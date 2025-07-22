@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Programa_Bioquim
 {
-    public partial class Login : Form
+    public partial class frmLogin : Form
     {
-        public Login()
+        public frmLogin()
         {
             InitializeComponent();
         }
@@ -31,6 +31,11 @@ namespace Programa_Bioquim
                 MessageBox.Show("Por favor llene los campos para continuar");
             }
 
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
 
         }
     }

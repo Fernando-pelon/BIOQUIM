@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Programa_Bioquim
+namespace Programa_Bioquim.Formularios
 {
-    public partial class frmDashBoard : Form
+    public partial class frmInicioEmpleado : Form
     {
-        public frmDashBoard()
+        public frmInicioEmpleado()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Environment.Exit(0);
         }
     }
 }

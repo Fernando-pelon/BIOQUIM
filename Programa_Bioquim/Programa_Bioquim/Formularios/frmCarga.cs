@@ -43,7 +43,7 @@ namespace Programa_Bioquim
                 timerCarga.Stop();
                 this.Hide();
 
-                frmDashBoard destino = new frmDashBoard();
+                frmDashBoardEmpleado destino = new frmDashBoardEmpleado();
                 destino.Show();
             }
         }

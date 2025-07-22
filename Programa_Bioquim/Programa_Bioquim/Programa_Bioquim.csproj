@@ -46,34 +46,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmCarga.cs">
+    <Compile Include="Formularios\frmCarga.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCarga.Designer.cs">
+    <Compile Include="Formularios\frmCarga.Designer.cs">
       <DependentUpon>frmCarga.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmDashBoard.cs">
+    <Compile Include="Formularios\Empleado\frmDashBoardEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmDashBoard.Designer.cs">
-      <DependentUpon>frmDashBoard.cs</DependentUpon>
+    <Compile Include="Formularios\Empleado\frmDashBoardEmpleado.Designer.cs">
+      <DependentUpon>frmDashBoardEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Formularios\Empleado\frmInicioEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="Formularios\Empleado\frmInicioEmpleado.Designer.cs">
+      <DependentUpon>frmInicioEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmCarga.resx">
+    <EmbeddedResource Include="Formularios\Empleado\frmInicioEmpleado.resx">
+      <DependentUpon>frmInicioEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmCarga.resx">
       <DependentUpon>frmCarga.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmDashBoard.resx">
-      <DependentUpon>frmDashBoard.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Empleado\frmDashBoardEmpleado.resx">
+      <DependentUpon>frmDashBoardEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -112,6 +121,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\LogoSimple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Formularios\Admin\" />
+    <Folder Include="Formularios\Repartidor\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
