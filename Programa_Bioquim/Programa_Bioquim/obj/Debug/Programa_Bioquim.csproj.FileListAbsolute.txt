@@ -24,3 +24,17 @@ C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj
 C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.pdb
 C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.frmDashBoardEmpleado.resources
 C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.frmInicioEmpleado.resources
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\bin\Debug\Programa_Bioquim.exe.config
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\bin\Debug\Programa_Bioquim.exe
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\bin\Debug\Programa_Bioquim.pdb
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.csproj.AssemblyReference.cache
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.exe.config
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.frmInicioEmpleado.resources
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.frmCarga.resources
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.frmDashBoardEmpleado.resources
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.frmLogin.resources
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Properties.Resources.resources
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.csproj.GenerateResource.cache
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.csproj.CoreCompileInputs.cache
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.exe
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.pdb

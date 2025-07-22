@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -30,7 +31,8 @@ namespace Programa_Bioquim
 
         private void btnSalida_Click(object sender, EventArgs e)
         {
-            Close();
+            Application.Exit();
+
         }
 
         private void panel4_Paint(object sender, PaintEventArgs e)
@@ -62,5 +64,10 @@ namespace Programa_Bioquim
 
         }
         #endregion
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

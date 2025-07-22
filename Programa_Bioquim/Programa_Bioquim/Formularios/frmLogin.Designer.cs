@@ -36,6 +36,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblContraseña = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
+            this.btnSalida = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.gbxDatos.SuspendLayout();
@@ -90,7 +91,7 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(10, 122);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(250, 24);
+            this.textBox2.Size = new System.Drawing.Size(250, 27);
             this.textBox2.TabIndex = 3;
             this.textBox2.UseSystemPasswordChar = true;
             // 
@@ -98,7 +99,7 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(10, 60);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 24);
+            this.textBox1.Size = new System.Drawing.Size(250, 27);
             this.textBox1.TabIndex = 2;
             // 
             // lblContraseña
@@ -106,7 +107,7 @@
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Location = new System.Drawing.Point(6, 99);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(107, 20);
+            this.lblContraseña.Size = new System.Drawing.Size(111, 20);
             this.lblContraseña.TabIndex = 1;
             this.lblContraseña.Text = "Contraseña:";
             // 
@@ -115,16 +116,30 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Location = new System.Drawing.Point(7, 37);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(76, 20);
+            this.lblUsuario.Size = new System.Drawing.Size(80, 20);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario:";
             // 
+            // btnSalida
+            // 
+            this.btnSalida.FlatAppearance.BorderSize = 0;
+            this.btnSalida.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSalida.Image = global::Programa_Bioquim.Properties.Resources.x;
+            this.btnSalida.Location = new System.Drawing.Point(525, 0);
+            this.btnSalida.Margin = new System.Windows.Forms.Padding(0);
+            this.btnSalida.Name = "btnSalida";
+            this.btnSalida.Size = new System.Drawing.Size(68, 49);
+            this.btnSalida.TabIndex = 7;
+            this.btnSalida.UseVisualStyleBackColor = false;
+            this.btnSalida.Click += new System.EventHandler(this.btnSalida_Click);
+            // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(593, 549);
+            this.Controls.Add(this.btnSalida);
             this.Controls.Add(this.gbxDatos);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -153,6 +168,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblContraseña;
         private System.Windows.Forms.Label lblUsuario;
+        private System.Windows.Forms.Button btnSalida;
     }
 }
 

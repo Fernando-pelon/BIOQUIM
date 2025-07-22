@@ -38,5 +38,11 @@ namespace Programa_Bioquim
         {
 
         }
+
+        private void btnSalida_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }
