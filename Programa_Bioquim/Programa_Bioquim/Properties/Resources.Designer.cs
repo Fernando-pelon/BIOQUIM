@@ -103,6 +103,16 @@ namespace Programa_Bioquim.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image_3 {
+            get {
+                object obj = ResourceManager.GetObject("image 3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LogoCompleto {
             get {
                 object obj = ResourceManager.GetObject("LogoCompleto", resourceCulture);

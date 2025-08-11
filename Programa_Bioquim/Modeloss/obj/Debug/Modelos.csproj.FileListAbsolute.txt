@@ -1,0 +1,12 @@
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modelos.csproj.AssemblyReference.cache
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modelos.csproj.CoreCompileInputs.cache
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\Modeloss.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\Modeloss.pdb
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modeloss.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modeloss.pdb
+C:\Users\Miste\OneDrive\Escritorio\Nueva carpeta\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\Modeloss.dll
+C:\Users\Miste\OneDrive\Escritorio\Nueva carpeta\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\Modeloss.pdb
+C:\Users\Miste\OneDrive\Escritorio\Nueva carpeta\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modelos.csproj.AssemblyReference.cache
+C:\Users\Miste\OneDrive\Escritorio\Nueva carpeta\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modelos.csproj.CoreCompileInputs.cache
+C:\Users\Miste\OneDrive\Escritorio\Nueva carpeta\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modeloss.dll
+C:\Users\Miste\OneDrive\Escritorio\Nueva carpeta\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modeloss.pdb

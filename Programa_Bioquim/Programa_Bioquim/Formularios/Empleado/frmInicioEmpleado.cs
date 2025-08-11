@@ -1,5 +1,6 @@
-﻿using Programa_Bioquim.ConexionDB;
+﻿using Programa_Bioquim; 
 using System;
+using Modelos.Entidades;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,31 +15,40 @@ namespace Programa_Bioquim.Formularios
 {
     public partial class frmInicioEmpleado : Form
     {
-      
         public frmInicioEmpleado()
         {
             InitializeComponent();
-
         }
 
         private void pnlInicioEmpleado_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void pnlBienvenida_Paint(object sender, PaintEventArgs e)
         {
+        }
+
+        private void MostrarRutas()
+        {
+            dgvDatosRutas.DataSource = null;
+            dgvDatosRutas.DataSource = RutaDeEntrega.cargarRutas();
 
         }
 
         private void dgvDatosRutas_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+      
         }
 
-        private void btnIngresar_Click(object sender, EventArgs e)
-        {
 
+        private void frmInicioEmpleado_Load(object sender, EventArgs e)
+        {
+            MostrarRutas();
+        }
+
+        private void frmInicioEmpleado_Load_1(object sender, EventArgs e)
+        {
+            MostrarRutas();
         }
     }
 }

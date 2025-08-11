@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Programa_Bioquim",
+    "\\Programa_Bioquim\\Modeloss",
+    "\\Programa_Bioquim\\Modeloss\\Conexiones"
   ],
-  "SelectedNode": "\\Programa_Bioquim.sln",
+  "SelectedNode": "\\Programa_Bioquim\\Modeloss\\Conexiones\\ConexionDB.cs",
   "PreviewInSolutionExplorer": false
 }

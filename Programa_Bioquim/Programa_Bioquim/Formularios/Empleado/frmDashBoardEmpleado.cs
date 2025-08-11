@@ -1,4 +1,5 @@
 ﻿using Programa_Bioquim.Formularios;
+using Programa_Bioquim.Formularios.Empleado;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -66,6 +67,21 @@ namespace Programa_Bioquim
         #endregion
 
         private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblRutas_Click(object sender, EventArgs e)
+        {
+            abrirForm(new frmRutasDeEntrega());
+        }
+
+        private void lblInventario_Click(object sender, EventArgs e)
+        {
+            abrirForm(new frmInvetario());
+        }
+
+        private void pnlMenu_Paint(object sender, PaintEventArgs e)
         {
 
         }

@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\Empleado\frmInvetario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Empleado\frmInvetario.Designer.cs">
+      <DependentUpon>frmInvetario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Empleado\frmRutasDeEntrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Empleado\frmRutasDeEntrega.Designer.cs">
+      <DependentUpon>frmRutasDeEntrega.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\frmCarga.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +86,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\Empleado\frmInicioEmpleado.resx">
       <DependentUpon>frmInicioEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Empleado\frmInvetario.resx">
+      <DependentUpon>frmInvetario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Empleado\frmRutasDeEntrega.resx">
+      <DependentUpon>frmRutasDeEntrega.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmCarga.resx">
       <DependentUpon>frmCarga.cs</DependentUpon>
@@ -131,6 +149,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Modeloss\Modelos.csproj">
+      <Project>{fcc4b47b-1918-4402-95e2-62e6a4dce7be}</Project>
+      <Name>Modelos</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
