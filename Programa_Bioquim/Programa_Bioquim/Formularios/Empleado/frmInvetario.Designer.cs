@@ -69,6 +69,7 @@
             this.btnEliminarProducto.TabIndex = 5;
             this.btnEliminarProducto.Text = "Eliminar producto";
             this.btnEliminarProducto.UseVisualStyleBackColor = false;
+            this.btnEliminarProducto.Click += new System.EventHandler(this.btnEliminarProducto_Click);
             // 
             // dgvInventario
             // 
@@ -83,6 +84,7 @@
             this.dgvInventario.Size = new System.Drawing.Size(584, 267);
             this.dgvInventario.TabIndex = 7;
             this.dgvInventario.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dgvInventario.DoubleClick += new System.EventHandler(this.dgvInventario_DoubleClick);
             // 
             // pnlinventario
             // 

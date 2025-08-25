@@ -37,6 +37,20 @@ namespace Programa_Bioquim.Formularios.Empleado
 
         private void btnAgregarRuta_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Producto Pro = new Producto();
+                Pro.NombreProducto = txtNombreProducto.Text;
+                Pro.CostoProducto = double.Parse(txtCostoProducto.Text);
+                Pro.CantidadProducto = double.Parse(txtCantidadProducto.Text);
+                Pro.insertarProducto();
+                MostrarInvetario();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error" + ex, "error de informacion", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
 
         }
 
@@ -48,6 +62,37 @@ namespace Programa_Bioquim.Formularios.Empleado
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEliminarProducto_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvInventario.CurrentRow != null)
+                {
+                    int idProducto = Convert.ToInt32(dgvInventario.CurrentRow.Cells[0].Value);
+                    Producto productoEliminar = new Producto();
+                    productoEliminar.IdProducto = idProducto;
+                    productoEliminar.eliminarProducto();
+                    MostrarInvetario();
+                    MessageBox.Show("Producto eliminado correctamente.", "Eliminación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione un producto para eliminar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error al eliminar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void dgvInventario_DoubleClick(object sender, EventArgs e)
+        {
+            txtNombreProducto.Text = dgvInventario.CurrentRow.Cells[1].Value.ToString();
+            txtCostoProducto.Text = dgvInventario.CurrentRow.Cells[2].Value.ToString();
+            txtCantidadProducto.Text = dgvInventario.CurrentRow.Cells[3].Value.ToString();
         }
     }
 }

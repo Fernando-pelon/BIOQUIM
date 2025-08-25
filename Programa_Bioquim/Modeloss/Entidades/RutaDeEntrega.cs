@@ -12,39 +12,46 @@ namespace Modelos.Entidades
 {
     public class RutaDeEntrega
     {
-        private string ubicacionEmpresa;
+        
         private int idProducto;
         private double montoPago;
         private int idEmpresa;
+        private int idTipoPago;
+        private int idUbicacion;
 
-        public string UbicacionEmpresa { get => ubicacionEmpresa; set => ubicacionEmpresa = value; }
         public int IdProducto { get => idProducto; set => idProducto = value; }
         public double MontoPago { get => montoPago; set => montoPago = value; }
         public int IdEmpresa { get => idEmpresa; set => idEmpresa = value; }
+        public int IdTipoPago { get => idTipoPago; set => idTipoPago = value; }
+        public int IdUbicacion { get => idUbicacion; set => idUbicacion = value; }
 
         public static DataTable cargarRutas()
         {
             SqlConnection conexion = ConexionDB.conectar();
-            string consultaQuery = "select *from Rutas2;";
+            string consultaQuery = "select *from Rutas3;";
             SqlDataAdapter add = new SqlDataAdapter(consultaQuery, conexion);
             DataTable tablaVirtual = new DataTable();
             add.Fill(tablaVirtual);
             return tablaVirtual;
         }
 
-        public bool insertarProducto()
+
+
+        public bool insertarRuta()
         {
             try
             {
                 SqlConnection conexion = ConexionDB.conectar();
-                string consultaQueryInsert = "insert into RutaDeEntrega  (ubicacionEmpresa, nombresProducto, montoPago, nombreEmpresa, ) values(@ubicacionEmpresa, @nombresProducto, @montoPago, @nombreEmpresa);";
+                string consultaQueryInsert = "insert into RutaDeEntrega  (idProducto,montoPago,idEmpresa,idTipoPago, idUbicacion) values(@idProducto,@montoPago,@idEmpresa,@idTipoPago, @idUbicacion);";
                 SqlCommand insertar = new SqlCommand(consultaQueryInsert, conexion);
-                insertar.Parameters.AddWithValue("@ubicacionEmpresa", UbicacionEmpresa);
-                insertar.Parameters.AddWithValue("@nombresProducto", IdProducto);
-                insertar.Parameters.AddWithValue("@montoPago", MontoPago);
-                insertar.Parameters.AddWithValue("@nombreEmpresa",IdEmpresa);
-                
+                insertar.Parameters.AddWithValue("@idProducto", idProducto);
+                insertar.Parameters.AddWithValue("@montoPago",montoPago );
+                insertar.Parameters.AddWithValue("@idEmpresa",idEmpresa );
+                insertar.Parameters.AddWithValue("@iTipoPago", idTipoPago);
+                insertar.Parameters.AddWithValue("@idUbicacion", idUbicacion);
                 insertar.ExecuteNonQuery();
+                MessageBox.Show("excelente datos registrados", "Datos correctos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 return true;
             }
             catch (Exception ex)
@@ -55,5 +62,17 @@ namespace Modelos.Entidades
 
 
         }
+
+        //public bool eliminarRuta(int id)
+        //{
+        //    try
+        //    {
+        //        SqlConnection conexion
+        //    }
+        //    catch (Exception ex)
+        //    {
+
+        //    }
+        //}
     }
 }
