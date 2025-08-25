@@ -68,7 +68,7 @@
             this.lblRutas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRutas.Location = new System.Drawing.Point(0, 0);
             this.lblRutas.Name = "lblRutas";
-            this.lblRutas.Size = new System.Drawing.Size(228, 29);
+            this.lblRutas.Size = new System.Drawing.Size(206, 25);
             this.lblRutas.TabIndex = 0;
             this.lblRutas.Text = "Rutas en progreso";
             // 
@@ -88,7 +88,7 @@
             this.lblBienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBienvenida.Location = new System.Drawing.Point(143, 99);
             this.lblBienvenida.Name = "lblBienvenida";
-            this.lblBienvenida.Size = new System.Drawing.Size(443, 25);
+            this.lblBienvenida.Size = new System.Drawing.Size(392, 24);
             this.lblBienvenida.TabIndex = 1;
             this.lblBienvenida.Text = "¡Hola, Bienvenido al sistema de Bioquim!";
             // 
