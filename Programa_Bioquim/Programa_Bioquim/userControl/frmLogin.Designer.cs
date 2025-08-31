@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.gbxDatos = new System.Windows.Forms.GroupBox();
-            this.btnEnviar = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnLogIn = new System.Windows.Forms.Button();
+            this.txtContrasenia = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.lblContraseña = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.btnSalida = new System.Windows.Forms.Button();
@@ -44,9 +44,9 @@
             // 
             // gbxDatos
             // 
-            this.gbxDatos.Controls.Add(this.btnEnviar);
-            this.gbxDatos.Controls.Add(this.textBox2);
-            this.gbxDatos.Controls.Add(this.textBox1);
+            this.gbxDatos.Controls.Add(this.btnLogIn);
+            this.gbxDatos.Controls.Add(this.txtContrasenia);
+            this.gbxDatos.Controls.Add(this.txtUsuario);
             this.gbxDatos.Controls.Add(this.lblContraseña);
             this.gbxDatos.Controls.Add(this.lblUsuario);
             this.gbxDatos.Location = new System.Drawing.Point(121, 221);
@@ -55,38 +55,39 @@
             this.gbxDatos.TabIndex = 10;
             this.gbxDatos.TabStop = false;
             // 
-            // btnEnviar
+            // btnLogIn
             // 
-            this.btnEnviar.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.btnEnviar.ForeColor = System.Drawing.Color.White;
-            this.btnEnviar.Location = new System.Drawing.Point(83, 174);
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(141, 35);
-            this.btnEnviar.TabIndex = 4;
-            this.btnEnviar.Text = "Enviar";
-            this.btnEnviar.UseVisualStyleBackColor = false;
+            this.btnLogIn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnLogIn.ForeColor = System.Drawing.Color.White;
+            this.btnLogIn.Location = new System.Drawing.Point(83, 174);
+            this.btnLogIn.Name = "btnLogIn";
+            this.btnLogIn.Size = new System.Drawing.Size(141, 35);
+            this.btnLogIn.TabIndex = 4;
+            this.btnLogIn.Text = "Log In";
+            this.btnLogIn.UseVisualStyleBackColor = false;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
-            // textBox2
+            // txtContrasenia
             // 
-            this.textBox2.Location = new System.Drawing.Point(10, 122);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(250, 22);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.txtContrasenia.Location = new System.Drawing.Point(10, 122);
+            this.txtContrasenia.Name = "txtContrasenia";
+            this.txtContrasenia.Size = new System.Drawing.Size(250, 26);
+            this.txtContrasenia.TabIndex = 3;
+            this.txtContrasenia.UseSystemPasswordChar = true;
             // 
-            // textBox1
+            // txtUsuario
             // 
-            this.textBox1.Location = new System.Drawing.Point(10, 60);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 22);
-            this.textBox1.TabIndex = 2;
+            this.txtUsuario.Location = new System.Drawing.Point(10, 60);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(250, 26);
+            this.txtUsuario.TabIndex = 2;
             // 
             // lblContraseña
             // 
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Location = new System.Drawing.Point(6, 99);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(90, 16);
+            this.lblContraseña.Size = new System.Drawing.Size(111, 20);
             this.lblContraseña.TabIndex = 1;
             this.lblContraseña.Text = "Contraseña:";
             // 
@@ -95,7 +96,7 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Location = new System.Drawing.Point(7, 37);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(65, 16);
+            this.lblUsuario.Size = new System.Drawing.Size(80, 20);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario:";
             // 
@@ -110,6 +111,7 @@
             this.btnSalida.Size = new System.Drawing.Size(68, 49);
             this.btnSalida.TabIndex = 11;
             this.btnSalida.UseVisualStyleBackColor = false;
+            this.btnSalida.Click += new System.EventHandler(this.btnSalida_Click);
             // 
             // pictureBox2
             // 
@@ -133,7 +135,7 @@
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnSalida);
@@ -141,7 +143,7 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmLogin";
             this.Size = new System.Drawing.Size(565, 550);
             this.gbxDatos.ResumeLayout(false);
@@ -156,9 +158,9 @@
 
         private System.Windows.Forms.Button btnSalida;
         private System.Windows.Forms.GroupBox gbxDatos;
-        private System.Windows.Forms.Button btnEnviar;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnLogIn;
+        private System.Windows.Forms.TextBox txtContrasenia;
+        private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Label lblContraseña;
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.PictureBox pictureBox2;

@@ -12,7 +12,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Modelos.Entidades
 {
-    internal class Usuario
+    public class Usuario
     {
         private int idUsario;
         private string nombreUsuario;
