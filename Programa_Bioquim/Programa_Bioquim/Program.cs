@@ -19,7 +19,7 @@ namespace Programa_Bioquim
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmContenedorLogin());
+            Application.Run(new frmGestionUsuarios());
         }
     }
 }

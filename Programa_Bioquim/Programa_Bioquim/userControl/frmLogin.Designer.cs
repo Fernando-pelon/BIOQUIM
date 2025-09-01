@@ -131,7 +131,6 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmLogin";
             this.Size = new System.Drawing.Size(565, 550);
-            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.gbxDatos.ResumeLayout(false);
             this.gbxDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

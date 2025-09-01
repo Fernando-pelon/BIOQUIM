@@ -28,15 +28,12 @@ namespace Modelos.Entidades
         public static DataTable cargarRutas()
         {
             SqlConnection conexion = ConexionDB.conectar();
-            string consultaQuery = "select *from Rutas4;";
+            string consultaQuery = "select *from Rutas3;";
             SqlDataAdapter add = new SqlDataAdapter(consultaQuery, conexion);
             DataTable tablaVirtual = new DataTable();
             add.Fill(tablaVirtual);
             return tablaVirtual;
         }
-
-
-
         public bool insertarRuta()
         {
             try

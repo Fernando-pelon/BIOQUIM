@@ -269,7 +269,7 @@ Ubicaciones Ub on re.idUbicacion = Ub.idUbicacion
 ;
 
 go
-
+select *from Rutas4
 create view Rutas3 as 
 SELECT 
     P.nombreProducto,
@@ -324,10 +324,6 @@ LEFT JOIN TipoUsuario T ON U.idTipoUsuario = T.idTipoUsuario
 LEFT JOIN Departamento D ON U.idDepartamento = D.idDepartamento;
 
 select *from UsuariosDGV
-
+go
 insert into Usuario(nombreUsuario, apellidoUsuario, correoUsuario, contrasenaUsuario, idTipoUsuario, idDepartamento) values
 ('1', '1', '1', '1', 2, 4);
-
-delete from TipoUsuario
-delete from Departamento
-delete from Ubicaciones
