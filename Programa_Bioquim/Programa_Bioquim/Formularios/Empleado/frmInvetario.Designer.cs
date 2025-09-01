@@ -40,6 +40,9 @@
             this.lblCantidadProducto = new System.Windows.Forms.Label();
             this.lblCostoProducto = new System.Windows.Forms.Label();
             this.lblNombreProducto = new System.Windows.Forms.Label();
+            this.btnActualizarProduc = new System.Windows.Forms.Button();
+            this.txtBuscarProducto = new System.Windows.Forms.TextBox();
+            this.lblBuscarProductp = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).BeginInit();
             this.pnlinventario.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -131,6 +134,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel1.Controls.Add(this.btnActualizarProduc);
             this.panel1.Controls.Add(this.lblCantidadProducto);
             this.panel1.Controls.Add(this.lblCostoProducto);
             this.panel1.Controls.Add(this.lblNombreProducto);
@@ -176,12 +180,45 @@
             this.lblNombreProducto.TabIndex = 12;
             this.lblNombreProducto.Text = "Nombre producto:";
             // 
+            // btnActualizarProduc
+            // 
+            this.btnActualizarProduc.BackColor = System.Drawing.Color.Blue;
+            this.btnActualizarProduc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarProduc.ForeColor = System.Drawing.Color.White;
+            this.btnActualizarProduc.Location = new System.Drawing.Point(456, 59);
+            this.btnActualizarProduc.Name = "btnActualizarProduc";
+            this.btnActualizarProduc.Size = new System.Drawing.Size(111, 44);
+            this.btnActualizarProduc.TabIndex = 16;
+            this.btnActualizarProduc.Text = "Actualizar Producto";
+            this.btnActualizarProduc.UseVisualStyleBackColor = false;
+            this.btnActualizarProduc.Click += new System.EventHandler(this.btnActualizarProduc_Click);
+            // 
+            // txtBuscarProducto
+            // 
+            this.txtBuscarProducto.Location = new System.Drawing.Point(506, 64);
+            this.txtBuscarProducto.Name = "txtBuscarProducto";
+            this.txtBuscarProducto.Size = new System.Drawing.Size(156, 20);
+            this.txtBuscarProducto.TabIndex = 13;
+            this.txtBuscarProducto.TextChanged += new System.EventHandler(this.txtBuscarProducto_TextChanged);
+            // 
+            // lblBuscarProductp
+            // 
+            this.lblBuscarProductp.AutoSize = true;
+            this.lblBuscarProductp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuscarProductp.Location = new System.Drawing.Point(505, 43);
+            this.lblBuscarProductp.Name = "lblBuscarProductp";
+            this.lblBuscarProductp.Size = new System.Drawing.Size(140, 18);
+            this.lblBuscarProductp.TabIndex = 23;
+            this.lblBuscarProductp.Text = "Buscar Producto:";
+            // 
             // frmInvetario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 618);
+            this.Controls.Add(this.lblBuscarProductp);
+            this.Controls.Add(this.txtBuscarProducto);
             this.Controls.Add(this.pnlinventario);
             this.Controls.Add(this.dgvInventario);
             this.Controls.Add(this.panel1);
@@ -194,6 +231,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -211,5 +249,8 @@
         private System.Windows.Forms.Label lblCantidadProducto;
         private System.Windows.Forms.Label lblCostoProducto;
         private System.Windows.Forms.Label lblNombreProducto;
+        private System.Windows.Forms.Button btnActualizarProduc;
+        private System.Windows.Forms.TextBox txtBuscarProducto;
+        private System.Windows.Forms.Label lblBuscarProductp;
     }
 }

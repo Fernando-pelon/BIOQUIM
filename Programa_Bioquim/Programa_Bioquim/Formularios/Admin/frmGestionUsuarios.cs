@@ -31,7 +31,7 @@ namespace Programa_Bioquim.Formularios.Admin
             SetRoundedRegion();
 
             StyleButton(btnIngresarUsuario);
-            StyleButton(btnEliminarUsuario); 
+            StyleButton(btnEliminarUsuario);
             StyleButton(btnBuscarUsuario);
 
             this.Resize += (s, e) =>
@@ -52,7 +52,7 @@ namespace Programa_Bioquim.Formularios.Admin
         }
         private void cargarUsuarios()
         {
-            dgvUsuarios.DataSource=null;
+            dgvUsuarios.DataSource = null;
             dgvUsuarios.DataSource = Usuario.cargarUsuarios();
         }
 
@@ -183,6 +183,16 @@ namespace Programa_Bioquim.Formularios.Admin
         {
             dgvUsuarios.DataSource = null;
             dgvUsuarios.DataSource = Usuario.cargarUsuarios();
+        }
+
+        private void txtBuscar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

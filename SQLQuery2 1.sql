@@ -322,3 +322,12 @@ SELECT
 FROM Usuario U
 LEFT JOIN TipoUsuario T ON U.idTipoUsuario = T.idTipoUsuario
 LEFT JOIN Departamento D ON U.idDepartamento = D.idDepartamento;
+
+select *from UsuariosDGV
+
+insert into Usuario(nombreUsuario, apellidoUsuario, correoUsuario, contrasenaUsuario, idTipoUsuario, idDepartamento) values
+('1', '1', '1', '1', 2, 4);
+
+delete from TipoUsuario
+delete from Departamento
+delete from Ubicaciones

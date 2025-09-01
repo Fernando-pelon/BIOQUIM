@@ -26,7 +26,7 @@ namespace Modelos.Entidades
         {
             SqlConnection conexion = ConexionDB.conectar();
             string consultaQuery = "Select *from inven;";
-            SqlDataAdapter add = new SqlDataAdapter(consultaQuery, conexion);
+            SqlDataAdapter add = new SqlDataAdapter( consultaQuery, conexion);
             DataTable tablaVirtual = new DataTable();
             add.Fill(tablaVirtual);
             return tablaVirtual;
@@ -37,7 +37,7 @@ namespace Modelos.Entidades
         {
             SqlConnection conexion = ConexionDB.conectar();
             string consultaQuery = "select nombreProducto,idProducto from Producto;";
-            SqlDataAdapter add = new SqlDataAdapter(consultaQuery, conexion);
+            SqlDataAdapter add = new SqlDataAdapter( consultaQuery, conexion);
             DataTable tablaVirtual = new DataTable();
             add.Fill(tablaVirtual);
             return tablaVirtual;
@@ -81,6 +81,44 @@ namespace Modelos.Entidades
                 MessageBox.Show("Error al eliminar producto: " + ex.Message, "Error al eliminar producto", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
+        }
+
+        public bool actualizarProducto()
+        {
+            try
+            {
+                SqlConnection conexion = ConexionDB.conectar();
+                string consultaQueryUpdate = "update Producto set nombreProducto=@nombreProducto, costoProducto=@costoProducto, cantidadProducto=@cantidadProducto where idProducto=@idProducto;";
+                SqlCommand actualizar = new SqlCommand(consultaQueryUpdate, conexion);
+                actualizar.Parameters.AddWithValue("@nombreProducto", nombreProducto);
+                actualizar.Parameters.AddWithValue("@costoProducto", costoProducto);
+                actualizar.Parameters.AddWithValue("@cantidadProducto", cantidadProducto);
+                actualizar.Parameters.AddWithValue("@idProducto", idProducto);
+                actualizar.ExecuteNonQuery();
+                MessageBox.Show("Datos actualizados correctamente", "Datos correctos", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al actualizar datos: " + ex.Message, "Error al actualizar datos", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
+
+        public static DataTable buscarProductos(string termino)
+        {
+            SqlConnection conexion = ConexionDB.conectar();
+            string comando =
+                "SELECT Producto.idProducto, Producto.nombreProducto, Producto.costoProducto, Producto.cantidadProducto, Proveedores.nombreProveedor " +
+                "FROM Producto " +
+                "INNER JOIN Proveedores ON Producto.idProveedor = Proveedores.idProveedor " +
+                "WHERE Producto.nombreProducto LIKE @termino;";
+
+            SqlDataAdapter ad = new SqlDataAdapter(comando, conexion);
+            ad.SelectCommand.Parameters.AddWithValue("@termino", "%" + termino + "%");
+            DataTable dt = new DataTable();
+            ad.Fill(dt);
+            return dt;
         }
 
     }   

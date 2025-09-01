@@ -47,6 +47,7 @@
             this.txtCostoProducto = new System.Windows.Forms.TextBox();
             this.txtBuscarRutas = new System.Windows.Forms.TextBox();
             this.lblBuscarRuta = new System.Windows.Forms.Label();
+            this.btnActualizarRutas = new System.Windows.Forms.Button();
             this.pnlRutas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRutas)).BeginInit();
             this.panel1.SuspendLayout();
@@ -100,6 +101,7 @@
             this.btnEliminarRuta.TabIndex = 3;
             this.btnEliminarRuta.Text = "Eliminar Ruta";
             this.btnEliminarRuta.UseVisualStyleBackColor = false;
+            this.btnEliminarRuta.Click += new System.EventHandler(this.btnEliminarRuta_Click);
             // 
             // btnAgregarRuta
             // 
@@ -117,6 +119,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.panel1.Controls.Add(this.btnActualizarRutas);
             this.panel1.Controls.Add(this.lblTipoPago);
             this.panel1.Controls.Add(this.rbTarjetaCredito);
             this.panel1.Controls.Add(this.rbEfectivo);
@@ -249,6 +252,7 @@
             this.txtBuscarRutas.Name = "txtBuscarRutas";
             this.txtBuscarRutas.Size = new System.Drawing.Size(185, 25);
             this.txtBuscarRutas.TabIndex = 14;
+            this.txtBuscarRutas.TextChanged += new System.EventHandler(this.txtBuscarRutas_TextChanged);
             // 
             // lblBuscarRuta
             // 
@@ -259,6 +263,19 @@
             this.lblBuscarRuta.Size = new System.Drawing.Size(106, 18);
             this.lblBuscarRuta.TabIndex = 22;
             this.lblBuscarRuta.Text = "Buscar Ruta:";
+            // 
+            // btnActualizarRutas
+            // 
+            this.btnActualizarRutas.BackColor = System.Drawing.Color.Blue;
+            this.btnActualizarRutas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarRutas.ForeColor = System.Drawing.Color.White;
+            this.btnActualizarRutas.Location = new System.Drawing.Point(576, 39);
+            this.btnActualizarRutas.Name = "btnActualizarRutas";
+            this.btnActualizarRutas.Size = new System.Drawing.Size(116, 47);
+            this.btnActualizarRutas.TabIndex = 23;
+            this.btnActualizarRutas.Text = "Actualizar Ruta";
+            this.btnActualizarRutas.UseVisualStyleBackColor = false;
+            this.btnActualizarRutas.Click += new System.EventHandler(this.btnActualizarRutas_Click);
             // 
             // frmRutasDeEntrega
             // 
@@ -305,5 +322,6 @@
         private System.Windows.Forms.Label lblTipoPago;
         private System.Windows.Forms.TextBox txtBuscarRutas;
         private System.Windows.Forms.Label lblBuscarRuta;
+        private System.Windows.Forms.Button btnActualizarRutas;
     }
 }

@@ -55,3 +55,14 @@ C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\M
 C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modelos.csproj.Up2Date
 C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modeloss.dll
 C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modeloss.pdb
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\System.Buffers.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\System.Memory.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\System.Buffers.xml
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\System.Memory.xml
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modelos.csproj.Up2Date

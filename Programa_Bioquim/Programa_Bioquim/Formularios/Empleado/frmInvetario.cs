@@ -94,5 +94,22 @@ namespace Programa_Bioquim.Formularios.Empleado
             txtCostoProducto.Text = dgvInventario.CurrentRow.Cells[2].Value.ToString();
             txtCantidadProducto.Text = dgvInventario.CurrentRow.Cells[3].Value.ToString();
         }
+
+        private void btnActualizarProduc_Click(object sender, EventArgs e)
+        {
+            Producto p = new Producto();
+            p.IdProducto = Convert.ToInt32(dgvInventario.CurrentRow.Cells[0].Value);
+            p.NombreProducto = txtNombreProducto.Text;
+            p.CostoProducto = double.Parse(txtCostoProducto.Text);
+            p.CantidadProducto = double.Parse(txtCantidadProducto.Text);
+            p.actualizarProducto();
+            MostrarInvetario();
+        }
+
+        private void txtBuscarProducto_TextChanged(object sender, EventArgs e)
+        {
+            dgvInventario.DataSource = null;
+            dgvInventario.DataSource = Producto.buscarProductos(txtBuscarProducto.Text);
+        }
     }
 }

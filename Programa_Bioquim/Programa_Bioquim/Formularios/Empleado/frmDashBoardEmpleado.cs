@@ -1,4 +1,5 @@
 ﻿using Programa_Bioquim.Formularios;
+using Programa_Bioquim.Formularios.Admin;
 using Programa_Bioquim.Formularios.Empleado;
 using System;
 using System.Collections.Generic;
@@ -27,7 +28,7 @@ namespace Programa_Bioquim
 
         private void frmDashBoard_Load(object sender, EventArgs e)
         {
-
+            abrirForm(new frmInicioEmpleado());
         }
 
         private void btnSalida_Click(object sender, EventArgs e)
@@ -84,6 +85,26 @@ namespace Programa_Bioquim
         private void pnlMenu_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void GestionUsuario_Click(object sender, EventArgs e)
+        {
+            abrirForm(new frmGestionUsuarios());
+        }
+
+        private void minimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
         }
     }
 }

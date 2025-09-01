@@ -70,7 +70,7 @@
             // 
             this.txtContrasenia.Location = new System.Drawing.Point(10, 122);
             this.txtContrasenia.Name = "txtContrasenia";
-            this.txtContrasenia.Size = new System.Drawing.Size(250, 26);
+            this.txtContrasenia.Size = new System.Drawing.Size(250, 24);
             this.txtContrasenia.TabIndex = 3;
             this.txtContrasenia.UseSystemPasswordChar = true;
             // 
@@ -78,7 +78,7 @@
             // 
             this.txtUsuario.Location = new System.Drawing.Point(10, 60);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(250, 26);
+            this.txtUsuario.Size = new System.Drawing.Size(250, 24);
             this.txtUsuario.TabIndex = 2;
             // 
             // lblContraseña
@@ -86,7 +86,7 @@
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Location = new System.Drawing.Point(6, 99);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(111, 20);
+            this.lblContraseña.Size = new System.Drawing.Size(100, 18);
             this.lblContraseña.TabIndex = 1;
             this.lblContraseña.Text = "Contraseña:";
             // 
@@ -95,7 +95,7 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Location = new System.Drawing.Point(7, 37);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(80, 20);
+            this.lblUsuario.Size = new System.Drawing.Size(72, 18);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario:";
             // 
@@ -121,7 +121,7 @@
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.gbxDatos);
@@ -131,6 +131,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmLogin";
             this.Size = new System.Drawing.Size(565, 550);
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.gbxDatos.ResumeLayout(false);
             this.gbxDatos.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

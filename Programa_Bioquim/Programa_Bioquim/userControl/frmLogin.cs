@@ -1,5 +1,6 @@
 ﻿using Modelos.Conexiones;
 using Modelos.Entidades;
+using Programa_Bioquim.Formularios.Admin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -88,6 +89,53 @@ namespace Programa_Bioquim.userControl
             {
                 MessageBox.Show("Por favor, complete todos los campos.");
             }
+        }
+
+        //public void logear(string usuario, string contraseña)
+        //{
+        //    SqlConnection conn = null;
+        //    try
+        //    {
+        //        conn = ConexionDB.conectar();
+        //        conn.Open();
+        //        SqlCommand cmd = new SqlCommand("SELECT Nombre, Tipo_usuario FROM usuarios WHERE Usuario = @usuario AND Password = @pass", conn);
+        //        cmd.Parameters.AddWithValue("usuario", usuario);
+        //        cmd.Parameters.AddWithValue("pass", contraseña);
+        //        SqlDataAdapter sda = new SqlDataAdapter(cmd);
+        //        DataTable dt = new DataTable();
+        //        sda.Fill(dt);
+
+        //        if (dt.Rows.Count == 1)
+        //        {
+        //            this.Hide();
+        //            if (dt.Rows[0][1].ToString() == "Admin")
+        //            {
+        //                new frmGestionUsuarios().Show();
+        //            }
+        //            else if (dt.Rows[0][1].ToString() == "Usuario")
+        //            {
+        //                new frmDashBoardEmpleado().Show();
+        //            }
+        //        }
+        //        else
+        //        {
+        //            MessageBox.Show("Usuario y/o Contraseña Incorrecta");
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message);
+        //    }
+        //    finally
+        //    {
+                
+        //            conn.Close();
+        //    }
+        //}
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

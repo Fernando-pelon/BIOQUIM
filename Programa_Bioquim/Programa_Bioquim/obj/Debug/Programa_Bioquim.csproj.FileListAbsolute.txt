@@ -30,7 +30,6 @@ C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj
 C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Empleado.frmRutasDeEntrega.resources
 C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.frmCarga.resources
 C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.frmDashBoardEmpleado.resources
-C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.frmLogin.resources
 C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Properties.Resources.resources
 C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.csproj.GenerateResource.cache
 C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.csproj.CoreCompileInputs.cache
@@ -135,3 +134,18 @@ C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj
 C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.pdb
 C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.frmContenedorLogin.resources
 C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.frmContenedorRegistrarUsuario.resources
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\bin\Debug\System.Buffers.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\bin\Debug\System.Memory.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\bin\Debug\System.Buffers.xml
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\bin\Debug\System.Memory.xml
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Admin.frmGestionUsuarios.resources
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.frmContenedorLogin.resources
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.frmContenedorRegistrarUsuario.resources
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.userControl.frmLogin.resources
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.userControl.frmRegistrarUsuario.resources
