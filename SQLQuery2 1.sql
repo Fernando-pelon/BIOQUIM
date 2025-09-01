@@ -189,6 +189,13 @@ insert into Usuario(nombreUsuario, apellidoUsuario, correoUsuario, contrasenaUsu
 ('Andrea', 'Gómez', 'a.gomez@cleanhouse.com', 'Andre@G', 4, 3),
 ('María', 'Flores', 'm.flores@furnizone.com', 'Mar1aF!', 5, 4);
 
+INSERT INTO Ubicaciones(UbicacionEmpresa)
+VALUES
+('San Salvador'),
+( 'Santa Ana'),
+('Mejicanos'),
+( 'San Miguel'),
+('Soyapango')
 -- RutaDeEntrega
 INSERT INTO RutaDeEntrega(idProducto, montoPago, idEmpresa, idTipoPago, idUbicacion)
 VALUES
@@ -199,13 +206,7 @@ VALUES
 ( 5, 445.00, 5, 2, 5);
 
 --Ubicacion
-INSERT INTO Ubicaciones(UbicacionEmpresa)
-VALUES
-('San Salvador'),
-( 'Santa Ana'),
-('Mejicanos'),
-( 'San Miguel'),
-('Soyapango')
+
 
 select 
     p.nombreProducto,
@@ -274,7 +275,7 @@ left JOIN TipoPago T ON R.idTipoPago = T.idTipoPago;
 
 
 
-select *from Empresas
+select *from Usuario
 select * from RutaDeEntrega
 select *from Departamento
 select * from Producto
@@ -294,3 +295,15 @@ LEFT JOIN
     CategoriaProducto C ON P.idCategoriaProduc = C.idCategoriaProduc
 LEFT JOIN 
     Proveedores PR ON P.idProveedor = PR.idProveedor;
+
+create view UsuariosDGV as
+select
+    nombreUsuario as Usuario,
+    apellidoUsuario as Apellido,
+    correoUsuario as Correo,
+    contrasenaUsuario as Contraseña,
+    nombreDepartamento as Departamento,
+    nombreTipoUsuario as TipoDeUsuario
+from Usuario
+left join TipoUsuario on idTipoUsuario = idTipoUsuario
+left join Departamento on idDepartamento = idDepartamento;

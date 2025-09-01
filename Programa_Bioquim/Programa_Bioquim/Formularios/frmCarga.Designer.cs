@@ -43,7 +43,6 @@
             this.pbIntermediario.Name = "pbIntermediario";
             this.pbIntermediario.Size = new System.Drawing.Size(484, 24);
             this.pbIntermediario.TabIndex = 0;
-            this.pbIntermediario.Click += new System.EventHandler(this.pbIntermediario_Click);
             // 
             // pbGotitas
             // 

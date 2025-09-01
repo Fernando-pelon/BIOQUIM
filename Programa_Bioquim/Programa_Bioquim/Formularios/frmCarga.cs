@@ -13,11 +13,9 @@ namespace Programa_Bioquim
 {
     public partial class frmCarga : Form
     {
-
         public frmCarga()
         {
             InitializeComponent();
-
         }
 
         private void frmCarga_Load(object sender, EventArgs e)
@@ -27,31 +25,26 @@ namespace Programa_Bioquim
             pbIntermediario.Maximum = 100;
             pbIntermediario.Style = ProgressBarStyle.Continuous;
 
-            timerCarga.Interval = 50;
+            timerCarga.Interval = 30; // Actualiza cada 30 ms
             timerCarga.Tick += new EventHandler(timerCarga_Tick);
             timerCarga.Start();
         }
 
-
-
         private void timerCarga_Tick(object sender, EventArgs e)
         {
-            pbIntermediario.Value += 2;
-
-            if (pbIntermediario.Value >= pbIntermediario.Maximum)
+            if (pbIntermediario.Value < pbIntermediario.Maximum)
+            {
+                pbIntermediario.Value += 2; // Incrementa de 2 en 2 (ajusta para la velocidad deseada)
+            }
+            else
             {
                 timerCarga.Stop();
                 this.Hide();
 
-                frmDashBoardEmpleado destino = new frmDashBoardEmpleado();
-                destino.Show();
+                // Abrir Dashboard
+                frmDashBoardEmpleado dashboard = new frmDashBoardEmpleado();
+                dashboard.Show();
             }
-        }
-
-
-        private void pbIntermediario_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

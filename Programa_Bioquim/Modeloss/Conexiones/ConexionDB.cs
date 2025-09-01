@@ -13,7 +13,7 @@ namespace Modelos.Conexiones
 {
     public class ConexionDB
     {
-        private static string servidor = "LAB03-DS-EQ19\\SQLEXPRESS";
+        private static string servidor = "localhost\\SQLEXPRESS"; // Cambia esto según tu entorno
         private static string dataBase = "BIOQUIM_PTC";
 
         public static SqlConnection conectar()

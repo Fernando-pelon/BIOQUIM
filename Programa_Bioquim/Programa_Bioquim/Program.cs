@@ -1,4 +1,6 @@
-﻿using Programa_Bioquim.Formularios.Admin;
+﻿using Programa_Bioquim.Formularios;
+using Programa_Bioquim.Formularios.Admin;
+using Programa_Bioquim.userControl;
 using System;
 using System.Collections.Generic;
 using System.Linq;

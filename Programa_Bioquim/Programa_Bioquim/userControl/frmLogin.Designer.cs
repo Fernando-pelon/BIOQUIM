@@ -34,7 +34,6 @@
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.lblContraseña = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
-            this.btnSalida = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gbxDatos.SuspendLayout();
@@ -100,19 +99,6 @@
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario:";
             // 
-            // btnSalida
-            // 
-            this.btnSalida.FlatAppearance.BorderSize = 0;
-            this.btnSalida.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalida.Image = global::Programa_Bioquim.Properties.Resources.x;
-            this.btnSalida.Location = new System.Drawing.Point(497, 0);
-            this.btnSalida.Margin = new System.Windows.Forms.Padding(0);
-            this.btnSalida.Name = "btnSalida";
-            this.btnSalida.Size = new System.Drawing.Size(68, 49);
-            this.btnSalida.TabIndex = 11;
-            this.btnSalida.UseVisualStyleBackColor = false;
-            this.btnSalida.Click += new System.EventHandler(this.btnSalida_Click);
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Programa_Bioquim.Properties.Resources.LogoCompleto;
@@ -138,7 +124,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.btnSalida);
             this.Controls.Add(this.gbxDatos);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
@@ -155,8 +140,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnSalida;
         private System.Windows.Forms.GroupBox gbxDatos;
         private System.Windows.Forms.Button btnLogIn;
         private System.Windows.Forms.TextBox txtContrasenia;

@@ -99,11 +99,17 @@
     <Compile Include="Formularios\Empleado\frmInicioEmpleado.Designer.cs">
       <DependentUpon>frmInicioEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\frmLogin.cs">
+    <Compile Include="Formularios\frmContenedorLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <Compile Include="Formularios\frmContenedorLogin.Designer.cs">
+      <DependentUpon>frmContenedorLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\frmContenedorRegistrarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\frmContenedorRegistrarUsuario.Designer.cs">
+      <DependentUpon>frmContenedorRegistrarUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -137,8 +143,11 @@
     <EmbeddedResource Include="Formularios\Empleado\frmDashBoardEmpleado.resx">
       <DependentUpon>frmDashBoardEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\frmContenedorLogin.resx">
+      <DependentUpon>frmContenedorLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\frmContenedorRegistrarUsuario.resx">
+      <DependentUpon>frmContenedorRegistrarUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

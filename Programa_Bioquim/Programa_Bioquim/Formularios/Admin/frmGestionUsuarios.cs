@@ -1,7 +1,11 @@
-﻿using System;
+﻿using Modelos.Conexiones;
+using Modelos.Entidades;
+using Programa_Bioquim.userControl;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
@@ -17,8 +21,6 @@ namespace Programa_Bioquim.Formularios.Admin
         public frmGestionUsuarios()
         {
             InitializeComponent();
-
-            // Label styling (already present)
             lblGestionUsuarios.AutoSize = true;
             lblGestionUsuarios.TextAlign = ContentAlignment.MiddleCenter;
             lblGestionUsuarios.BackColor = Color.FromArgb(20, 141, 255);
@@ -28,9 +30,8 @@ namespace Programa_Bioquim.Formularios.Admin
             CenterLabel();
             SetRoundedRegion();
 
-            // Button styling
             StyleButton(btnIngresarUsuario);
-            StyleButton(button1); // Eliminar Usuario
+            StyleButton(btnEliminarUsuario); 
             StyleButton(btnBuscarUsuario);
 
             this.Resize += (s, e) =>
@@ -49,6 +50,12 @@ namespace Programa_Bioquim.Formularios.Admin
 
             SetButtonsRounded();
         }
+        private void cargarUsuarios()
+        {
+            dgvUsuarios.DataSource=null;
+            dgvUsuarios.DataSource = Usuario.cargarUsuarios();
+        }
+
 
         private void CenterLabel()
         {
@@ -83,7 +90,7 @@ namespace Programa_Bioquim.Formularios.Admin
         {
             int radius = 15;
             SetButtonRoundedRegion(btnIngresarUsuario, radius);
-            SetButtonRoundedRegion(button1, radius);
+            SetButtonRoundedRegion(btnEliminarUsuario, radius);
             SetButtonRoundedRegion(btnBuscarUsuario, radius);
         }
 
@@ -118,12 +125,57 @@ namespace Programa_Bioquim.Formularios.Admin
             int y = this.ClientSize.Height - buttonHeight - 40;
 
             btnIngresarUsuario.Size = new Size(buttonWidth, buttonHeight);
-            button1.Size = new Size(buttonWidth, buttonHeight);
+            btnEliminarUsuario.Size = new Size(buttonWidth, buttonHeight);
             btnBuscarUsuario.Size = new Size(buttonWidth, buttonHeight);
 
             btnIngresarUsuario.Location = new Point(startX, y);
-            button1.Location = new Point(startX + buttonWidth + spacing, y);
+            btnEliminarUsuario.Location = new Point(startX + buttonWidth + spacing, y);
             btnBuscarUsuario.Location = new Point(startX + (buttonWidth + spacing) * 2, y);
+        }
+
+        private void btnIngresarUsuario_Click(object sender, EventArgs e)
+        {
+            frmContenedorRegistrarUsuario registro = new frmContenedorRegistrarUsuario();
+            registro.Dock = DockStyle.Fill;
+            this.Controls.Add(registro);
+            registro.BringToFront();
+        }
+
+        private void btnEliminarUsuario_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (dgvUsuarios.CurrentRow != null)
+                {
+                    int idUsuario = Convert.ToInt32(dgvUsuarios.CurrentRow.Cells[0].Value);
+                    Usuario UsuarioEliminar = new Usuario();
+                    UsuarioEliminar.IdUsario = idUsuario;
+                    UsuarioEliminar.eliminarUsuarios(idUsuario);
+                    cargarUsuarios();
+                    MessageBox.Show("Usuario eliminado correctamente.", "Eliminación exitosa", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Seleccione un Usuario para eliminar.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error al eliminar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnBuscarUsuario_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dgvUsuarios.DataSource = null;
+                dgvUsuarios.DataSource = Usuario.buscarUsuarios(txtBuscar.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
