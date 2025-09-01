@@ -89,7 +89,7 @@ namespace Programa_Bioquim
 
         private void GestionUsuario_Click(object sender, EventArgs e)
         {
-            abrirForm(new frmGestionUsuarios());
+            abrirForm(new frmGestionDeUsuarios());
         }
 
         private void minimizar_Click(object sender, EventArgs e)

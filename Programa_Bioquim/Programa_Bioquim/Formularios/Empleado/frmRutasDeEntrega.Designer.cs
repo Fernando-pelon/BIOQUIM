@@ -34,6 +34,7 @@
             this.btnEliminarRuta = new System.Windows.Forms.Button();
             this.btnAgregarRuta = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnActualizarRutas = new System.Windows.Forms.Button();
             this.lblTipoPago = new System.Windows.Forms.Label();
             this.rbTarjetaCredito = new System.Windows.Forms.RadioButton();
             this.rbEfectivo = new System.Windows.Forms.RadioButton();
@@ -47,7 +48,6 @@
             this.txtCostoProducto = new System.Windows.Forms.TextBox();
             this.txtBuscarRutas = new System.Windows.Forms.TextBox();
             this.lblBuscarRuta = new System.Windows.Forms.Label();
-            this.btnActualizarRutas = new System.Windows.Forms.Button();
             this.pnlRutas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRutas)).BeginInit();
             this.panel1.SuspendLayout();
@@ -137,6 +137,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(703, 167);
             this.panel1.TabIndex = 13;
+            // 
+            // btnActualizarRutas
+            // 
+            this.btnActualizarRutas.BackColor = System.Drawing.Color.Blue;
+            this.btnActualizarRutas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarRutas.ForeColor = System.Drawing.Color.White;
+            this.btnActualizarRutas.Location = new System.Drawing.Point(576, 39);
+            this.btnActualizarRutas.Name = "btnActualizarRutas";
+            this.btnActualizarRutas.Size = new System.Drawing.Size(116, 47);
+            this.btnActualizarRutas.TabIndex = 23;
+            this.btnActualizarRutas.Text = "Actualizar Ruta";
+            this.btnActualizarRutas.UseVisualStyleBackColor = false;
+            this.btnActualizarRutas.Click += new System.EventHandler(this.btnActualizarRutas_Click);
             // 
             // lblTipoPago
             // 
@@ -242,14 +255,17 @@
             // 
             this.txtCostoProducto.Location = new System.Drawing.Point(216, 46);
             this.txtCostoProducto.Name = "txtCostoProducto";
+            this.txtCostoProducto.ShortcutsEnabled = false;
             this.txtCostoProducto.Size = new System.Drawing.Size(186, 20);
             this.txtCostoProducto.TabIndex = 11;
+            this.txtCostoProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCostoProducto_KeyPress);
             // 
             // txtBuscarRutas
             // 
             this.txtBuscarRutas.Location = new System.Drawing.Point(530, 57);
             this.txtBuscarRutas.Multiline = true;
             this.txtBuscarRutas.Name = "txtBuscarRutas";
+            this.txtBuscarRutas.ShortcutsEnabled = false;
             this.txtBuscarRutas.Size = new System.Drawing.Size(185, 25);
             this.txtBuscarRutas.TabIndex = 14;
             this.txtBuscarRutas.TextChanged += new System.EventHandler(this.txtBuscarRutas_TextChanged);
@@ -263,19 +279,6 @@
             this.lblBuscarRuta.Size = new System.Drawing.Size(106, 18);
             this.lblBuscarRuta.TabIndex = 22;
             this.lblBuscarRuta.Text = "Buscar Ruta:";
-            // 
-            // btnActualizarRutas
-            // 
-            this.btnActualizarRutas.BackColor = System.Drawing.Color.Blue;
-            this.btnActualizarRutas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarRutas.ForeColor = System.Drawing.Color.White;
-            this.btnActualizarRutas.Location = new System.Drawing.Point(576, 39);
-            this.btnActualizarRutas.Name = "btnActualizarRutas";
-            this.btnActualizarRutas.Size = new System.Drawing.Size(116, 47);
-            this.btnActualizarRutas.TabIndex = 23;
-            this.btnActualizarRutas.Text = "Actualizar Ruta";
-            this.btnActualizarRutas.UseVisualStyleBackColor = false;
-            this.btnActualizarRutas.Click += new System.EventHandler(this.btnActualizarRutas_Click);
             // 
             // frmRutasDeEntrega
             // 

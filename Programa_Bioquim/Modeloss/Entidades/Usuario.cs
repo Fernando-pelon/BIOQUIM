@@ -200,7 +200,41 @@ namespace Modelos.Entidades
             }
         }
         
-
+        public bool actualizarUsuarios(int id)
+        {
+            try
+            {
+                using (SqlConnection conexion = ConexionDB.conectar()) 
+                {
+                    string consultaQueryUpdate = @"
+                UPDATE Usuario
+                SET nombreUsuario = @nombreUsuario,
+                    apellidoUsuario = @apellidoUsuario,
+                    correoUsuario = @correoUsuario,
+                    contrasenaUsuario = @contrasenaUsuario,
+                    idTipoUsuario = @idTipoUsuario,
+                    idDepartamento = @idDepartamento
+                WHERE idUsuario = @id";
+                    using (SqlCommand actualizar = new SqlCommand(consultaQueryUpdate, conexion))
+                    {
+                        actualizar.Parameters.AddWithValue("@nombreUsuario", nombreUsuario);
+                        actualizar.Parameters.AddWithValue("@apellidoUsuario", apellidoUsuario);
+                        actualizar.Parameters.AddWithValue("@correoUsuario", correoUsuario);
+                        actualizar.Parameters.AddWithValue("@contrasenaUsuario", contrasenaUsuario);
+                        actualizar.Parameters.AddWithValue("@idTipoUsuario", idTipoUsuario);
+                        actualizar.Parameters.AddWithValue("@idDepartamento", idDepartamento);
+                        actualizar.Parameters.AddWithValue("@id", id);
+                        int filas = actualizar.ExecuteNonQuery();
+                        return filas > 0;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al actualizar datos: " + ex.Message, "Error al actualizar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+        }
 
     }
 }

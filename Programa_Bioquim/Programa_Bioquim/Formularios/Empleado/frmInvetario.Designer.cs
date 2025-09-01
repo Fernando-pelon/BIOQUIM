@@ -37,10 +37,10 @@
             this.txtCantidadProducto = new System.Windows.Forms.TextBox();
             this.txtCostoProducto = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnActualizarProduc = new System.Windows.Forms.Button();
             this.lblCantidadProducto = new System.Windows.Forms.Label();
             this.lblCostoProducto = new System.Windows.Forms.Label();
             this.lblNombreProducto = new System.Windows.Forms.Label();
-            this.btnActualizarProduc = new System.Windows.Forms.Button();
             this.txtBuscarProducto = new System.Windows.Forms.TextBox();
             this.lblBuscarProductp = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).BeginInit();
@@ -112,24 +112,30 @@
             // 
             // txtNombreProducto
             // 
-            this.txtNombreProducto.Location = new System.Drawing.Point(30, 46);
+            this.txtNombreProducto.Location = new System.Drawing.Point(30, 48);
             this.txtNombreProducto.Name = "txtNombreProducto";
+            this.txtNombreProducto.ShortcutsEnabled = false;
             this.txtNombreProducto.Size = new System.Drawing.Size(169, 20);
             this.txtNombreProducto.TabIndex = 9;
+            this.txtNombreProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreProducto_KeyPress);
             // 
             // txtCantidadProducto
             // 
             this.txtCantidadProducto.Location = new System.Drawing.Point(30, 109);
             this.txtCantidadProducto.Name = "txtCantidadProducto";
+            this.txtCantidadProducto.ShortcutsEnabled = false;
             this.txtCantidadProducto.Size = new System.Drawing.Size(169, 20);
             this.txtCantidadProducto.TabIndex = 10;
+            this.txtCantidadProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidadProducto_KeyPress);
             // 
             // txtCostoProducto
             // 
             this.txtCostoProducto.Location = new System.Drawing.Point(252, 46);
             this.txtCostoProducto.Name = "txtCostoProducto";
+            this.txtCostoProducto.ShortcutsEnabled = false;
             this.txtCostoProducto.Size = new System.Drawing.Size(186, 20);
             this.txtCostoProducto.TabIndex = 11;
+            this.txtCostoProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCostoProducto_KeyPress);
             // 
             // panel1
             // 
@@ -148,6 +154,19 @@
             this.panel1.Size = new System.Drawing.Size(584, 167);
             this.panel1.TabIndex = 12;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnActualizarProduc
+            // 
+            this.btnActualizarProduc.BackColor = System.Drawing.Color.Blue;
+            this.btnActualizarProduc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarProduc.ForeColor = System.Drawing.Color.White;
+            this.btnActualizarProduc.Location = new System.Drawing.Point(456, 59);
+            this.btnActualizarProduc.Name = "btnActualizarProduc";
+            this.btnActualizarProduc.Size = new System.Drawing.Size(111, 44);
+            this.btnActualizarProduc.TabIndex = 16;
+            this.btnActualizarProduc.Text = "Actualizar Producto";
+            this.btnActualizarProduc.UseVisualStyleBackColor = false;
+            this.btnActualizarProduc.Click += new System.EventHandler(this.btnActualizarProduc_Click);
             // 
             // lblCantidadProducto
             // 
@@ -180,23 +199,11 @@
             this.lblNombreProducto.TabIndex = 12;
             this.lblNombreProducto.Text = "Nombre producto:";
             // 
-            // btnActualizarProduc
-            // 
-            this.btnActualizarProduc.BackColor = System.Drawing.Color.Blue;
-            this.btnActualizarProduc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarProduc.ForeColor = System.Drawing.Color.White;
-            this.btnActualizarProduc.Location = new System.Drawing.Point(456, 59);
-            this.btnActualizarProduc.Name = "btnActualizarProduc";
-            this.btnActualizarProduc.Size = new System.Drawing.Size(111, 44);
-            this.btnActualizarProduc.TabIndex = 16;
-            this.btnActualizarProduc.Text = "Actualizar Producto";
-            this.btnActualizarProduc.UseVisualStyleBackColor = false;
-            this.btnActualizarProduc.Click += new System.EventHandler(this.btnActualizarProduc_Click);
-            // 
             // txtBuscarProducto
             // 
             this.txtBuscarProducto.Location = new System.Drawing.Point(506, 64);
             this.txtBuscarProducto.Name = "txtBuscarProducto";
+            this.txtBuscarProducto.ShortcutsEnabled = false;
             this.txtBuscarProducto.Size = new System.Drawing.Size(156, 20);
             this.txtBuscarProducto.TabIndex = 13;
             this.txtBuscarProducto.TextChanged += new System.EventHandler(this.txtBuscarProducto_TextChanged);

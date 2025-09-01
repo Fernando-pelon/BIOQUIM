@@ -182,3 +182,4 @@ C:\Users\xfern\OneDrive\Escritorio\New folder\BIOQUIM\Programa_Bioquim\Programa_
 C:\Users\xfern\OneDrive\Escritorio\New folder\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa.2779E31A.Up2Date
 C:\Users\xfern\OneDrive\Escritorio\New folder\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.exe
 C:\Users\xfern\OneDrive\Escritorio\New folder\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.pdb
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Admin.frmGestionDeUsuarios.resources

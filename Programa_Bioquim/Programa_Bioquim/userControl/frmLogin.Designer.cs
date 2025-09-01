@@ -70,6 +70,7 @@
             // 
             this.txtContrasenia.Location = new System.Drawing.Point(10, 122);
             this.txtContrasenia.Name = "txtContrasenia";
+            this.txtContrasenia.ShortcutsEnabled = false;
             this.txtContrasenia.Size = new System.Drawing.Size(250, 24);
             this.txtContrasenia.TabIndex = 3;
             this.txtContrasenia.UseSystemPasswordChar = true;
@@ -78,6 +79,7 @@
             // 
             this.txtUsuario.Location = new System.Drawing.Point(10, 60);
             this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.ShortcutsEnabled = false;
             this.txtUsuario.Size = new System.Drawing.Size(250, 24);
             this.txtUsuario.TabIndex = 2;
             // 

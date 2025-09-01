@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCarga));
             this.pbIntermediario = new System.Windows.Forms.ProgressBar();
             this.pbGotitas = new System.Windows.Forms.PictureBox();
             this.timerCarga = new System.Windows.Forms.Timer(this.components);
@@ -39,7 +40,7 @@
             // 
             this.pbIntermediario.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pbIntermediario.Location = new System.Drawing.Point(84, 306);
-            this.pbIntermediario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbIntermediario.Margin = new System.Windows.Forms.Padding(2);
             this.pbIntermediario.Name = "pbIntermediario";
             this.pbIntermediario.Size = new System.Drawing.Size(484, 24);
             this.pbIntermediario.TabIndex = 0;
@@ -48,7 +49,7 @@
             // 
             this.pbGotitas.Image = global::Programa_Bioquim.Properties.Resources.LogoSimple;
             this.pbGotitas.Location = new System.Drawing.Point(277, 125);
-            this.pbGotitas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbGotitas.Margin = new System.Windows.Forms.Padding(2);
             this.pbGotitas.Name = "pbGotitas";
             this.pbGotitas.Size = new System.Drawing.Size(123, 88);
             this.pbGotitas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -68,7 +69,8 @@
             this.Controls.Add(this.pbGotitas);
             this.Controls.Add(this.pbIntermediario);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmCarga";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pantalla de carga";
