@@ -326,4 +326,6 @@ LEFT JOIN Departamento D ON U.idDepartamento = D.idDepartamento;
 select *from UsuariosDGV
 go
 insert into Usuario(nombreUsuario, apellidoUsuario, correoUsuario, contrasenaUsuario, idTipoUsuario, idDepartamento) values
-('1', '1', '1', '1', 2, 4);
+('fer', 'fer', 'fer@gmail.com', 'fer', 2, 4);
+insert into Usuario(nombreUsuario, apellidoUsuario, correoUsuario, contrasenaUsuario, idTipoUsuario, idDepartamento) values
+('fe', 'fe', 'fe@gmail.com', 'fe', 3, 4);

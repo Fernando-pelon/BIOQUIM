@@ -106,7 +106,7 @@
             this.lblInventario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblInventario.Location = new System.Drawing.Point(17, 13);
             this.lblInventario.Name = "lblInventario";
-            this.lblInventario.Size = new System.Drawing.Size(116, 25);
+            this.lblInventario.Size = new System.Drawing.Size(107, 25);
             this.lblInventario.TabIndex = 0;
             this.lblInventario.Text = "Inventario";
             // 
@@ -126,6 +126,7 @@
             this.txtCantidadProducto.ShortcutsEnabled = false;
             this.txtCantidadProducto.Size = new System.Drawing.Size(169, 20);
             this.txtCantidadProducto.TabIndex = 10;
+            this.txtCantidadProducto.TextChanged += new System.EventHandler(this.txtCantidadProducto_TextChanged);
             this.txtCantidadProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidadProducto_KeyPress);
             // 
             // txtCostoProducto
@@ -174,7 +175,7 @@
             this.lblCantidadProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidadProducto.Location = new System.Drawing.Point(26, 84);
             this.lblCantidadProducto.Name = "lblCantidadProducto";
-            this.lblCantidadProducto.Size = new System.Drawing.Size(187, 24);
+            this.lblCantidadProducto.Size = new System.Drawing.Size(168, 20);
             this.lblCantidadProducto.TabIndex = 14;
             this.lblCantidadProducto.Text = "Cantidad producto:";
             this.lblCantidadProducto.Click += new System.EventHandler(this.label2_Click);
@@ -185,7 +186,7 @@
             this.lblCostoProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCostoProducto.Location = new System.Drawing.Point(248, 21);
             this.lblCostoProducto.Name = "lblCostoProducto";
-            this.lblCostoProducto.Size = new System.Drawing.Size(158, 24);
+            this.lblCostoProducto.Size = new System.Drawing.Size(143, 20);
             this.lblCostoProducto.TabIndex = 13;
             this.lblCostoProducto.Text = "Costo producto:";
             // 
@@ -195,7 +196,7 @@
             this.lblNombreProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreProducto.Location = new System.Drawing.Point(26, 21);
             this.lblNombreProducto.Name = "lblNombreProducto";
-            this.lblNombreProducto.Size = new System.Drawing.Size(180, 24);
+            this.lblNombreProducto.Size = new System.Drawing.Size(159, 20);
             this.lblNombreProducto.TabIndex = 12;
             this.lblNombreProducto.Text = "Nombre producto:";
             // 
@@ -214,7 +215,7 @@
             this.lblBuscarProductp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBuscarProductp.Location = new System.Drawing.Point(505, 43);
             this.lblBuscarProductp.Name = "lblBuscarProductp";
-            this.lblBuscarProductp.Size = new System.Drawing.Size(140, 18);
+            this.lblBuscarProductp.Size = new System.Drawing.Size(133, 17);
             this.lblBuscarProductp.TabIndex = 23;
             this.lblBuscarProductp.Text = "Buscar Producto:";
             // 

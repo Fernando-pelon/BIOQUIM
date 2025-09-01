@@ -92,7 +92,6 @@ C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\
 C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Empleado.frmRutasDeEntrega.resources
 C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.frmCarga.resources
 C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.frmDashBoardEmpleado.resources
-C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.frmLogin.resources
 C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Properties.Resources.resources
 C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.csproj.GenerateResource.cache
 C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.csproj.CoreCompileInputs.cache
@@ -183,3 +182,7 @@ C:\Users\xfern\OneDrive\Escritorio\New folder\BIOQUIM\Programa_Bioquim\Programa_
 C:\Users\xfern\OneDrive\Escritorio\New folder\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.exe
 C:\Users\xfern\OneDrive\Escritorio\New folder\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.pdb
 C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Admin.frmGestionDeUsuarios.resources
+C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Admin.frmGestionDeUsuarios.resources
+C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Admin.frmGestionUsuarios.resources
+C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.frmContenedorLogin.resources
+C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.frmContenedorRegistrarUsuario.resources

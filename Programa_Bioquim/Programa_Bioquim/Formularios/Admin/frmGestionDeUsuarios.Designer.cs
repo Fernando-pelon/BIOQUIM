@@ -38,17 +38,17 @@
             this.lblBuscarUser = new System.Windows.Forms.Label();
             this.PnlDatosUsuarios = new System.Windows.Forms.Panel();
             this.cbDepartamentoUser = new System.Windows.Forms.ComboBox();
+            this.txtNombreUser = new System.Windows.Forms.TextBox();
             this.lblDepartamento = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.txtApellidoUser = new System.Windows.Forms.TextBox();
             this.lblApellido = new System.Windows.Forms.Label();
+            this.txtCorreoUser = new System.Windows.Forms.TextBox();
+            this.lblCorreo = new System.Windows.Forms.Label();
             this.cbTIpoUsuarioUser = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txtContraseñaUser = new System.Windows.Forms.TextBox();
             this.lblCorreoCrear = new System.Windows.Forms.Label();
-            this.txtCorreoUser = new System.Windows.Forms.TextBox();
-            this.txtNombreUser = new System.Windows.Forms.TextBox();
-            this.lblCorreo = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGestionUsuarios)).BeginInit();
             this.pnlinventario.SuspendLayout();
             this.PnlDatosUsuarios.SuspendLayout();
@@ -88,7 +88,7 @@
             this.lblInventario.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblInventario.Location = new System.Drawing.Point(19, 13);
             this.lblInventario.Name = "lblInventario";
-            this.lblInventario.Size = new System.Drawing.Size(223, 25);
+            this.lblInventario.Size = new System.Drawing.Size(204, 25);
             this.lblInventario.TabIndex = 0;
             this.lblInventario.Text = "Gestion de usuarios";
             // 
@@ -146,7 +146,7 @@
             this.lblBuscarUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBuscarUser.Location = new System.Drawing.Point(549, 28);
             this.lblBuscarUser.Name = "lblBuscarUser";
-            this.lblBuscarUser.Size = new System.Drawing.Size(115, 18);
+            this.lblBuscarUser.Size = new System.Drawing.Size(109, 17);
             this.lblBuscarUser.TabIndex = 14;
             this.lblBuscarUser.Text = "Buscar Usuario:";
             // 
@@ -181,6 +181,16 @@
             this.cbDepartamentoUser.Size = new System.Drawing.Size(248, 21);
             this.cbDepartamentoUser.TabIndex = 24;
             // 
+            // txtNombreUser
+            // 
+            this.txtNombreUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtNombreUser.Location = new System.Drawing.Point(18, 27);
+            this.txtNombreUser.Name = "txtNombreUser";
+            this.txtNombreUser.Size = new System.Drawing.Size(250, 20);
+            this.txtNombreUser.TabIndex = 15;
+            // 
             // lblDepartamento
             // 
             this.lblDepartamento.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -192,6 +202,18 @@
             this.lblDepartamento.Size = new System.Drawing.Size(77, 13);
             this.lblDepartamento.TabIndex = 23;
             this.lblDepartamento.Text = "Departamento:";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(15, 11);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(47, 13);
+            this.lblNombre.TabIndex = 13;
+            this.lblNombre.Text = "Nombre:";
             // 
             // txtApellidoUser
             // 
@@ -214,6 +236,29 @@
             this.lblApellido.Size = new System.Drawing.Size(47, 13);
             this.lblApellido.TabIndex = 21;
             this.lblApellido.Text = "Apellido:";
+            // 
+            // txtCorreoUser
+            // 
+            this.txtCorreoUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtCorreoUser.Location = new System.Drawing.Point(18, 121);
+            this.txtCorreoUser.Name = "txtCorreoUser";
+            this.txtCorreoUser.Size = new System.Drawing.Size(250, 20);
+            this.txtCorreoUser.TabIndex = 16;
+            this.txtCorreoUser.UseSystemPasswordChar = true;
+            // 
+            // lblCorreo
+            // 
+            this.lblCorreo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.Location = new System.Drawing.Point(16, 105);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(41, 13);
+            this.lblCorreo.TabIndex = 14;
+            this.lblCorreo.Text = "Correo:";
             // 
             // cbTIpoUsuarioUser
             // 
@@ -262,55 +307,11 @@
             this.lblCorreoCrear.Text = "Contraseña:";
             this.lblCorreoCrear.Click += new System.EventHandler(this.lblCorreoCrear_Click);
             // 
-            // txtCorreoUser
-            // 
-            this.txtCorreoUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCorreoUser.Location = new System.Drawing.Point(18, 121);
-            this.txtCorreoUser.Name = "txtCorreoUser";
-            this.txtCorreoUser.Size = new System.Drawing.Size(250, 20);
-            this.txtCorreoUser.TabIndex = 16;
-            this.txtCorreoUser.UseSystemPasswordChar = true;
-            // 
-            // txtNombreUser
-            // 
-            this.txtNombreUser.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombreUser.Location = new System.Drawing.Point(18, 27);
-            this.txtNombreUser.Name = "txtNombreUser";
-            this.txtNombreUser.Size = new System.Drawing.Size(250, 20);
-            this.txtNombreUser.TabIndex = 15;
-            // 
-            // lblCorreo
-            // 
-            this.lblCorreo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Location = new System.Drawing.Point(16, 105);
-            this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(41, 13);
-            this.lblCorreo.TabIndex = 14;
-            this.lblCorreo.Text = "Correo:";
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(15, 11);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(47, 13);
-            this.lblNombre.TabIndex = 13;
-            this.lblNombre.Text = "Nombre:";
-            // 
             // frmGestionDeUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(906, 511);
             this.Controls.Add(this.PnlDatosUsuarios);
             this.Controls.Add(this.lblBuscarUser);

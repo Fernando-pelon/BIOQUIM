@@ -137,10 +137,20 @@ namespace Programa_Bioquim.Formularios.Empleado
 
         private void txtCantidadProducto_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
             {
                 e.Handled = true;
             }
+
+            if (e.KeyChar == '.' && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtCantidadProducto_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
