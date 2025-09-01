@@ -73,10 +73,21 @@ namespace Modelos.Entidades
             }
         }
 
-        public static DataTable cargarRoles()
+        public static DataTable cargarTipoUsuario()
         {
             SqlConnection conn = ConexionDB.conectar();
-            string querycargar = "select idTipoUsuario, nombreTipoUsuario from TipoUsuario;"; SqlDataAdapter dt = new SqlDataAdapter(querycargar, conn); DataTable tabla = new DataTable();
+            string querycargar = "select idTipoUsuario, nombreTipoUsuario from TipoUsuario;";
+            SqlDataAdapter dt = new SqlDataAdapter(querycargar, conn);
+            DataTable tabla = new DataTable();
+            dt.Fill(tabla);
+            return tabla;
+        }
+        public static DataTable CargarDepartamento()
+        {
+            SqlConnection conn = ConexionDB.conectar();
+            string querycargar = "select idDepartamento, nombreDepartamento from Departamento;";
+            SqlDataAdapter dt = new SqlDataAdapter(querycargar, conn);
+            DataTable tabla = new DataTable();
             dt.Fill(tabla);
             return tabla;
         }
@@ -88,7 +99,7 @@ namespace Modelos.Entidades
 
                 SqlConnection conexion = ConexionDB.conectar();
 
-                string cadena = "select *from UsuarioDGV";
+                string cadena = "select *from UsuariosDGV";
 
                 SqlDataAdapter add = new SqlDataAdapter(cadena, conexion);
 
@@ -115,7 +126,11 @@ namespace Modelos.Entidades
         {
             SqlConnection conexion = ConexionDB.conectar();
             string comando =
-                $"SELECT Usuario.idUsuario, Usuario.nombreUsuario, Departamento.nombreDepartamento from Usuario inner join Departamento on Departamento.idDepartamento = Departamento.idDepartamento WHERE Usuario.nombreUsuario like '%{termino}%';";
+                $"SELECT Usuario.idUsuario, Usuario.nombreUsuario, Departamento.nombreDepartamento " +
+                $"FROM Usuario " +
+                $"INNER JOIN Departamento ON Usuario.idDepartamento = Departamento.idDepartamento " +
+                $"WHERE Usuario.nombreUsuario LIKE '%{termino}%';";
+
             SqlDataAdapter ad = new SqlDataAdapter(comando, conexion);
             DataTable dt = new DataTable();
             ad.Fill(dt);
@@ -153,31 +168,37 @@ namespace Modelos.Entidades
 
         }
         public bool insertarUsuarios()
-
         {
             try
             {
+                using (SqlConnection conexion = ConexionDB.conectar()) // ya viene abierta
+                {
+                    string consultaQueryInsert = @"
+                INSERT INTO Usuario
+                (nombreUsuario, apellidoUsuario, correoUsuario, contrasenaUsuario, idTipoUsuario, idDepartamento)
+                VALUES
+                (@nombreUsuario, @apellidoUsuario, @correoUsuario, @contrasenaUsuario, @idTipoUsuario, @idDepartamento)";
 
-                SqlConnection conexion = ConexionDB.conectar();
+                    using (SqlCommand insertar = new SqlCommand(consultaQueryInsert, conexion))
+                    {
+                        insertar.Parameters.AddWithValue("@nombreUsuario", nombreUsuario);
+                        insertar.Parameters.AddWithValue("@apellidoUsuario", apellidoUsuario);
+                        insertar.Parameters.AddWithValue("@correoUsuario", correoUsuario);
+                        insertar.Parameters.AddWithValue("@contrasenaUsuario", contrasenaUsuario);
+                        insertar.Parameters.AddWithValue("@idTipoUsuario", idTipoUsuario);
+                        insertar.Parameters.AddWithValue("@idDepartamento", idDepartamento);
 
-                string consultaQueryInsert = "insert into Usuario(nombreUsuario, apellidoUsuario, correoUsuario, contrasenaUsuario, idTipoUsuario, idDepartamento) values (@nombreUsuario, @apellidoUsuario, @correoUsuario, @contrasenaUsuario, @idTipoUsuario, @idDepartamento)";
-
-                SqlCommand insertar = new SqlCommand(consultaQueryInsert, conexion);
-                insertar.Parameters.AddWithValue("@nombreUsuario", nombreUsuario);
-                insertar.Parameters.AddWithValue("@apellidoUsuario", apellidoUsuario);
-                insertar.Parameters.AddWithValue("@correoUsuario", correoUsuario);
-                insertar.Parameters.AddWithValue("@contrasenaUsuario", contrasenaUsuario);
-                insertar.Parameters.AddWithValue("@idTipoUsuario", idTipoUsuario);
-                insertar.Parameters.AddWithValue("@idDepartamento", idDepartamento);
-
-                insertar.ExecuteNonQuery();
-                return true;
+                        int filas = insertar.ExecuteNonQuery();
+                        return filas > 0;
+                    }
+                }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Verifica si la consulta es correcta" + ex, "error al insertar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Verifica si la consulta es correcta: " + ex.Message, "Error al insertar", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
         }
+
     }
 }

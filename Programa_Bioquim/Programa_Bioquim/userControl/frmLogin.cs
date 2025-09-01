@@ -48,31 +48,40 @@ namespace Programa_Bioquim.userControl
 
                     using (SqlConnection conn = ConexionDB.conectar())
                     {
-                        string query = "SELECT COUNT(*) FROM Usuario WHERE NombreUsuario=@user AND Contrasena=@pass";
+                        string query = "SELECT ContrasenaUsuario FROM Usuario WHERE NombreUsuario=@user";
                         SqlCommand cmd = new SqlCommand(query, conn);
                         cmd.Parameters.AddWithValue("@user", usuario);
-                        cmd.Parameters.AddWithValue("@pass", contrasena);
 
-                        int count = Convert.ToInt32(cmd.ExecuteScalar());
-
+                        object result = cmd.ExecuteScalar();
                         carga.Close();
 
-                        if (count > 0)
+                        if (result == null)
                         {
-                            this.Hide();
-                            frmDashBoardEmpleado dashboard = new frmDashBoardEmpleado();
-                            dashboard.Show();
+                            // Usuario no existe
+                            MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else
                         {
-                            MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            string passwordEnDB = result.ToString(); // contraseña en texto plano
+                            if (contrasena == passwordEnDB)
+                            {
+                                // Contraseña correcta
+                                this.Hide();
+                                frmDashBoardEmpleado dashboard = new frmDashBoardEmpleado();
+                                dashboard.Show();
+                            }
+                            else
+                            {
+                                // Contraseña incorrecta
+                                MessageBox.Show("Usuario o contraseña incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
                         }
                     }
+
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Ocurrió un error al intentar iniciar sesión: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    // No mostrar dashboard ni cerrar el login
                 }
             }
             else

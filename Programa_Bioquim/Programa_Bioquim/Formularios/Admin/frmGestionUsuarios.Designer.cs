@@ -76,6 +76,7 @@
             // 
             // dgvUsuarios
             // 
+            this.dgvUsuarios.AllowUserToAddRows = false;
             this.dgvUsuarios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -172,6 +173,7 @@
             this.Controls.Add(this.pnlResponsive1);
             this.Name = "frmGestionUsuarios";
             this.Text = "frmGestionUsuarios";
+            this.Load += new System.EventHandler(this.frmGestionUsuarios_Load);
             this.pnlResponsive1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUsuarios)).EndInit();

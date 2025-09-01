@@ -16,14 +16,22 @@ namespace Programa_Bioquim.userControl
         public frmRegistrarUsuario()
         {
             InitializeComponent();
+            this.Load += frmRegistrarUsuario_Load;
         }
 
-        private void cargarRoles()
+        private void cargarTipoUsuario()
         {
-            cbDepartamento.DataSource= null;
-            cbDepartamento.DataSource=Usuario.cargarRoles();
-            cbDepartamento.DisplayMember = "Nombre";
-            cbDepartamento.ValueMember = "id";
+            cbTIpoUsuario.DataSource = null;
+            cbTIpoUsuario.DataSource = Usuario.cargarTipoUsuario();
+            cbTIpoUsuario.DisplayMember = "nombreTipoUsuario";
+            cbTIpoUsuario.ValueMember = "idTipoUsuario";
+        }
+        private void cargarDepartamento()
+        {
+            cbDepartamento.DataSource = null;
+            cbDepartamento.DataSource = Usuario.CargarDepartamento();
+            cbDepartamento.DisplayMember = "nombreDepartamento";
+            cbDepartamento.ValueMember = "idDepartamento";
         }
 
         private void btnCrearCuenta_Click(object sender, EventArgs e)
@@ -35,7 +43,7 @@ namespace Programa_Bioquim.userControl
             user.ContrasenaUsuario = BCrypt.Net.BCrypt.HashPassword(txtContraseña.Text);
             user.IdTipoUsuario = Convert.ToInt32(cbTIpoUsuario.SelectedValue);
             user.IdDepartamento = Convert.ToInt32(cbDepartamento.SelectedValue);
-            if (user.RegistrarUsuario())
+            if (user.insertarUsuarios())
             {
                 MessageBox.Show("Usuario registrado con exito");
             }
@@ -47,7 +55,8 @@ namespace Programa_Bioquim.userControl
 
         private void frmRegistrarUsuario_Load(object sender, EventArgs e)
         {
-            cargarRoles();
+            cargarTipoUsuario();
+            cargarDepartamento();
         }
     }
 }

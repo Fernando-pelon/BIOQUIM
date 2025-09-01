@@ -135,10 +135,11 @@ namespace Programa_Bioquim.Formularios.Admin
 
         private void btnIngresarUsuario_Click(object sender, EventArgs e)
         {
-            frmContenedorRegistrarUsuario registro = new frmContenedorRegistrarUsuario();
-            registro.Dock = DockStyle.Fill;
-            this.Controls.Add(registro);
-            registro.BringToFront();
+            frmContenedorRegistrarUsuario flotante = new frmContenedorRegistrarUsuario();
+
+            flotante.StartPosition = FormStartPosition.CenterParent;
+
+            flotante.ShowDialog(this);
         }
 
         private void btnEliminarUsuario_Click(object sender, EventArgs e)
@@ -176,6 +177,12 @@ namespace Programa_Bioquim.Formularios.Admin
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void frmGestionUsuarios_Load(object sender, EventArgs e)
+        {
+            dgvUsuarios.DataSource = null;
+            dgvUsuarios.DataSource = Usuario.cargarUsuarios();
         }
     }
 }
