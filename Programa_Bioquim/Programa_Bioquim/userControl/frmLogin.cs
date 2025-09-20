@@ -3,6 +3,7 @@ using Programa_Bioquim.Formularios.Admin;
 using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using BCrypt.Net;
 
 namespace Programa_Bioquim.userControl
 {
@@ -52,11 +53,11 @@ namespace Programa_Bioquim.userControl
                         return;
                     }
 
-                    string passwordEnDB = result.ToString(); // contraseña en texto plano
+                    string hashEnDB = result.ToString();
 
-                    if (contrasena == passwordEnDB)
+                    // Validar la contraseña ingresada contra el hash almacenado
+                    if (BCrypt.Net.BCrypt.Verify(contrasena, hashEnDB))
                     {
-                        // Login exitoso: lanzar evento
                         LoginExitoso?.Invoke(this, EventArgs.Empty);
                     }
                     else

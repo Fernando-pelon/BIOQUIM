@@ -112,7 +112,7 @@ idUbicacion int identity(1,1) primary key,
 UbicacionEmpresa varchar(100)
 );
 
-
+go
 -- RutaDeEntrega 
 CREATE TABLE RutaDeEntrega (
     idRutaEntrega INT IDENTITY(1,1) PRIMARY KEY,
@@ -133,11 +133,11 @@ go
 -- CategoriaProducto
 insert into CategoriaProducto(nombreCategoriaProducto) values
 ('detergentes'), ('blanqueadores'), ('suavizantes'), ('desinfectantes'), ('neutralizantes');
-
+go
 -- Proveedores
 insert into Proveedores values
 ('Duisa'), ('Rquimica'), ('Dibarsa'), ('Unichemical'), ('HomeComfort');
-
+go
 -- Producto
 insert into Producto(nombreProducto, costoProducto, cantidadProducto, idCategoriaProduc, idProveedor) values
 ('Cloro', 45.00, 25, 4, 4),
@@ -145,7 +145,7 @@ insert into Producto(nombreProducto, costoProducto, cantidadProducto, idCategori
 ('Blanquedar Industrial', 22.75, 30, 4, 4),
 ('Desinfectante', 35.90, 15, 4, 4),
 ('Detergente industrial', 29.99, 20, 4, 4);
-
+go
 -- Empresas
 insert into Empresas(NombreEmpresa, correoEmpresa) values
 ('Hospital Nacional Rosales', 'compras@rosales.gob.sv'),
@@ -153,11 +153,11 @@ insert into Empresas(NombreEmpresa, correoEmpresa) values
 ('Hospital Nacional Zacamil', 'logistica@zacamil.gob.sv' ),
 ('Hospital de la Mujer', 'admin@mujer.gob.sv'),
 ('Hospital Bloom', 'servicios@bloom.gob.sv' );
-
+go
 -- TipoPago
 insert into TipoPago(nombreTipoPago) values
 ('Efectivo'), ('Tarjeta de Crédito');
-
+go
 -- Pagos
 insert into Pagos(montoPago, idEmpresa, idProducto, idTipoPago) values
 (850.00, 1, 1, 1),
@@ -165,7 +165,7 @@ insert into Pagos(montoPago, idEmpresa, idProducto, idTipoPago) values
 (129.95, 3, 3, 1),
 (15.00, 4, 4, 2),
 (445.00, 5, 5, 1);
-
+go
 -- Pedidos
 insert into Pedidos(cantidadProducto, DireccionEntrega, id_Empresa, id_Producto, fecha, idPago) values
 (10, 'Entrada de lavandería, sector B', 1, 1, '2025-07-20', 1),
@@ -173,18 +173,18 @@ insert into Pedidos(cantidadProducto, DireccionEntrega, id_Empresa, id_Producto,
 (12, 'Pasillo quirúrgico, recepción central', 3, 3, '2025-07-19', 3),
 (8, 'Depósito de higiene, módulo C', 4, 4, '2025-07-21', 4),
 (20, 'Edificio logístico, acceso 1', 5, 5, '2025-07-17', 5);
-
+go
 -- TipoUsuario
 insert into TipoUsuario(nombreTipoUsuario) values
 ('Administrador'), ('Empleado'), ('Repartidor');
-
+go
 -- Departamento
 insert into Departamento(nombreDepartamento) values
 ('Secretaria'), ('Repartidores'), ('Finanzas'), ('Recursos Humanos');
-
+go
 -- Usuario
 insert into Usuario(nombreUsuario, apellidoUsuario, correoUsuario, contrasenaUsuario, idTipoUsuario, idDepartamento) values
-('Carlos', 'Ramírez', 'c.ramirez@novacorp.com', 'c4rl0sR!', 1, 5),
+('Carlos', 'Ramírez', 'c.ramirez@novacorp.com', 'c4rl0sR!', 1, 4),
 ('Sandra', 'Mejía', 's.mejia@elegantwear.com', 'S@ndr@M', 2, 1),
 ('Luis', 'Hernández', 'l.hernandez@freshfoods.com', 'Lu1sH_23', 3, 2),
 ('Andrea', 'Gómez', 'a.gomez@cleanhouse.com', 'Andre@G', 2, 3),
@@ -193,14 +193,15 @@ insert into Usuario(nombreUsuario, apellidoUsuario, correoUsuario, contrasenaUsu
 ('pruebaEmpleado', '', 'pruebaEmpleado@gmail.com', '1234', 1, 4),
 ('pruebaRepartidor', '', 'pruebaRepartidor@gmail.com', '1234', 1, 4);
 -- RutaDeEntrega
+go
 INSERT INTO RutaDeEntrega(idProducto, montoPago, idEmpresa, idTipoPago, idUbicacion)
 VALUES
 ( 1, 850.00, 1, 2, 1),
 ( 2, 13.50, 2, 1, 2),
 ( 3, 129.95, 3, 2, 3),
 ( 4, 15.00, 3, 1, 4),
-( 5, 445.00, 5, 2, 5);
-
+( 5, 445.00, 5, 2, 4);
+go
 --Ubicacion
 INSERT INTO Ubicaciones(UbicacionEmpresa)
 VALUES
@@ -259,7 +260,7 @@ Usuario u on re.idUsuario = u.idUsuario
 inner join
 Ubicaciones Ub on re.idUbicacion = Ub.idUbicacion
 ;
-
+go
 
 CREATE VIEW Rutas4 AS
 SELECT 
@@ -276,8 +277,8 @@ LEFT JOIN Producto P ON R.idProducto = P.idProducto
 LEFT JOIN Empresas E ON R.idEmpresa = E.idEmpresa
 LEFT JOIN TipoPago T ON R.idTipoPago = T.idTipoPago;
 
-
-select *from Empresas
+go
+select *from UsuariosDGV
 select * from RutaDeEntrega
 select *from Departamento
 select * from Producto
@@ -286,7 +287,7 @@ select *from Usuario
 select *from TipoUsuario
 
 insert into RutaDeEntrega(idProducto,montoPago,idEmpresa,idTipoPago) values(1,20,2,1);
-
+go
 create view inven as
 SELECT 
     P.idProducto AS [N° Registro],
@@ -301,5 +302,19 @@ LEFT JOIN
     Proveedores PR ON P.idProveedor = PR.idProveedor;
 
     alter table Usuario drop idRol 
+    go
+    CREATE VIEW UsuariosDGV AS
+SELECT
+    U.idUsuario as Id,
+    U.nombreUsuario AS Usuario,
+    U.apellidoUsuario AS Apellido,
+    U.correoUsuario AS Correo,
+    U.contrasenaUsuario AS Contraseña,
+    D.nombreDepartamento AS Departamento,
+    T.nombreTipoUsuario AS TipoDeUsuario
+FROM Usuario U
+LEFT JOIN TipoUsuario T ON U.idTipoUsuario = T.idTipoUsuario
+LEFT JOIN Departamento D ON U.idDepartamento = D.idDepartamento;
+
 
   

@@ -186,3 +186,4 @@ C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\
 C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Admin.frmGestionUsuarios.resources
 C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.frmContenedorLogin.resources
 C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.frmContenedorRegistrarUsuario.resources
+C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Admin.frmGestionDeUsuarios.resources

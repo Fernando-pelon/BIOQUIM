@@ -65,9 +65,11 @@
             this.gbxDatos.Controls.Add(this.txtNombre);
             this.gbxDatos.Controls.Add(this.lblCorreo);
             this.gbxDatos.Controls.Add(this.lblNombre);
-            this.gbxDatos.Location = new System.Drawing.Point(143, 138);
+            this.gbxDatos.Location = new System.Drawing.Point(191, 170);
+            this.gbxDatos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbxDatos.Name = "gbxDatos";
-            this.gbxDatos.Size = new System.Drawing.Size(322, 432);
+            this.gbxDatos.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbxDatos.Size = new System.Drawing.Size(429, 532);
             this.gbxDatos.TabIndex = 10;
             this.gbxDatos.TabStop = false;
             // 
@@ -77,9 +79,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbDepartamento.FormattingEnabled = true;
-            this.cbDepartamento.Location = new System.Drawing.Point(33, 343);
+            this.cbDepartamento.Location = new System.Drawing.Point(44, 422);
+            this.cbDepartamento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbDepartamento.Name = "cbDepartamento";
-            this.cbDepartamento.Size = new System.Drawing.Size(248, 21);
+            this.cbDepartamento.Size = new System.Drawing.Size(329, 24);
             this.cbDepartamento.TabIndex = 12;
             // 
             // lblDepartamento
@@ -88,9 +91,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblDepartamento.AutoSize = true;
-            this.lblDepartamento.Location = new System.Drawing.Point(34, 327);
+            this.lblDepartamento.Location = new System.Drawing.Point(45, 402);
+            this.lblDepartamento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDepartamento.Name = "lblDepartamento";
-            this.lblDepartamento.Size = new System.Drawing.Size(77, 13);
+            this.lblDepartamento.Size = new System.Drawing.Size(96, 16);
             this.lblDepartamento.TabIndex = 11;
             this.lblDepartamento.Text = "Departamento:";
             // 
@@ -99,9 +103,10 @@
             this.txtApellido.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtApellido.Location = new System.Drawing.Point(36, 117);
+            this.txtApellido.Location = new System.Drawing.Point(48, 144);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(250, 20);
+            this.txtApellido.Size = new System.Drawing.Size(332, 22);
             this.txtApellido.TabIndex = 10;
             // 
             // lblApellido
@@ -110,9 +115,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(33, 94);
+            this.lblApellido.Location = new System.Drawing.Point(44, 116);
+            this.lblApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(47, 13);
+            this.lblApellido.Size = new System.Drawing.Size(60, 16);
             this.lblApellido.TabIndex = 9;
             this.lblApellido.Text = "Apellido:";
             // 
@@ -122,9 +128,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbTIpoUsuario.FormattingEnabled = true;
-            this.cbTIpoUsuario.Location = new System.Drawing.Point(35, 290);
+            this.cbTIpoUsuario.Location = new System.Drawing.Point(47, 357);
+            this.cbTIpoUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbTIpoUsuario.Name = "cbTIpoUsuario";
-            this.cbTIpoUsuario.Size = new System.Drawing.Size(248, 21);
+            this.cbTIpoUsuario.Size = new System.Drawing.Size(329, 24);
             this.cbTIpoUsuario.TabIndex = 8;
             // 
             // label1
@@ -133,9 +140,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(36, 274);
+            this.label1.Location = new System.Drawing.Point(48, 337);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.Size = new System.Drawing.Size(88, 16);
             this.label1.TabIndex = 7;
             this.label1.Text = "Tipo Usuario:";
             // 
@@ -144,9 +152,10 @@
             this.txtContraseña.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtContraseña.Location = new System.Drawing.Point(39, 238);
+            this.txtContraseña.Location = new System.Drawing.Point(52, 293);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtContraseña.Name = "txtContraseña";
-            this.txtContraseña.Size = new System.Drawing.Size(250, 20);
+            this.txtContraseña.Size = new System.Drawing.Size(332, 22);
             this.txtContraseña.TabIndex = 6;
             this.txtContraseña.UseSystemPasswordChar = true;
             // 
@@ -156,9 +165,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCorreoCrear.AutoSize = true;
-            this.lblCorreoCrear.Location = new System.Drawing.Point(34, 214);
+            this.lblCorreoCrear.Location = new System.Drawing.Point(45, 263);
+            this.lblCorreoCrear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCorreoCrear.Name = "lblCorreoCrear";
-            this.lblCorreoCrear.Size = new System.Drawing.Size(64, 13);
+            this.lblCorreoCrear.Size = new System.Drawing.Size(79, 16);
             this.lblCorreoCrear.TabIndex = 5;
             this.lblCorreoCrear.Text = "Contraseña:";
             // 
@@ -169,9 +179,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCrearCuenta.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnCrearCuenta.ForeColor = System.Drawing.Color.White;
-            this.btnCrearCuenta.Location = new System.Drawing.Point(89, 391);
+            this.btnCrearCuenta.Location = new System.Drawing.Point(119, 481);
+            this.btnCrearCuenta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCrearCuenta.Name = "btnCrearCuenta";
-            this.btnCrearCuenta.Size = new System.Drawing.Size(141, 35);
+            this.btnCrearCuenta.Size = new System.Drawing.Size(188, 43);
             this.btnCrearCuenta.TabIndex = 4;
             this.btnCrearCuenta.Text = "Crear Cuenta";
             this.btnCrearCuenta.UseVisualStyleBackColor = false;
@@ -182,9 +193,11 @@
             this.txtCorreo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCorreo.Location = new System.Drawing.Point(38, 176);
+            this.txtCorreo.Location = new System.Drawing.Point(51, 217);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCorreo.Multiline = true;
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(250, 20);
+            this.txtCorreo.Size = new System.Drawing.Size(332, 20);
             this.txtCorreo.TabIndex = 3;
             this.txtCorreo.UseSystemPasswordChar = true;
             // 
@@ -193,9 +206,10 @@
             this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombre.Location = new System.Drawing.Point(36, 60);
+            this.txtNombre.Location = new System.Drawing.Point(48, 74);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(250, 20);
+            this.txtNombre.Size = new System.Drawing.Size(332, 22);
             this.txtNombre.TabIndex = 2;
             // 
             // lblCorreo
@@ -204,9 +218,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Location = new System.Drawing.Point(34, 153);
+            this.lblCorreo.Location = new System.Drawing.Point(45, 188);
+            this.lblCorreo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(41, 13);
+            this.lblCorreo.Size = new System.Drawing.Size(51, 16);
             this.lblCorreo.TabIndex = 1;
             this.lblCorreo.Text = "Correo:";
             // 
@@ -216,9 +231,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(33, 37);
+            this.lblNombre.Location = new System.Drawing.Point(44, 46);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(47, 13);
+            this.lblNombre.Size = new System.Drawing.Size(59, 16);
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre:";
             // 
@@ -228,22 +244,24 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::Programa_Bioquim.Properties.Resources.CuadroAzul2;
-            this.pictureBox1.Location = new System.Drawing.Point(71, 69);
+            this.pictureBox1.Location = new System.Drawing.Point(95, 85);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(482, 564);
+            this.pictureBox1.Size = new System.Drawing.Size(643, 694);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
             // frmRegistrarUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.gbxDatos);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmRegistrarUsuario";
-            this.Size = new System.Drawing.Size(608, 618);
+            this.Size = new System.Drawing.Size(811, 761);
             this.Load += new System.EventHandler(this.frmRegistrarUsuario_Load);
             this.gbxDatos.ResumeLayout(false);
             this.gbxDatos.PerformLayout();

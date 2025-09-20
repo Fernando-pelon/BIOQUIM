@@ -1,62 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\",
+  "WorkspaceRootPath": "C:\\Users\\xfern\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\programa_bioquim\\formularios\\empleado\\frminvetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|solutionrelative:programa_bioquim\\formularios\\empleado\\frminvetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|C:\\Users\\xfern\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\programa_bioquim\\formularios\\admin\\frmgestiondeusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|solutionrelative:programa_bioquim\\formularios\\admin\\frmgestiondeusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\programa_bioquim\\formularios\\empleado\\frminvetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|solutionrelative:programa_bioquim\\formularios\\empleado\\frminvetario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|c:\\users\\xfern\\onedrive\\escritorio\\bioquim\\programa_bioquim\\programa_bioquim\\formularios\\admin\\frmgestiondeusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|solutionrelative:programa_bioquim\\formularios\\admin\\frmgestiondeusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FCC4B47B-1918-4402-95E2-62E6A4DCE7BE}|Modeloss\\Modelos.csproj|C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\modeloss\\conexiones\\conexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FCC4B47B-1918-4402-95E2-62E6A4DCE7BE}|Modeloss\\Modelos.csproj|solutionrelative:modeloss\\conexiones\\conexiondb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FCC4B47B-1918-4402-95E2-62E6A4DCE7BE}|Modeloss\\Modelos.csproj|C:\\Users\\xfern\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\modeloss\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FCC4B47B-1918-4402-95E2-62E6A4DCE7BE}|Modeloss\\Modelos.csproj|solutionrelative:modeloss\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\programa_bioquim\\formularios\\frmcontenedorregistrarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|solutionrelative:programa_bioquim\\formularios\\frmcontenedorregistrarusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\programa_bioquim\\usercontrol\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|solutionrelative:programa_bioquim\\usercontrol\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\programa_bioquim\\formularios\\empleado\\frmrutasdeentrega.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|solutionrelative:programa_bioquim\\formularios\\empleado\\frmrutasdeentrega.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\programa_bioquim\\formularios\\empleado\\frminicioempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|solutionrelative:programa_bioquim\\formularios\\empleado\\frminicioempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\programa_bioquim\\formularios\\frmcarga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|solutionrelative:programa_bioquim\\formularios\\frmcarga.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\programa_bioquim\\formularios\\empleado\\frmdashboardempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|solutionrelative:programa_bioquim\\formularios\\empleado\\frmdashboardempleado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\programa_bioquim\\formularios\\admin\\frmgestionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|solutionrelative:programa_bioquim\\formularios\\admin\\frmgestionusuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\programa_bioquim\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|solutionrelative:programa_bioquim\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\programa_bioquim\\formularios\\frmcontenedorlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|solutionrelative:programa_bioquim\\formularios\\frmcontenedorlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\programa_bioquim\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|solutionrelative:programa_bioquim\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\programa_bioquim\\formularios\\frmcontenedorlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|solutionrelative:programa_bioquim\\formularios\\frmcontenedorlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|C:\\Users\\xfern\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\programa_bioquim\\formularios\\admin\\frmgestiondeusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA57B291-707B-4F1C-A453-DD355B11812D}|Programa_Bioquim\\Programa_Bioquim.csproj|solutionrelative:programa_bioquim\\formularios\\admin\\frmgestiondeusuarios.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,173 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\App.config",
-              "RelativeDocumentMoniker": "Programa_Bioquim\\App.config",
-              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\App.config",
-              "RelativeToolTip": "Programa_Bioquim\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-09-01T19:42:30.51Z",
+              "DocumentIndex": 3,
+              "Title": "frmGestionDeUsuarios.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\xfern\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Admin\\frmGestionDeUsuarios.Designer.cs",
+              "RelativeDocumentMoniker": "Programa_Bioquim\\Formularios\\Admin\\frmGestionDeUsuarios.Designer.cs",
+              "ToolTip": "C:\\Users\\xfern\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Admin\\frmGestionDeUsuarios.Designer.cs",
+              "RelativeToolTip": "Programa_Bioquim\\Formularios\\Admin\\frmGestionDeUsuarios.Designer.cs",
+              "ViewState": "AgIAAHcBAAAAAAAAAAAkwIsBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T02:54:17.381Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmRutasDeEntrega.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Empleado\\frmRutasDeEntrega.cs",
-              "RelativeDocumentMoniker": "Programa_Bioquim\\Formularios\\Empleado\\frmRutasDeEntrega.cs",
-              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Empleado\\frmRutasDeEntrega.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Programa_Bioquim\\Formularios\\Empleado\\frmRutasDeEntrega.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T19:40:56.703Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmContenedorRegistrarUsuario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\frmContenedorRegistrarUsuario.cs",
-              "RelativeDocumentMoniker": "Programa_Bioquim\\Formularios\\frmContenedorRegistrarUsuario.cs",
-              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\frmContenedorRegistrarUsuario.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Programa_Bioquim\\Formularios\\frmContenedorRegistrarUsuario.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T19:40:42.825Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ConexionDB.cs",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Modeloss\\Conexiones\\ConexionDB.cs",
-              "RelativeDocumentMoniker": "Modeloss\\Conexiones\\ConexionDB.cs",
-              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Modeloss\\Conexiones\\ConexionDB.cs",
-              "RelativeToolTip": "Modeloss\\Conexiones\\ConexionDB.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\xfern\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\Modeloss\\Entidades\\Usuario.cs",
+              "RelativeDocumentMoniker": "Modeloss\\Entidades\\Usuario.cs",
+              "ToolTip": "C:\\Users\\xfern\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\Modeloss\\Entidades\\Usuario.cs",
+              "RelativeToolTip": "Modeloss\\Entidades\\Usuario.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAQwM0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T19:28:11.02Z",
+              "WhenOpened": "2025-09-16T02:35:16.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmGestionDeUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\xfern\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Admin\\frmGestionDeUsuarios.cs",
+              "RelativeDocumentMoniker": "Programa_Bioquim\\Formularios\\Admin\\frmGestionDeUsuarios.cs",
+              "ToolTip": "C:\\Users\\xfern\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Admin\\frmGestionDeUsuarios.cs",
+              "RelativeToolTip": "Programa_Bioquim\\Formularios\\Admin\\frmGestionDeUsuarios.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAASwL4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T02:31:41.4Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmInvetario.cs",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Empleado\\frmInvetario.cs",
-              "RelativeDocumentMoniker": "Programa_Bioquim\\Formularios\\Empleado\\frmInvetario.cs",
-              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Empleado\\frmInvetario.cs*",
-              "RelativeToolTip": "Programa_Bioquim\\Formularios\\Empleado\\frmInvetario.cs*",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAQwJMAAAANAAAAAAAAAA==",
+              "Title": "frmGestionDeUsuarios.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\xfern\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Admin\\frmGestionDeUsuarios.cs",
+              "RelativeDocumentMoniker": "Programa_Bioquim\\Formularios\\Admin\\frmGestionDeUsuarios.cs",
+              "ToolTip": "C:\\Users\\xfern\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Admin\\frmGestionDeUsuarios.cs [Design]",
+              "RelativeToolTip": "Programa_Bioquim\\Formularios\\Admin\\frmGestionDeUsuarios.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T20:30:58.812Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmCarga.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\frmCarga.cs",
-              "RelativeDocumentMoniker": "Programa_Bioquim\\Formularios\\frmCarga.cs",
-              "ToolTip": "C:\\Users\\Miste\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\frmCarga.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\Miste\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\frmCarga.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T19:40:40.534Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmInicioEmpleado.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Empleado\\frmInicioEmpleado.cs",
-              "RelativeDocumentMoniker": "Programa_Bioquim\\Formularios\\Empleado\\frmInicioEmpleado.cs",
-              "ToolTip": "C:\\Users\\Miste\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Empleado\\frmInicioEmpleado.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\Miste\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Empleado\\frmInicioEmpleado.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T19:31:41.788Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmInvetario.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Empleado\\frmInvetario.cs",
-              "RelativeDocumentMoniker": "Programa_Bioquim\\Formularios\\Empleado\\frmInvetario.cs",
-              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Empleado\\frmInvetario.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "Programa_Bioquim\\Formularios\\Empleado\\frmInvetario.cs [Dise\u00F1o]*",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T19:43:12.177Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmLogin.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\userControl\\frmLogin.cs",
-              "RelativeDocumentMoniker": "Programa_Bioquim\\userControl\\frmLogin.cs",
-              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\userControl\\frmLogin.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Programa_Bioquim\\userControl\\frmLogin.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T19:42:31.948Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "frmGestionUsuarios.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Admin\\frmGestionUsuarios.cs",
-              "RelativeDocumentMoniker": "Programa_Bioquim\\Formularios\\Admin\\frmGestionUsuarios.cs",
-              "ToolTip": "C:\\Users\\Miste\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Admin\\frmGestionUsuarios.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\Miste\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Admin\\frmGestionUsuarios.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T19:30:51.623Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frmDashBoardEmpleado.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Empleado\\frmDashBoardEmpleado.cs",
-              "RelativeDocumentMoniker": "Programa_Bioquim\\Formularios\\Empleado\\frmDashBoardEmpleado.cs",
-              "ToolTip": "C:\\Users\\Miste\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Empleado\\frmDashBoardEmpleado.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\Miste\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\Empleado\\frmDashBoardEmpleado.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T19:30:20.34Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Program.cs",
-              "RelativeDocumentMoniker": "Programa_Bioquim\\Program.cs",
-              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Program.cs",
-              "RelativeToolTip": "Programa_Bioquim\\Program.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwBUAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T19:02:15.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "frmContenedorLogin.cs",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\frmContenedorLogin.cs",
-              "RelativeDocumentMoniker": "Programa_Bioquim\\Formularios\\frmContenedorLogin.cs",
-              "ToolTip": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\frmContenedorLogin.cs",
-              "RelativeToolTip": "Programa_Bioquim\\Formularios\\frmContenedorLogin.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAYwBQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T18:57:16.634Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "frmContenedorLogin.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Estudiante\\Desktop\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\frmContenedorLogin.cs",
-              "RelativeDocumentMoniker": "Programa_Bioquim\\Formularios\\frmContenedorLogin.cs",
-              "ToolTip": "C:\\Users\\Miste\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\frmContenedorLogin.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\Miste\\OneDrive\\Escritorio\\BIOQUIM\\Programa_Bioquim\\Programa_Bioquim\\Formularios\\frmContenedorLogin.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T18:57:11.235Z"
+              "WhenOpened": "2025-09-16T02:31:36.668Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -1,8 +1,10 @@
-﻿using Modelos.Entidades;
+﻿using Modelos.Conexiones;
+using Modelos.Entidades;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -41,11 +43,6 @@ namespace Programa_Bioquim.Formularios.Admin
                 MessageBox.Show("Error: " + ex.Message, "Error al eliminar", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void dgvGestionUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
         private void cargarUsuarios()
         {
             dgvGestionUsuarios.DataSource = null;
@@ -69,39 +66,129 @@ namespace Programa_Bioquim.Formularios.Admin
 
         private void btnActualizarUser_Click(object sender, EventArgs e)
         {
-            Usuario user = new Usuario();
-            user.IdUsario = Convert.ToInt32(dgvGestionUsuarios.CurrentRow.Cells[0].Value);
-            user.NombreUsuario = dgvGestionUsuarios.CurrentRow.Cells[1].Value.ToString();
-            user.ApellidoUsuario = dgvGestionUsuarios.CurrentRow.Cells[2].Value.ToString();
-            user.CorreoUsuario = dgvGestionUsuarios.CurrentRow.Cells[3].Value.ToString();
-            user.IdDepartamento = Convert.ToInt32(dgvGestionUsuarios.CurrentRow.Cells[5].Value);
-            user.IdTipoUsuario = Convert.ToInt32(dgvGestionUsuarios.CurrentRow.Cells[6].Value);
+            try
+            {
+                if (txtNombreUser.Tag == null)
+                {
+                    MessageBox.Show("Seleccione un usuario dando doble clic en la tabla.", "Aviso",
+                                   MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
-            //user.actualizarUsuarios();
-            cargarUsuarios();
+                Usuario user = new Usuario();
+                user.IdUsario = Convert.ToInt32(txtNombreUser.Tag);
+                user.NombreUsuario = txtNombreUser.Text;
+                user.ApellidoUsuario = txtApellidoUser.Text;
+                user.CorreoUsuario = txtCorreoUser.Text;
+                user.ContrasenaUsuario = txtContraseñaUser.Text;
+                user.IdDepartamento = Convert.ToInt32(cbDepartamentoUser.SelectedValue);
+                user.IdTipoUsuario = Convert.ToInt32(cbTIpoUsuarioUser.SelectedValue);
 
+                if (user.actualizarUsuarios(user.IdUsario))
+                {
+                    cargarUsuarios();
+                    MessageBox.Show("Usuario actualizado correctamente.", "Éxito",
+                                   MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-
+                    // Limpiar campos
+                    txtNombreUser.Clear();
+                    txtApellidoUser.Clear();
+                    txtCorreoUser.Clear();
+                    txtContraseñaUser.Clear();
+                    cbDepartamentoUser.SelectedIndex = -1;
+                    cbTIpoUsuarioUser.SelectedIndex = -1;
+                    txtNombreUser.Tag = null;
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo actualizar el usuario.", "Error",
+                                   MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al actualizar usuario: " + ex.Message, "Error",
+                               MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void frmGestionDeUsuarios_Load(object sender, EventArgs e)
         {
             cargarUsuarios();
+            CargarComboTipoUsuario();
+            CargarComboDepartamento();
         }
 
-        private void lblCorreoCrear_Click(object sender, EventArgs e)
+        private void btnRefrescar_Click(object sender, EventArgs e)
         {
+            btnRefrescar.Enabled = false;
+            Cursor = Cursors.WaitCursor;
 
+            try
+            {
+                cargarUsuarios();
+                MessageBox.Show("Datos actualizados correctamente.", "Actualización",
+                               MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al actualizar: {ex.Message}", "Error",
+                               MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                btnRefrescar.Enabled = true;
+                Cursor = Cursors.Default;
+            }
         }
-
-        private void dgvGestionUsuarios_DoubleClick(object sender, EventArgs e)
+        private void dgvGestionUsuarios_CellDoubleClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            txtNombreUser.Text = dgvGestionUsuarios.CurrentRow.Cells[1].Value.ToString();
-            txtApellidoUser.Text = dgvGestionUsuarios.CurrentRow.Cells[2].Value.ToString();
-            txtContraseñaUser.Text = dgvGestionUsuarios.CurrentRow.Cells[6].Value.ToString();
-            txtCorreoUser.Text = dgvGestionUsuarios.CurrentRow.Cells[3].Value.ToString();
-            cbTIpoUsuarioUser.Text = dgvGestionUsuarios.CurrentRow.Cells[4].Value.ToString();
-            cbDepartamentoUser.Text = dgvGestionUsuarios.CurrentRow.Cells[5].Value.ToString();
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow fila = dgvGestionUsuarios.Rows[e.RowIndex];
+
+                txtNombreUser.Tag = fila.Cells[0].Value;
+
+                txtNombreUser.Text = fila.Cells[1].Value.ToString();
+                txtApellidoUser.Text = fila.Cells[2].Value.ToString();
+                txtCorreoUser.Text = fila.Cells[3].Value.ToString();
+                txtContraseñaUser.Text = fila.Cells[4].Value.ToString();
+                cbDepartamentoUser.Text = fila.Cells[5].Value.ToString();
+                cbTIpoUsuarioUser.Text = fila.Cells[6].Value.ToString();
+            }
         }
+        private void CargarComboTipoUsuario()
+        {
+      
+            string query = "SELECT idTipoUsuario, nombreTipoUsuario FROM TipoUsuario";
+
+            using (SqlConnection con = ConexionDB.conectar())
+            {
+                SqlDataAdapter da = new SqlDataAdapter(query, con);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                cbTIpoUsuarioUser.DataSource = dt;
+                cbTIpoUsuarioUser.DisplayMember = "nombreTipoUsuario";
+                cbTIpoUsuarioUser.ValueMember = "idTipoUsuario";
+            }
+        }
+        private void CargarComboDepartamento()
+        {
+            string query = "SELECT idDepartamento, nombreDepartamento FROM Departamento";
+
+            using (SqlConnection con = ConexionDB.conectar())
+            {
+                SqlDataAdapter da = new SqlDataAdapter(query, con);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                cbDepartamentoUser.DataSource = dt;
+                cbDepartamentoUser.DisplayMember = "nombreDepartamento"; 
+                cbDepartamentoUser.ValueMember = "idDepartamento";      
+            }
+        }
+
     }
+
 }
