@@ -119,7 +119,6 @@ C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj
 C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.exe.config
 C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Admin.frmGestionUsuarios.resources
 C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.frmInicioEmpleado.resources
-C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Empleado.frmInvetario.resources
 C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Empleado.frmRutasDeEntrega.resources
 C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.frmCarga.resources
 C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.frmDashBoardEmpleado.resources
@@ -187,3 +186,11 @@ C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\
 C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.frmContenedorLogin.resources
 C:\Users\Estudiante\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.frmContenedorRegistrarUsuario.resources
 C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Admin.frmGestionDeUsuarios.resources
+C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.frmDashBoardAdmin.resources
+C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.frmInicioAdmin.resources
+C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Empleado.frmInvetarioAdmin.resources
+C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Empleado.frmRutasDeEntregaAdmin.resources
+C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Empleado.frmInvetarioEmpleado.resources
+C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.frmDashBoardRepartidor.resources
+C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.frmInicioRepartidor.resources
+C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Empleado.frmRutasDeEntregaRepartidor.resources

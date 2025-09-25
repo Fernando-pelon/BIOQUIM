@@ -79,7 +79,7 @@ namespace Programa_Bioquim
 
         private void lblInventario_Click(object sender, EventArgs e)
         {
-            abrirForm(new frmInvetario());
+            abrirForm(new frmInvetarioEmpleado());
         }
 
         private void pnlMenu_Paint(object sender, PaintEventArgs e)

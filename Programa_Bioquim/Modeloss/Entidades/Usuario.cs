@@ -14,7 +14,7 @@ namespace Modelos.Entidades
 {
     public class Usuario
     {
-        private int idUsuario;
+        public int idUsuario;
         private string nombreUsuario;
         private string apellidoUsuario;
         private string correoUsuario;
@@ -29,6 +29,7 @@ namespace Modelos.Entidades
         public string ContrasenaUsuario { get => contrasenaUsuario; set => contrasenaUsuario = value; }
         public int IdTipoUsuario { get => idTipoUsuario; set => idTipoUsuario = value; }
         public int IdDepartamento { get => idDepartamento; set => idDepartamento = value; }
+        public int IdUsuario { get; internal set; }
 
         public bool RegistrarUsuario()
         {
@@ -235,6 +236,51 @@ namespace Modelos.Entidades
                 return false;
             }
         }
+        public static Usuario VerificarLoginCompleto(string nombreUsuario, string clave)
+        {
+            Usuario usuario = null;
 
+            try
+            {
+                SqlConnection conn = ConexionDB.conectar();
+                string query = @"
+            SELECT idUsuario, nombreUsuario, apellidoUsuario, correoUsuario, 
+                   contrasenaUsuario, idTipoUsuario, idDepartamento
+            FROM Usuario 
+            WHERE nombreUsuario = @nombreUsuario";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@nombreUsuario", nombreUsuario);
+
+                SqlDataReader reader = cmd.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    string hashEnBaseDeDatos = reader["contrasenaUsuario"].ToString();
+
+                    if (BCrypt.Net.BCrypt.Verify(clave, hashEnBaseDeDatos))
+                    {
+                        usuario = new Usuario
+                        {
+                            IdUsuario = (int)reader["idUsuario"],
+                            NombreUsuario = reader["nombreUsuario"].ToString(),
+                            ApellidoUsuario = reader["apellidoUsuario"].ToString(),
+                            CorreoUsuario = reader["correoUsuario"].ToString(),
+                            IdTipoUsuario = (int)reader["idTipoUsuario"],
+                            IdDepartamento = (int)reader["idDepartamento"]
+                        };
+                    }
+                }
+                reader.Close();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al verificar login: " + ex.Message, "Error",
+                               MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            return usuario;
+        }
     }
 }

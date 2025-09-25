@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace Programa_Bioquim.Formularios.Empleado
 {
-    public partial class frmInvetario : Form
+    public partial class frmInvetarioEmpleado : Form
     {
         
-        public frmInvetario()
+        public frmInvetarioEmpleado()
         {
             InitializeComponent();
         }

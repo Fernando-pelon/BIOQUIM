@@ -68,6 +68,7 @@
     <Compile Include="Entidades\Producto.cs" />
     <Compile Include="Entidades\Proveedor.cs" />
     <Compile Include="Entidades\RutaDeEntrega.cs" />
+    <Compile Include="Entidades\SesionUsuario.cs" />
     <Compile Include="Entidades\TipoPago.cs" />
     <Compile Include="Entidades\TipoUsuario.cs" />
     <Compile Include="Entidades\Usuario.cs" />

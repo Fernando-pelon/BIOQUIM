@@ -1,6 +1,6 @@
 ﻿namespace Programa_Bioquim.Formularios.Empleado
 {
-    partial class frmInvetario
+    partial class frmInvetarioAdmin
     {
         /// <summary>
         /// Required designer variable.
