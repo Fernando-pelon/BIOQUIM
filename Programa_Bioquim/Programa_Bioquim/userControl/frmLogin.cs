@@ -94,6 +94,29 @@ namespace Programa_Bioquim.userControl
                     return;
             }
         }
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            txtUsuario.KeyDown += TxtUsuario_KeyDown;
+            txtContrasenia.KeyDown += TxtContrasenia_KeyDown;
+        }
+
+        private void TxtUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && !string.IsNullOrEmpty(txtUsuario.Text))
+            {
+                e.SuppressKeyPress = true; // Opcional: evita el sonido
+                txtContrasenia.Focus();
+            }
+        }
+
+        private void TxtContrasenia_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && !string.IsNullOrEmpty(txtContrasenia.Text))
+            {
+                e.SuppressKeyPress = true; // Opcional: evita el sonido
+                btnLogIn.PerformClick();
+            }
+        }
     }
 
 }

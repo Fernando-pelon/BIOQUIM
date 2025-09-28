@@ -1,6 +1,8 @@
-﻿using Programa_Bioquim.Formularios;
+﻿using Modelos.Entidades;
+using Programa_Bioquim.Formularios;
 using Programa_Bioquim.Formularios.Admin;
 using Programa_Bioquim.Formularios.Empleado;
+using Programa_Bioquim.userControl;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +22,7 @@ namespace Programa_Bioquim
         {
             InitializeComponent();
         }
-        
+
         private void button1_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
@@ -105,6 +107,73 @@ namespace Programa_Bioquim
         private void button2_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
+        }
+
+        private void btnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("¿Deseas cerrar sesión?", "Confirmar",
+                                                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                CerrarSesionYLimpiarCampos();
+            }
+        }
+
+        private void CerrarSesionYLimpiarCampos()
+        {
+            SesionUsuario.CerrarSesion();
+
+            foreach (Form form in Application.OpenForms)
+            {
+                if (form is frmContenedorLogin contenedor)
+                {
+                    // Limpiar los campos del UserControl de login
+                    LimpiarCamposLogin(contenedor);
+
+                    // Mostrar el contenedor
+                    form.Show();
+                    form.BringToFront();
+
+                    // Cerrar este dashboard
+                    this.Close();
+                    return;
+                }
+            }
+
+            frmContenedorLogin nuevoContenedor = new frmContenedorLogin();
+            nuevoContenedor.Show();
+            this.Close();
+        }
+
+        private void LimpiarCamposLogin(frmContenedorLogin contenedor)
+        {
+            foreach (Control control in contenedor.Controls)
+            {
+                if (control is frmLogin loginControl)
+                {
+                    LimpiarTextBox(loginControl, "txtUsuario");
+                    LimpiarTextBox(loginControl, "txtContrasenia");
+                    break;
+                }
+            }
+        }
+
+        private void LimpiarTextBox(Control parent, string nombreControl)
+        {
+            foreach (Control control in parent.Controls)
+            {
+                if (control.Name == nombreControl && control is TextBox textBox)
+                {
+                    textBox.Text = "";
+                    break;
+                }
+
+                if (control.HasChildren)
+                {
+                    LimpiarTextBox(control, nombreControl);
+                }
+            }
         }
     }
 }
