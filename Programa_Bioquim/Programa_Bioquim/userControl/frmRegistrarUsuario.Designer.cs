@@ -38,11 +38,11 @@
             this.txtContraseña = new System.Windows.Forms.TextBox();
             this.lblCorreoCrear = new System.Windows.Forms.Label();
             this.btnCrearCuenta = new System.Windows.Forms.Button();
-            this.txtCorreo = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblCorreo = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
             this.gbxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -52,6 +52,7 @@
             this.gbxDatos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.gbxDatos.Controls.Add(this.txtCorreo);
             this.gbxDatos.Controls.Add(this.cbDepartamento);
             this.gbxDatos.Controls.Add(this.lblDepartamento);
             this.gbxDatos.Controls.Add(this.txtApellido);
@@ -61,14 +62,13 @@
             this.gbxDatos.Controls.Add(this.txtContraseña);
             this.gbxDatos.Controls.Add(this.lblCorreoCrear);
             this.gbxDatos.Controls.Add(this.btnCrearCuenta);
-            this.gbxDatos.Controls.Add(this.txtCorreo);
             this.gbxDatos.Controls.Add(this.txtNombre);
             this.gbxDatos.Controls.Add(this.lblCorreo);
             this.gbxDatos.Controls.Add(this.lblNombre);
             this.gbxDatos.Location = new System.Drawing.Point(191, 170);
-            this.gbxDatos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbxDatos.Margin = new System.Windows.Forms.Padding(4);
             this.gbxDatos.Name = "gbxDatos";
-            this.gbxDatos.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbxDatos.Padding = new System.Windows.Forms.Padding(4);
             this.gbxDatos.Size = new System.Drawing.Size(429, 532);
             this.gbxDatos.TabIndex = 10;
             this.gbxDatos.TabStop = false;
@@ -80,7 +80,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbDepartamento.FormattingEnabled = true;
             this.cbDepartamento.Location = new System.Drawing.Point(44, 422);
-            this.cbDepartamento.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbDepartamento.Margin = new System.Windows.Forms.Padding(4);
             this.cbDepartamento.Name = "cbDepartamento";
             this.cbDepartamento.Size = new System.Drawing.Size(329, 24);
             this.cbDepartamento.TabIndex = 12;
@@ -104,7 +104,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtApellido.Location = new System.Drawing.Point(48, 144);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(332, 22);
             this.txtApellido.TabIndex = 10;
@@ -129,7 +129,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.cbTIpoUsuario.FormattingEnabled = true;
             this.cbTIpoUsuario.Location = new System.Drawing.Point(47, 357);
-            this.cbTIpoUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbTIpoUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.cbTIpoUsuario.Name = "cbTIpoUsuario";
             this.cbTIpoUsuario.Size = new System.Drawing.Size(329, 24);
             this.cbTIpoUsuario.TabIndex = 8;
@@ -153,7 +153,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtContraseña.Location = new System.Drawing.Point(52, 293);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(332, 22);
             this.txtContraseña.TabIndex = 6;
@@ -180,7 +180,7 @@
             this.btnCrearCuenta.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnCrearCuenta.ForeColor = System.Drawing.Color.White;
             this.btnCrearCuenta.Location = new System.Drawing.Point(119, 481);
-            this.btnCrearCuenta.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCrearCuenta.Margin = new System.Windows.Forms.Padding(4);
             this.btnCrearCuenta.Name = "btnCrearCuenta";
             this.btnCrearCuenta.Size = new System.Drawing.Size(188, 43);
             this.btnCrearCuenta.TabIndex = 4;
@@ -188,26 +188,13 @@
             this.btnCrearCuenta.UseVisualStyleBackColor = false;
             this.btnCrearCuenta.Click += new System.EventHandler(this.btnCrearCuenta_Click);
             // 
-            // txtCorreo
-            // 
-            this.txtCorreo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCorreo.Location = new System.Drawing.Point(51, 217);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtCorreo.Multiline = true;
-            this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(332, 20);
-            this.txtCorreo.TabIndex = 3;
-            this.txtCorreo.UseSystemPasswordChar = true;
-            // 
             // txtNombre
             // 
             this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtNombre.Location = new System.Drawing.Point(48, 74);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(332, 22);
             this.txtNombre.TabIndex = 2;
@@ -245,12 +232,19 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::Programa_Bioquim.Properties.Resources.CuadroAzul2;
             this.pictureBox1.Location = new System.Drawing.Point(95, 85);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(643, 694);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
+            // 
+            // txtCorreo
+            // 
+            this.txtCorreo.Location = new System.Drawing.Point(51, 224);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(353, 22);
+            this.txtCorreo.TabIndex = 13;
             // 
             // frmRegistrarUsuario
             // 
@@ -259,7 +253,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.gbxDatos);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmRegistrarUsuario";
             this.Size = new System.Drawing.Size(811, 761);
             this.Load += new System.EventHandler(this.frmRegistrarUsuario_Load);
@@ -273,7 +267,6 @@
         #endregion
         private System.Windows.Forms.GroupBox gbxDatos;
         private System.Windows.Forms.Button btnCrearCuenta;
-        private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label lblCorreo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtContraseña;
@@ -286,5 +279,6 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.ComboBox cbDepartamento;
         private System.Windows.Forms.Label lblDepartamento;
+        private System.Windows.Forms.TextBox txtCorreo;
     }
 }

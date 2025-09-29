@@ -39,7 +39,7 @@
             this.btnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciar.ForeColor = System.Drawing.SystemColors.Control;
             this.btnIniciar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIniciar.Location = new System.Drawing.Point(453, 238);
+            this.btnIniciar.Location = new System.Drawing.Point(316, 310);
             this.btnIniciar.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(396, 129);
@@ -51,7 +51,7 @@
             // lblBienvenida
             // 
             this.lblBienvenida.AutoSize = true;
-            this.lblBienvenida.Location = new System.Drawing.Point(448, 62);
+            this.lblBienvenida.Location = new System.Drawing.Point(311, 168);
             this.lblBienvenida.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblBienvenida.Name = "lblBienvenida";
             this.lblBienvenida.Size = new System.Drawing.Size(386, 29);
@@ -61,7 +61,7 @@
             // lblTexto
             // 
             this.lblTexto.AutoSize = true;
-            this.lblTexto.Location = new System.Drawing.Point(296, 140);
+            this.lblTexto.Location = new System.Drawing.Point(311, 237);
             this.lblTexto.Name = "lblTexto";
             this.lblTexto.Size = new System.Drawing.Size(679, 29);
             this.lblTexto.TabIndex = 2;
@@ -71,7 +71,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1330, 575);
+            this.ClientSize = new System.Drawing.Size(1017, 575);
             this.Controls.Add(this.lblTexto);
             this.Controls.Add(this.lblBienvenida);
             this.Controls.Add(this.btnIniciar);

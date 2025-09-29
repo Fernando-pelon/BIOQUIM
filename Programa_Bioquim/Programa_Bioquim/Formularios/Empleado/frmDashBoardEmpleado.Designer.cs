@@ -141,7 +141,7 @@
             this.pnlCentral.Location = new System.Drawing.Point(263, 36);
             this.pnlCentral.Margin = new System.Windows.Forms.Padding(4);
             this.pnlCentral.Name = "pnlCentral";
-            this.pnlCentral.Size = new System.Drawing.Size(973, 715);
+            this.pnlCentral.Size = new System.Drawing.Size(999, 715);
             this.pnlCentral.TabIndex = 7;
             this.pnlCentral.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
@@ -183,7 +183,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1233, 751);
+            this.ClientSize = new System.Drawing.Size(1259, 751);
             this.Controls.Add(this.btnCerrarSesionEmpleado);
             this.Controls.Add(this.pnlLogo);
             this.Controls.Add(this.pnlCentral);
