@@ -1,17 +1,9 @@
-go
-create database BIOQUIM_PTC
-go
-use BIOQUIM_PTC
-go 
-
 -- CategoriaProducto
 CREATE TABLE CategoriaProducto (
     idCategoriaProduc INT IDENTITY(1,1) PRIMARY KEY,
     nombreCategoriaProducto VARCHAR(50)
 );
 go
-
-
 -- Proveedores
 CREATE TABLE Proveedores (
     idProveedor INT IDENTITY(1,1) PRIMARY KEY,
@@ -94,7 +86,7 @@ CREATE TABLE Usuario (
     nombreUsuario VARCHAR(50) NOT NULL,
     apellidoUsuario VARCHAR(50) NOT NULL,
     correoUsuario VARCHAR(100) unique,
-    contrasenaUsuario VARCHAR(50) NOT NULL,
+    contrasenaUsuario VARCHAR(100) NOT NULL,
     idTipoUsuario INT,
     idDepartamento INT,
     CONSTRAINT FK_TipoUser FOREIGN KEY (idTipoUsuario)
@@ -138,14 +130,6 @@ go
 insert into Proveedores values
 ('Duisa'), ('Rquimica'), ('Dibarsa'), ('Unichemical'), ('HomeComfort');
 go
--- Producto
-insert into Producto(nombreProducto, costoProducto, cantidadProducto, idCategoriaProduc, idProveedor) values
-('Cloro', 45.00, 25, 4, 4),
-('Secuestrante', 38.50, 40, 4, 4),
-('Blanquedar Industrial', 22.75, 30, 4, 4),
-('Desinfectante', 35.90, 15, 4, 4),
-('Detergente industrial', 29.99, 20, 4, 4);
-go
 -- Empresas
 insert into Empresas(NombreEmpresa, correoEmpresa) values
 ('Hospital Nacional Rosales', 'compras@rosales.gob.sv'),
@@ -166,14 +150,6 @@ insert into Pagos(montoPago, idEmpresa, idProducto, idTipoPago) values
 (15.00, 4, 4, 2),
 (445.00, 5, 5, 1);
 go
--- Pedidos
-insert into Pedidos(cantidadProducto, DireccionEntrega, id_Empresa, id_Producto, fecha, idPago) values
-(10, 'Entrada de lavandería, sector B', 1, 1, '2025-07-20', 1),
-(15, 'Zona de suministros, nivel 2', 2, 2, '2025-07-18', 2),
-(12, 'Pasillo quirúrgico, recepción central', 3, 3, '2025-07-19', 3),
-(8, 'Depósito de higiene, módulo C', 4, 4, '2025-07-21', 4),
-(20, 'Edificio logístico, acceso 1', 5, 5, '2025-07-17', 5);
-go
 -- TipoUsuario
 insert into TipoUsuario(nombreTipoUsuario) values
 ('Administrador'), ('Empleado'), ('Repartidor');
@@ -181,26 +157,6 @@ go
 -- Departamento
 insert into Departamento(nombreDepartamento) values
 ('Secretaria'), ('Repartidores'), ('Finanzas'), ('Recursos Humanos');
-go
--- Usuario
-insert into Usuario(nombreUsuario, apellidoUsuario, correoUsuario, contrasenaUsuario, idTipoUsuario, idDepartamento) values
-('Carlos', 'Ramírez', 'c.ramirez@novacorp.com', 'c4rl0sR!', 1, 4),
-('Sandra', 'Mejía', 's.mejia@elegantwear.com', 'S@ndr@M', 2, 1),
-('Luis', 'Hernández', 'l.hernandez@freshfoods.com', 'Lu1sH_23', 3, 2),
-('Andrea', 'Gómez', 'a.gomez@cleanhouse.com', 'Andre@G', 2, 3),
-('María', 'Flores', 'm.flores@furnizone.com', 'Mar1aF!', 2, 4),
-('pruebaAdmin', '', 'PruebaAdmin@gmail.com', '1234', 1, 4),
-('pruebaEmpleado', '', 'pruebaEmpleado@gmail.com', '1234', 1, 4),
-('pruebaRepartidor', '', 'pruebaRepartidor@gmail.com', '1234', 1, 4);
--- RutaDeEntrega
-go
-INSERT INTO RutaDeEntrega(idProducto, montoPago, idEmpresa, idTipoPago, idUbicacion)
-VALUES
-( 1, 850.00, 1, 2, 1),
-( 2, 13.50, 2, 1, 2),
-( 3, 129.95, 3, 2, 3),
-( 4, 15.00, 3, 1, 4),
-( 5, 445.00, 5, 2, 4);
 go
 --Ubicacion
 INSERT INTO Ubicaciones(UbicacionEmpresa)
@@ -210,8 +166,6 @@ VALUES
 ('Mejicanos'),
 ( 'San Miguel'),
 ('Soyapango')
-
-
 select 
     p.nombreProducto,
     c.nombreCategoriaProducto,
@@ -300,8 +254,6 @@ LEFT JOIN
     CategoriaProducto C ON P.idCategoriaProduc = C.idCategoriaProduc
 LEFT JOIN 
     Proveedores PR ON P.idProveedor = PR.idProveedor;
-
-    alter table Usuario drop idRol 
     go
     CREATE VIEW UsuariosDGV AS
 SELECT
@@ -315,6 +267,18 @@ SELECT
 FROM Usuario U
 LEFT JOIN TipoUsuario T ON U.idTipoUsuario = T.idTipoUsuario
 LEFT JOIN Departamento D ON U.idDepartamento = D.idDepartamento;
+go 
+CREATE VIEW Rutas AS
+SELECT 
+    P.NombreProducto,
+    R.MontoPago,
+    E.NombreEmpresa,
+    Ub.UbicacionEmpresa,
+    T.NombreTipoPago
+FROM RutaDeEntrega R
+LEFT JOIN Ubicaciones Ub ON R.idUbicacion = Ub.idUbicacion
+LEFT JOIN Producto P ON R.idProducto = P.idProducto
+LEFT JOIN Empresas E ON R.idEmpresa = E.idEmpresa
+LEFT JOIN TipoPago T ON R.idTipoPago = T.idTipoPago;
 
-
-  
+  delete from Usuario where idUsuario= 3

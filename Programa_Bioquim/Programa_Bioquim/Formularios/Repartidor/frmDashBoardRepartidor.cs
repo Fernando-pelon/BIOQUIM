@@ -76,7 +76,7 @@ namespace Programa_Bioquim
 
         private void lblRutas_Click(object sender, EventArgs e)
         {
-            abrirForm(new frmRutasDeEntrega());
+            abrirForm(new frmRutasDeEntregaEmpleado());
         }
         private void pnlMenu_Paint(object sender, PaintEventArgs e)
         {

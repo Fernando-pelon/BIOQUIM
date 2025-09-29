@@ -99,17 +99,23 @@
       <DependentUpon>frmRutasDeEntregaAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Admin\PaddedLabel.cs" />
+    <Compile Include="Formularios\Empleado\frmInicioEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Empleado\frmInicioEmpleado.Designer.cs">
+      <DependentUpon>frmInicioEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Empleado\frmInvetarioEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\Empleado\frmInvetarioEmpleado.Designer.cs">
       <DependentUpon>frmInvetarioEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Empleado\frmRutasDeEntrega.cs">
+    <Compile Include="Formularios\Empleado\frmRutasDeEntregaEmpleado.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Empleado\frmRutasDeEntrega.Designer.cs">
-      <DependentUpon>frmRutasDeEntrega.cs</DependentUpon>
+    <Compile Include="Formularios\Empleado\frmRutasDeEntregaEmpleado.Designer.cs">
+      <DependentUpon>frmRutasDeEntregaEmpleado.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\frmCarga.cs">
       <SubType>Form</SubType>
@@ -123,12 +129,6 @@
     <Compile Include="Formularios\Empleado\frmDashBoardEmpleado.Designer.cs">
       <DependentUpon>frmDashBoardEmpleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Empleado\frmInicioEmpleado.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\Empleado\frmInicioEmpleado.Designer.cs">
-      <DependentUpon>frmInicioEmpleado.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\frmContenedorLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +140,24 @@
     </Compile>
     <Compile Include="Formularios\frmContenedorRegistrarUsuario.Designer.cs">
       <DependentUpon>frmContenedorRegistrarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Primer Uso\frmBienvenida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Primer Uso\frmBienvenida.Designer.cs">
+      <DependentUpon>frmBienvenida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Primer Uso\frmCambiarContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Primer Uso\frmCambiarContraseña.Designer.cs">
+      <DependentUpon>frmCambiarContraseña.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Primer Uso\frmCrearNuevoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Primer Uso\frmCrearNuevoUsuario.Designer.cs">
+      <DependentUpon>frmCrearNuevoUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\Repartidor\frmDashBoardRepartidor.cs">
       <SubType>Form</SubType>
@@ -153,11 +171,11 @@
     <Compile Include="Formularios\Repartidor\frmInicioRepartidor.Designer.cs">
       <DependentUpon>frmInicioRepartidor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\Repartidor\frmRutasDeEntrega.cs">
+    <Compile Include="Formularios\Repartidor\frmRutasDeEntregaRepartidor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\Repartidor\frmRutasDeEntrega.Designer.cs">
-      <DependentUpon>frmRutasDeEntrega.cs</DependentUpon>
+    <Compile Include="Formularios\Repartidor\frmRutasDeEntregaRepartidor.Designer.cs">
+      <DependentUpon>frmRutasDeEntregaRepartidor.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -197,8 +215,8 @@
     <EmbeddedResource Include="Formularios\Empleado\frmInvetarioEmpleado.resx">
       <DependentUpon>frmInvetarioEmpleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Empleado\frmRutasDeEntrega.resx">
-      <DependentUpon>frmRutasDeEntrega.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Empleado\frmRutasDeEntregaEmpleado.resx">
+      <DependentUpon>frmRutasDeEntregaEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\frmCarga.resx">
       <DependentUpon>frmCarga.cs</DependentUpon>
@@ -212,14 +230,23 @@
     <EmbeddedResource Include="Formularios\frmContenedorRegistrarUsuario.resx">
       <DependentUpon>frmContenedorRegistrarUsuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Primer Uso\frmBienvenida.resx">
+      <DependentUpon>frmBienvenida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Primer Uso\frmCambiarContraseña.resx">
+      <DependentUpon>frmCambiarContraseña.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Primer Uso\frmCrearNuevoUsuario.resx">
+      <DependentUpon>frmCrearNuevoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Repartidor\frmDashBoardRepartidor.resx">
       <DependentUpon>frmDashBoardRepartidor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Repartidor\frmInicioRepartidor.resx">
       <DependentUpon>frmInicioRepartidor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\Repartidor\frmRutasDeEntrega.resx">
-      <DependentUpon>frmRutasDeEntrega.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\Repartidor\frmRutasDeEntregaRepartidor.resx">
+      <DependentUpon>frmRutasDeEntregaRepartidor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

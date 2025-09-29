@@ -63,8 +63,12 @@
     <Compile Include="Entidades\CategoriaProducto.cs" />
     <Compile Include="Entidades\Departamento.cs" />
     <Compile Include="Entidades\Empresa.cs" />
+    <Compile Include="Entidades\EstadoAplicacion.cs" />
+    <Compile Include="Entidades\EstadoContrasena.cs" />
+    <Compile Include="Entidades\ModelPrimerUso.cs" />
     <Compile Include="Entidades\Pagos.cs" />
     <Compile Include="Entidades\Pedidos.cs" />
+    <Compile Include="Entidades\PrimerUsoController.cs" />
     <Compile Include="Entidades\Producto.cs" />
     <Compile Include="Entidades\Proveedor.cs" />
     <Compile Include="Entidades\RutaDeEntrega.cs" />

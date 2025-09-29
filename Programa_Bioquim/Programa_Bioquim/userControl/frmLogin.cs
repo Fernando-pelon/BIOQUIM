@@ -1,10 +1,14 @@
 ﻿using BCrypt.Net;
 using Modelos.Conexiones;
 using Modelos.Entidades;
+using Programa_Bioquim.Formularios;
 using Programa_Bioquim.Formularios.Admin;
+using Programa_Bioquim.Formularios.Primer_Uso;
+using Programa_Bioquim.Utilidades;
 using System;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+
 namespace Programa_Bioquim.userControl
 {
     public partial class frmLogin : UserControl
@@ -15,10 +19,12 @@ namespace Programa_Bioquim.userControl
         {
             InitializeComponent();
         }
+
         private void btnSalida_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
         private void btnLogIn_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(txtUsuario.Text) || string.IsNullOrWhiteSpace(txtContrasenia.Text))
@@ -27,8 +33,10 @@ namespace Programa_Bioquim.userControl
                                MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+
             string usuario = txtUsuario.Text.Trim();
             string contrasena = txtContrasenia.Text.Trim();
+
             try
             {
                 frmCarga carga = new frmCarga();
@@ -41,11 +49,38 @@ namespace Programa_Bioquim.userControl
 
                 if (usuarioLogueado != null)
                 {
-                    // Iniciar sesión
-                    SesionUsuario.IniciarSesion(usuarioLogueado);
+                    // Verificar si necesita cambiar contraseña
+                    bool necesitaCambio = EstadoContrasena.NecesitaCambioContrasena(usuarioLogueado.CorreoUsuario);
+                    MessageBox.Show($"DEBUG: Correo: {usuarioLogueado.CorreoUsuario}\nNecesita cambio: {necesitaCambio}",
+                                  "Debug Cambio Contraseña");
 
-                    // Redirigir según el tipo de usuario
-                    RedirigirSegunTipoUsuario();
+                    if (necesitaCambio)
+                    {
+                        // Mostrar formulario de cambio de contraseña
+                        frmCambiarContraseña cambiarContrasena = new frmCambiarContraseña(usuarioLogueado.CorreoUsuario);
+                        var formPadre = this.ParentForm;
+                        if (formPadre != null) formPadre.Hide();
+
+                        if (cambiarContrasena.ShowDialog() == DialogResult.OK)
+                        {
+                            // Contraseña cambiada, continuar normal
+                            SesionUsuario.IniciarSesion(usuarioLogueado);
+                            if (formPadre != null) formPadre.Close();
+                            RedirigirSegunTipoUsuario();
+                        }
+                        else
+                        {
+                            // No cambió la contraseña, volver al login
+                            if (formPadre != null) formPadre.Show();
+                            return;
+                        }
+                    }
+                    else
+                    {
+                        // No necesita cambiar contraseña, login normal
+                        SesionUsuario.IniciarSesion(usuarioLogueado);
+                        RedirigirSegunTipoUsuario();
+                    }
                 }
                 else
                 {
@@ -59,6 +94,7 @@ namespace Programa_Bioquim.userControl
                                "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         private void RedirigirSegunTipoUsuario()
         {
             // Ocultar el formulario de login
@@ -94,6 +130,7 @@ namespace Programa_Bioquim.userControl
                     return;
             }
         }
+
         private void frmLogin_Load(object sender, EventArgs e)
         {
             txtUsuario.KeyDown += TxtUsuario_KeyDown;
@@ -104,7 +141,7 @@ namespace Programa_Bioquim.userControl
         {
             if (e.KeyCode == Keys.Enter && !string.IsNullOrEmpty(txtUsuario.Text))
             {
-                e.SuppressKeyPress = true; // Opcional: evita el sonido
+                e.SuppressKeyPress = true;
                 txtContrasenia.Focus();
             }
         }
@@ -113,10 +150,9 @@ namespace Programa_Bioquim.userControl
         {
             if (e.KeyCode == Keys.Enter && !string.IsNullOrEmpty(txtContrasenia.Text))
             {
-                e.SuppressKeyPress = true; // Opcional: evita el sonido
+                e.SuppressKeyPress = true;
                 btnLogIn.PerformClick();
             }
         }
     }
-
 }

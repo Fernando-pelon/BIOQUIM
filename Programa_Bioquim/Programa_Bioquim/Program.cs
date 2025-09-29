@@ -1,5 +1,6 @@
 ﻿using Programa_Bioquim.Formularios;
 using Programa_Bioquim.Formularios.Admin;
+using Programa_Bioquim.Formularios.Primer_Uso;
 using Programa_Bioquim.userControl;
 using System;
 using System.Collections.Generic;
@@ -19,7 +20,14 @@ namespace Programa_Bioquim
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmContenedorLogin());
+            if (Modeloss.Entidades.EstadoAplicacion.EsPrimerUso())
+            {
+                Application.Run(new frmBienvenida());
+            }
+            else
+            {
+                Application.Run(new frmContenedorLogin());
+            }
         }
     }
 }

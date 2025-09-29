@@ -69,11 +69,6 @@ namespace Programa_Bioquim
         }
         #endregion
 
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void lblRutas_Click(object sender, EventArgs e)
         {
             abrirForm(new frmRutasDeEntregaAdmin());

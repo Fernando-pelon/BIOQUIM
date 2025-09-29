@@ -44,7 +44,7 @@
             this.pnlInicioEmpleado.Controls.Add(this.dgvDatosRutas);
             this.pnlInicioEmpleado.Controls.Add(this.lblRutas);
             this.pnlInicioEmpleado.Location = new System.Drawing.Point(47, 233);
-            this.pnlInicioEmpleado.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlInicioEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlInicioEmpleado.Name = "pnlInicioEmpleado";
             this.pnlInicioEmpleado.Size = new System.Drawing.Size(873, 326);
             this.pnlInicioEmpleado.TabIndex = 9;
@@ -55,7 +55,7 @@
             this.dgvDatosRutas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDatosRutas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDatosRutas.Location = new System.Drawing.Point(7, 39);
-            this.dgvDatosRutas.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDatosRutas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvDatosRutas.Name = "dgvDatosRutas";
             this.dgvDatosRutas.ReadOnly = true;
             this.dgvDatosRutas.RowHeadersWidth = 45;
@@ -79,7 +79,7 @@
             // 
             this.pbPerfil.Image = global::Programa_Bioquim.Properties.Resources.Group;
             this.pbPerfil.Location = new System.Drawing.Point(47, 86);
-            this.pbPerfil.Margin = new System.Windows.Forms.Padding(4);
+            this.pbPerfil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pbPerfil.Name = "pbPerfil";
             this.pbPerfil.Size = new System.Drawing.Size(113, 103);
             this.pbPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -97,7 +97,7 @@
             this.lblBienvenida.TabIndex = 1;
             this.lblBienvenida.Text = "¡Hola, Bienvenido al sistema de Bioquim!";
             // 
-            // frmInicioEmpleado
+            // frmInicioAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -107,9 +107,9 @@
             this.Controls.Add(this.pbPerfil);
             this.Controls.Add(this.pnlInicioEmpleado);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
-            this.Name = "frmInicioEmpleado";
+            this.Name = "frmInicioAdmin";
             this.Text = "frmInicio";
             this.Load += new System.EventHandler(this.frmInicioEmpleado_Load_1);
             this.pnlInicioEmpleado.ResumeLayout(false);

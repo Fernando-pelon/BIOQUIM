@@ -12,9 +12,9 @@ using Modeloss.Entidades;
 
 namespace Programa_Bioquim.Formularios.Empleado
 {
-    public partial class frmRutasDeEntrega : Form
+    public partial class frmRutasDeEntregaEmpleado : Form
     {
-        public frmRutasDeEntrega()
+        public frmRutasDeEntregaEmpleado()
         {
             InitializeComponent();
         }
