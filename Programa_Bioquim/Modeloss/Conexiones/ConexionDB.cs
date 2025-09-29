@@ -10,7 +10,6 @@ namespace Modelos.Conexiones
 {
     public class ConexionDB
     {
-        // TUS DATOS DE CONEXIÓN DIRECTA
         private static string servidor = "SQL8020.site4now.net";
         private static string dataBase = "db_abec8a_bioquimptc";
         private static string usuario = "db_abec8a_bioquimptc_admin";
@@ -18,7 +17,6 @@ namespace Modelos.Conexiones
 
         public static SqlConnection conectar()
         {
-            // Cadena de conexión directa
             string cadena = $"Server={servidor};Database={dataBase};User Id={usuario};Password={contrasena};";
 
             SqlConnection conexion = new SqlConnection(cadena);
@@ -36,7 +34,6 @@ namespace Modelos.Conexiones
             }
         }
 
-        // Método para probar la conexión
         public static bool ProbarConexion()
         {
             try

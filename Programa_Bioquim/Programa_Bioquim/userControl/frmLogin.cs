@@ -51,8 +51,6 @@ namespace Programa_Bioquim.userControl
                 {
                     // Verificar si necesita cambiar contraseña
                     bool necesitaCambio = EstadoContrasena.NecesitaCambioContrasena(usuarioLogueado.CorreoUsuario);
-                    MessageBox.Show($"DEBUG: Correo: {usuarioLogueado.CorreoUsuario}\nNecesita cambio: {necesitaCambio}",
-                                  "Debug Cambio Contraseña");
 
                     if (necesitaCambio)
                     {

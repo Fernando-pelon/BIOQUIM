@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\Admin\frmAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Admin\frmAyuda.Designer.cs">
+      <DependentUpon>frmAyuda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Admin\frmDashBoardAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,6 +197,9 @@
     <Compile Include="userControl\frmRegistrarUsuario.Designer.cs">
       <DependentUpon>frmRegistrarUsuario.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Formularios\Admin\frmAyuda.resx">
+      <DependentUpon>frmAyuda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Admin\frmDashBoardAdmin.resx">
       <DependentUpon>frmDashBoardAdmin.cs</DependentUpon>
     </EmbeddedResource>

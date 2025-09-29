@@ -15,11 +15,7 @@ namespace Modeloss.Entidades
             {
             string ruta = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "BioquimApp", "estado.aplicacion");
 
-            // DEBUG: Mostrar información
             bool existe = File.Exists(ruta);
-            MessageBox.Show($"Buscando archivo en: {ruta}\n¿Existe?: {existe}",
-                          "Debug EsPrimerUso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
             return !existe;
         }
 

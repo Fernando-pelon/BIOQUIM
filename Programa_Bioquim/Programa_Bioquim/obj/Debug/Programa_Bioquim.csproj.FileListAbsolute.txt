@@ -197,3 +197,4 @@ C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj
 C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Primer_Uso.frmCrearNuevoUsuario.resources
 C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Primer_Uso.frmCambiarContraseña.resources
 C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Empleado.frmRutasDeEntregaEmpleado.resources
+C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Admin.frmAyuda.resources
