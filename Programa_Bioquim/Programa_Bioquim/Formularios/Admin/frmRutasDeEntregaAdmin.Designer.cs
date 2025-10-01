@@ -88,7 +88,7 @@
             this.dgvRutas.RowHeadersVisible = false;
             this.dgvRutas.RowHeadersWidth = 45;
             this.dgvRutas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvRutas.Size = new System.Drawing.Size(1038, 337);
+            this.dgvRutas.Size = new System.Drawing.Size(893, 337);
             this.dgvRutas.TabIndex = 1;
             this.dgvRutas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dgvRutas.DoubleClick += new System.EventHandler(this.dgvRutas_DoubleClick);
@@ -98,7 +98,7 @@
             this.btnEliminarRuta.BackColor = System.Drawing.Color.Blue;
             this.btnEliminarRuta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarRuta.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarRuta.Location = new System.Drawing.Point(879, 87);
+            this.btnEliminarRuta.Location = new System.Drawing.Point(731, 84);
             this.btnEliminarRuta.Margin = new System.Windows.Forms.Padding(4);
             this.btnEliminarRuta.Name = "btnEliminarRuta";
             this.btnEliminarRuta.Size = new System.Drawing.Size(155, 43);
@@ -112,7 +112,7 @@
             this.btnAgregarRuta.BackColor = System.Drawing.Color.Blue;
             this.btnAgregarRuta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarRuta.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarRuta.Location = new System.Drawing.Point(879, 135);
+            this.btnAgregarRuta.Location = new System.Drawing.Point(734, 135);
             this.btnAgregarRuta.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregarRuta.Name = "btnAgregarRuta";
             this.btnAgregarRuta.Size = new System.Drawing.Size(152, 43);
@@ -141,7 +141,7 @@
             this.panel1.Location = new System.Drawing.Point(16, 453);
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1038, 206);
+            this.panel1.Size = new System.Drawing.Size(893, 206);
             this.panel1.TabIndex = 13;
             // 
             // btnActualizarRutas
@@ -149,7 +149,7 @@
             this.btnActualizarRutas.BackColor = System.Drawing.Color.Blue;
             this.btnActualizarRutas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizarRutas.ForeColor = System.Drawing.Color.White;
-            this.btnActualizarRutas.Location = new System.Drawing.Point(879, 21);
+            this.btnActualizarRutas.Location = new System.Drawing.Point(731, 21);
             this.btnActualizarRutas.Margin = new System.Windows.Forms.Padding(4);
             this.btnActualizarRutas.Name = "btnActualizarRutas";
             this.btnActualizarRutas.Size = new System.Drawing.Size(155, 58);
@@ -162,7 +162,7 @@
             // 
             this.lblTipoPago.AutoSize = true;
             this.lblTipoPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoPago.Location = new System.Drawing.Point(630, 40);
+            this.lblTipoPago.Location = new System.Drawing.Point(544, 26);
             this.lblTipoPago.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTipoPago.Name = "lblTipoPago";
             this.lblTipoPago.Size = new System.Drawing.Size(125, 20);
@@ -173,7 +173,7 @@
             // 
             this.rbTarjetaCredito.AutoSize = true;
             this.rbTarjetaCredito.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbTarjetaCredito.Location = new System.Drawing.Point(634, 122);
+            this.rbTarjetaCredito.Location = new System.Drawing.Point(548, 116);
             this.rbTarjetaCredito.Margin = new System.Windows.Forms.Padding(4);
             this.rbTarjetaCredito.Name = "rbTarjetaCredito";
             this.rbTarjetaCredito.Size = new System.Drawing.Size(164, 24);
@@ -186,7 +186,7 @@
             // 
             this.rbEfectivo.AutoSize = true;
             this.rbEfectivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbEfectivo.Location = new System.Drawing.Point(634, 76);
+            this.rbEfectivo.Location = new System.Drawing.Point(548, 71);
             this.rbEfectivo.Margin = new System.Windows.Forms.Padding(4);
             this.rbEfectivo.Name = "rbEfectivo";
             this.rbEfectivo.Size = new System.Drawing.Size(90, 24);
@@ -285,7 +285,7 @@
             this.txtBuscarRutas.Multiline = true;
             this.txtBuscarRutas.Name = "txtBuscarRutas";
             this.txtBuscarRutas.ShortcutsEnabled = false;
-            this.txtBuscarRutas.Size = new System.Drawing.Size(245, 30);
+            this.txtBuscarRutas.Size = new System.Drawing.Size(202, 30);
             this.txtBuscarRutas.TabIndex = 14;
             this.txtBuscarRutas.TextChanged += new System.EventHandler(this.txtBuscarRutas_TextChanged);
             // 
@@ -305,7 +305,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1067, 751);
+            this.ClientSize = new System.Drawing.Size(940, 751);
             this.Controls.Add(this.lblBuscarRuta);
             this.Controls.Add(this.txtBuscarRutas);
             this.Controls.Add(this.panel1);

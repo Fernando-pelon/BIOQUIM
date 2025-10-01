@@ -58,5 +58,10 @@ namespace Programa_Bioquim.userControl
             cargarTipoUsuario();
             cargarDepartamento();
         }
+
+        private void txtCorreo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
