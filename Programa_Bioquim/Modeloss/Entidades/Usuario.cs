@@ -125,17 +125,31 @@ namespace Modelos.Entidades
         }
         public static DataTable buscarUsuarios(string termino)
         {
-            SqlConnection conexion = ConexionDB.conectar();
-            string comando =
-                $"SELECT Usuario.idUsuario, Usuario.nombreUsuario, Departamento.nombreDepartamento " +
-                $"FROM Usuario " +
-                $"INNER JOIN Departamento ON Usuario.idDepartamento = Departamento.idDepartamento " +
-                $"WHERE Usuario.nombreUsuario LIKE '%{termino}%';";
+            using (SqlConnection conexion = ConexionDB.conectar())
+            {
+                string consulta = @"
+            SELECT 
+                Usuario.idUsuario, 
+                Usuario.nombreUsuario, 
+                Departamento.nombreDepartamento
+            FROM Usuario
+            INNER JOIN Departamento 
+                ON Usuario.idDepartamento = Departamento.idDepartamento
+            WHERE Usuario.nombreUsuario LIKE @termino;";
 
-            SqlDataAdapter ad = new SqlDataAdapter(comando, conexion);
-            DataTable dt = new DataTable();
-            ad.Fill(dt);
-            return dt;
+                using (SqlCommand comando = new SqlCommand(consulta, conexion))
+                {
+                    comando.Parameters.AddWithValue("@termino", "%" + termino + "%");
+
+                    using (SqlDataAdapter adaptador = new SqlDataAdapter(comando))
+                    {
+                        DataTable resultado = new DataTable();
+                        adaptador.Fill(resultado);
+                        return resultado;
+                    }
+                }
+            }
+
         }
         public bool eliminarUsuarios(int id)
 

@@ -83,3 +83,20 @@ C:\Users\xfern\OneDrive\Escritorio\New folder\BIOQUIM\Programa_Bioquim\Modeloss\
 C:\Users\xfern\OneDrive\Escritorio\New folder\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modelos.csproj.Up2Date
 C:\Users\xfern\OneDrive\Escritorio\New folder\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modeloss.dll
 C:\Users\xfern\OneDrive\Escritorio\New folder\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modeloss.pdb
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\Modeloss.dll
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\Modeloss.pdb
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\System.Buffers.dll
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\System.Memory.dll
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\System.Buffers.xml
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\System.Memory.xml
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Modeloss\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modelos.csproj.AssemblyReference.cache
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modelos.csproj.CoreCompileInputs.cache
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modelos.csproj.Up2Date
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modeloss.dll
+C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Modeloss\obj\Debug\Modeloss.pdb

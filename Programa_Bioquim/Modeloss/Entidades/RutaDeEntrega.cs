@@ -104,21 +104,36 @@ namespace Modelos.Entidades
 
         public static DataTable buscarRutaDeEntrega(string termino)
         {
-            SqlConnection conexion = ConexionDB.conectar();
-            string comando =
-                "SELECT RutaDeEntrega.idRutaEntrega, Producto.nombreProducto, Empresas.NombreEmpresa, TipoPago.nombreTipoPago, Ubicaciones.ubicacionEmpresa, RutaDeEntrega.montoPago " +
-                "FROM RutaDeEntrega " +
-                "INNER JOIN Producto ON RutaDeEntrega.idProducto = Producto.idProducto " +
-                "INNER JOIN Empresas ON RutaDeEntrega.idEmpresa = Empresas.idEmpresa " +
-                "INNER JOIN TipoPago ON RutaDeEntrega.idTipoPago = TipoPago.idTipoPago " +
-                "INNER JOIN Ubicaciones ON RutaDeEntrega.idUbicacion = Ubicaciones.idUbicacion " +
-                "WHERE Producto.nombreProducto LIKE @termino OR Empresas.NombreEmpresa LIKE @termino;";
+            using (SqlConnection conexion = ConexionDB.conectar())
+            {
+                string consulta = @"
+            SELECT 
+                RutaDetalleEntrega.idEntrega, 
+                Producto.nombreProducto, 
+                Express.nombreExpress, 
+                TipoApp.nombreTipoApp, 
+                Ubicaciones.ubicacion
+            FROM RutaDetalleEntrega
+            INNER JOIN Producto ON RutaDetalleEntrega.idProducto = Producto.idProducto
+            INNER JOIN Express ON RutaDetalleEntrega.idExpress = Express.idExpress
+            INNER JOIN TipoApp ON RutaDetalleEntrega.idTipoApp = TipoApp.idTipoApp
+            INNER JOIN Ubicaciones ON RutaDetalleEntrega.idUbicacion = Ubicaciones.idUbicacion
+            WHERE Producto.nombreProducto LIKE @termino;";
 
-            SqlDataAdapter ad = new SqlDataAdapter(comando, conexion);
-            ad.SelectCommand.Parameters.AddWithValue("@termino", "%" + termino + "%");
-            DataTable dt = new DataTable();
-            ad.Fill(dt);
-            return dt;
+                using (SqlCommand comando = new SqlCommand(consulta, conexion))
+                {
+                    comando.Parameters.AddWithValue("@termino", "%" + termino + "%");
+
+                    using (SqlDataAdapter adaptador = new SqlDataAdapter(comando))
+                    {
+                        DataTable resultado = new DataTable();
+                        adaptador.Fill(resultado);
+                        return resultado;
+                    }
+                }
+            }
+
+
         }
     }
 }

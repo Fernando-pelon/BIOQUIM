@@ -29,5 +29,10 @@ namespace Programa_Bioquim.Formularios
             dashboard.FormClosed += (s, args) => this.Close(); // Cierra el login cuando el dashboard se cierra
             dashboard.Show();
         }
+
+        private void frmLogin2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

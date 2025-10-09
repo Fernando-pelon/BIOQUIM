@@ -107,18 +107,34 @@ namespace Modelos.Entidades
 
         public static DataTable buscarProductos(string termino)
         {
-            SqlConnection conexion = ConexionDB.conectar();
-            string comando =
-                "SELECT Producto.idProducto, Producto.nombreProducto, Producto.costoProducto, Producto.cantidadProducto, Proveedores.nombreProveedor " +
-                "FROM Producto " +
-                "INNER JOIN Proveedores ON Producto.idProveedor = Proveedores.idProveedor " +
-                "WHERE Producto.nombreProducto LIKE @termino;";
+            using (SqlConnection conexion = ConexionDB.conectar())
+            {
+                string consulta = @"
+            SELECT 
+                Producto.idProducto, 
+                Producto.nombreProducto, 
+                Producto.costoProducto, 
+                Producto.cantidadProducto, 
+                Proveedores.nombreProveedor
+            FROM Producto
+            INNER JOIN Proveedores 
+                ON Producto.idProveedor = Proveedores.idProveedor
+            WHERE Producto.nombreProducto LIKE @termino;";
 
-            SqlDataAdapter ad = new SqlDataAdapter(comando, conexion);
-            ad.SelectCommand.Parameters.AddWithValue("@termino", "%" + termino + "%");
-            DataTable dt = new DataTable();
-            ad.Fill(dt);
-            return dt;
+                using (SqlCommand comando = new SqlCommand(consulta, conexion))
+                {
+                    comando.Parameters.AddWithValue("@termino", "%" + termino + "%");
+
+                    using (SqlDataAdapter adaptador = new SqlDataAdapter(comando))
+                    {
+                        DataTable resultado = new DataTable();
+                        adaptador.Fill(resultado);
+                        return resultado;
+                    }
+                }
+            }
+
+
         }
 
     }   

@@ -165,6 +165,12 @@
     <Compile Include="Formularios\Primer Uso\frmCrearNuevoUsuario.Designer.cs">
       <DependentUpon>frmCrearNuevoUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Primer Uso\frmOlvideContraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Primer Uso\frmOlvideContraseña.Designer.cs">
+      <DependentUpon>frmOlvideContraseña.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Repartidor\frmDashBoardRepartidor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Primer Uso\frmCrearNuevoUsuario.resx">
       <DependentUpon>frmCrearNuevoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Primer Uso\frmOlvideContraseña.resx">
+      <DependentUpon>frmOlvideContraseña.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Repartidor\frmDashBoardRepartidor.resx">
       <DependentUpon>frmDashBoardRepartidor.cs</DependentUpon>
