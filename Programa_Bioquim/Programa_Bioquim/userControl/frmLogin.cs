@@ -152,5 +152,12 @@ namespace Programa_Bioquim.userControl
                 btnLogIn.PerformClick();
             }
         }
+
+        private void lblOlvideContraseña_Click(object sender, EventArgs e)
+        {
+            frmOlvideContraseña formOlvide = new frmOlvideContraseña();
+            formOlvide.Show();
+            this.Hide();
+        }
     }
 }

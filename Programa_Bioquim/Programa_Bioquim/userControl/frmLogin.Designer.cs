@@ -36,6 +36,7 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblOlvideContraseña = new System.Windows.Forms.Label();
             this.gbxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -43,6 +44,7 @@
             // 
             // gbxDatos
             // 
+            this.gbxDatos.Controls.Add(this.lblOlvideContraseña);
             this.gbxDatos.Controls.Add(this.btnLogIn);
             this.gbxDatos.Controls.Add(this.txtContrasenia);
             this.gbxDatos.Controls.Add(this.txtUsuario);
@@ -53,12 +55,13 @@
             this.gbxDatos.Size = new System.Drawing.Size(322, 233);
             this.gbxDatos.TabIndex = 10;
             this.gbxDatos.TabStop = false;
+            this.gbxDatos.Text = "v";
             // 
             // btnLogIn
             // 
             this.btnLogIn.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnLogIn.ForeColor = System.Drawing.Color.White;
-            this.btnLogIn.Location = new System.Drawing.Point(83, 174);
+            this.btnLogIn.Location = new System.Drawing.Point(83, 162);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(141, 35);
             this.btnLogIn.TabIndex = 4;
@@ -71,7 +74,7 @@
             this.txtContrasenia.Location = new System.Drawing.Point(10, 122);
             this.txtContrasenia.Name = "txtContrasenia";
             this.txtContrasenia.ShortcutsEnabled = false;
-            this.txtContrasenia.Size = new System.Drawing.Size(250, 26);
+            this.txtContrasenia.Size = new System.Drawing.Size(250, 22);
             this.txtContrasenia.TabIndex = 3;
             this.txtContrasenia.UseSystemPasswordChar = true;
             this.txtContrasenia.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtContrasenia_KeyDown);
@@ -81,7 +84,7 @@
             this.txtUsuario.Location = new System.Drawing.Point(10, 60);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.ShortcutsEnabled = false;
-            this.txtUsuario.Size = new System.Drawing.Size(250, 26);
+            this.txtUsuario.Size = new System.Drawing.Size(250, 22);
             this.txtUsuario.TabIndex = 2;
             this.txtUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtUsuario_KeyDown);
             // 
@@ -90,7 +93,7 @@
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.Location = new System.Drawing.Point(6, 99);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(111, 20);
+            this.lblContraseña.Size = new System.Drawing.Size(90, 16);
             this.lblContraseña.TabIndex = 1;
             this.lblContraseña.Text = "Contraseña:";
             // 
@@ -99,7 +102,7 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.Location = new System.Drawing.Point(7, 37);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(80, 20);
+            this.lblUsuario.Size = new System.Drawing.Size(65, 16);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario:";
             // 
@@ -123,9 +126,20 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
+            // lblOlvideContraseña
+            // 
+            this.lblOlvideContraseña.AutoSize = true;
+            this.lblOlvideContraseña.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lblOlvideContraseña.Location = new System.Drawing.Point(80, 214);
+            this.lblOlvideContraseña.Name = "lblOlvideContraseña";
+            this.lblOlvideContraseña.Size = new System.Drawing.Size(153, 16);
+            this.lblOlvideContraseña.TabIndex = 5;
+            this.lblOlvideContraseña.Text = "Olvide mi contraseña";
+            this.lblOlvideContraseña.Click += new System.EventHandler(this.lblOlvideContraseña_Click);
+            // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.gbxDatos);
@@ -153,5 +167,6 @@
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblOlvideContraseña;
     }
 }

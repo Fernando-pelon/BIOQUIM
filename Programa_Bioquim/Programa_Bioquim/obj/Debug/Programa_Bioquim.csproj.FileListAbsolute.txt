@@ -244,3 +244,4 @@ C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\De
 C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.userControl.frmRegistrarUsuario.resources
 C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa.2779E31A.Up2Date
 C:\Users\Dario\OneDrive\Desktop\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Primer_Uso.frmOlvideContraseña.resources
+C:\Users\xfern\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Programa_Bioquim\obj\Debug\Programa_Bioquim.Formularios.Primer_Uso.frmOlvideContraseña.resources
