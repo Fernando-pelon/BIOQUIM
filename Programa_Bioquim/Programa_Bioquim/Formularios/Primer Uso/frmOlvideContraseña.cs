@@ -103,8 +103,7 @@ namespace Programa_Bioquim.Formularios.Primer_Uso
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Debe cambiar su contraseña para continuar.", "Advertencia",
-             MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            this.Close();
         }
     }
     }
