@@ -86,7 +86,7 @@ namespace Programa_Bioquim
 
         private void GestionUsuario_Click(object sender, EventArgs e)
         {
-            abrirForm(new frmGestionDeUsuarios());
+            abrirForm(new frmAyuda());
         }
 
         private void minimizar_Click(object sender, EventArgs e)
@@ -169,6 +169,11 @@ namespace Programa_Bioquim
                     LimpiarTextBox(control, nombreControl);
                 }
             }
+        }
+
+        private void lblAyuda_Click(object sender, EventArgs e)
+        {
+            abrirForm(new frmAyuda());
         }
     }
 }

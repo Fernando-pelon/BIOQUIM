@@ -39,6 +39,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlLogo = new System.Windows.Forms.Panel();
             this.btnCerrarSesionRepartidor = new System.Windows.Forms.Button();
+            this.lblAyuda = new System.Windows.Forms.Label();
             this.pnlMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,6 +52,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(110)))), ((int)(((byte)(242)))));
+            this.pnlMenu.Controls.Add(this.lblAyuda);
             this.pnlMenu.Controls.Add(this.panel2);
             this.pnlMenu.Controls.Add(this.lblRutas);
             this.pnlMenu.Controls.Add(this.lblMenu);
@@ -163,6 +165,19 @@
             this.btnCerrarSesionRepartidor.UseVisualStyleBackColor = true;
             this.btnCerrarSesionRepartidor.Click += new System.EventHandler(this.btnCerrarSesionRepartidor_Click);
             // 
+            // lblAyuda
+            // 
+            this.lblAyuda.AutoSize = true;
+            this.lblAyuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAyuda.ForeColor = System.Drawing.Color.White;
+            this.lblAyuda.Location = new System.Drawing.Point(31, 205);
+            this.lblAyuda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAyuda.Name = "lblAyuda";
+            this.lblAyuda.Size = new System.Drawing.Size(84, 29);
+            this.lblAyuda.TabIndex = 6;
+            this.lblAyuda.Text = "Ayuda";
+            this.lblAyuda.Click += new System.EventHandler(this.lblAyuda_Click);
+            // 
             // frmDashBoardRepartidor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -203,5 +218,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pnlLogo;
         private System.Windows.Forms.Button btnCerrarSesionRepartidor;
+        private System.Windows.Forms.Label lblAyuda;
     }
 }

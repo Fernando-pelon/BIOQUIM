@@ -174,5 +174,10 @@ namespace Programa_Bioquim
                 }
             }
         }
+
+        private void lblAyuda_Click(object sender, EventArgs e)
+        {
+            abrirForm(new frmAyuda());
+        }
     }
 }
