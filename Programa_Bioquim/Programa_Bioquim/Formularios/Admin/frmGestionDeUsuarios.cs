@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Programa_Bioquim.Formularios.Admin
 {
@@ -188,6 +189,41 @@ namespace Programa_Bioquim.Formularios.Admin
                 cbDepartamentoUser.ValueMember = "idDepartamento";      
             }
         }
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si el texto actual más el nuevo carácter excede los 100 caracteres
+            if (txtNombreUser.Text.Length >= 100 && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Cancela la entrada del carácter
+            }
+        }
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si el texto actual más el nuevo carácter excede los 100 caracteres
+            if (txtApellidoUser.Text.Length >= 100 && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Cancela la entrada del carácter
+            }
+        }
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si el texto actual más el nuevo carácter excede los 100 caracteres
+            if (txtContraseñaUser.Text.Length >= 100 && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Cancela la entrada del carácter
+            }
+        }
+        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si el texto actual más el nuevo carácter excede los 100 caracteres
+            if (txtCorreoUser.Text.Length >= 100 && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Cancela la entrada del carácter
+            }
+        }
+        
+
+
 
     }
 

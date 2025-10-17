@@ -25,7 +25,7 @@ namespace Programa_Bioquim.Formularios.Admin
 
             if (File.Exists(rutaPDF))
             {
-                webBrowser1.Navigate(rutaPDF);
+                wbAyuda.Navigate(rutaPDF);
             }
             else
             {

@@ -92,6 +92,7 @@ namespace Programa_Bioquim.Formularios.Primer_Uso
                 {
                     MessageBox.Show("Error al cambiar la contraseña.", "Error",
                                   MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
             }
             catch (Exception ex)
@@ -104,6 +105,11 @@ namespace Programa_Bioquim.Formularios.Primer_Uso
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void frmOlvideContraseña_Load(object sender, EventArgs e)
+        {
+
         }
     }
     }

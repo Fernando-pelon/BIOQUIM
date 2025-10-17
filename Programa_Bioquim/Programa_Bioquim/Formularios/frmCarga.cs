@@ -18,31 +18,31 @@ namespace Programa_Bioquim
             InitializeComponent();
         }
 
-        private void frmCarga_Load(object sender, EventArgs e)
+        private async void frmCarga_Load(object sender, EventArgs e)
         {
-            pbIntermediario.Value = 0;
+        
             pbIntermediario.Minimum = 0;
             pbIntermediario.Maximum = 100;
+            pbIntermediario.Value = pbIntermediario.Minimum;
             pbIntermediario.Style = ProgressBarStyle.Continuous;
 
-            timerCarga.Interval = 30;
-            timerCarga.Tick += new EventHandler(timerCarga_Tick);
-            timerCarga.Start();
+            const int step = 2;
+            const int delayMs = 30;
+
+            for (int v = pbIntermediario.Minimum; v <= pbIntermediario.Maximum; v += step)
+            {
+                pbIntermediario.Value = Math.Min(v, pbIntermediario.Maximum);
+                await Task.Delay(delayMs);
+            }
+
+            await Task.Delay(150);
+            this.Hide();
         }
 
+       
         private void timerCarga_Tick(object sender, EventArgs e)
         {
-            if (pbIntermediario.Value < pbIntermediario.Maximum)
-            {
-                pbIntermediario.Value += 2;
-            }
-            else
-            {
-                timerCarga.Stop();
-                this.Hide();
-                frmDashBoardEmpleado dashboard = new frmDashBoardEmpleado();
-                dashboard.Show();
-            }
+            
         }
     }
 }

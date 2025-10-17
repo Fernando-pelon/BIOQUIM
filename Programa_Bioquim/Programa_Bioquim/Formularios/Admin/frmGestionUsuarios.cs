@@ -189,7 +189,14 @@ namespace Programa_Bioquim.Formularios.Admin
         {
 
         }
-
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si el texto actual más el nuevo carácter excede los 100 caracteres
+            if (txtBuscar.Text.Length >= 100 && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Cancela la entrada del carácter
+            }
+        }
         private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 

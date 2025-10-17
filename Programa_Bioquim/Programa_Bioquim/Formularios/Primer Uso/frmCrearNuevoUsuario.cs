@@ -67,5 +67,34 @@ namespace Programa_Bioquim.Formularios.Primer_Uso
                               MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si el texto actual más el nuevo carácter excede los 100 caracteres
+            if (txtNombre.Text.Length >= 100 && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Cancela la entrada del carácter
+            }
+        }
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si el texto actual más el nuevo carácter excede los 100 caracteres
+            if (txtApellido.Text.Length >= 100 && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Cancela la entrada del carácter
+            }
+        }
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si el texto actual más el nuevo carácter excede los 100 caracteres
+            if (txtCorreo.Text.Length >= 100 && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Cancela la entrada del carácter
+            }
+        }
     }
 }

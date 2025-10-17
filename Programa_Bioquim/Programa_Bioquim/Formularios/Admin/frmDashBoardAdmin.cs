@@ -86,7 +86,7 @@ namespace Programa_Bioquim
 
         private void GestionUsuario_Click(object sender, EventArgs e)
         {
-            abrirForm(new frmAyuda());
+            abrirForm(new frmGestionDeUsuarios());
         }
 
         private void minimizar_Click(object sender, EventArgs e)
@@ -174,6 +174,11 @@ namespace Programa_Bioquim
         private void lblAyuda_Click(object sender, EventArgs e)
         {
             abrirForm(new frmAyuda());
+        }
+
+        private void lbAdministrador_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

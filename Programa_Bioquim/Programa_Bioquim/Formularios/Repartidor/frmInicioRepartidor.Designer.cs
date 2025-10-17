@@ -43,6 +43,7 @@
             this.pnlInicioEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlInicioEmpleado.Controls.Add(this.dgvDatosRutas);
             this.pnlInicioEmpleado.Controls.Add(this.lblRutas);
+            this.pnlInicioEmpleado.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlInicioEmpleado.Location = new System.Drawing.Point(47, 233);
             this.pnlInicioEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlInicioEmpleado.Name = "pnlInicioEmpleado";
@@ -67,11 +68,11 @@
             // 
             this.lblRutas.AutoSize = true;
             this.lblRutas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblRutas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRutas.Font = new System.Drawing.Font("Open Sans Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRutas.Location = new System.Drawing.Point(0, 0);
             this.lblRutas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRutas.Name = "lblRutas";
-            this.lblRutas.Size = new System.Drawing.Size(254, 31);
+            this.lblRutas.Size = new System.Drawing.Size(194, 28);
             this.lblRutas.TabIndex = 0;
             this.lblRutas.Text = "Rutas en progreso";
             // 
@@ -89,15 +90,15 @@
             // lblBienvenida
             // 
             this.lblBienvenida.AutoSize = true;
-            this.lblBienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenida.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBienvenida.Location = new System.Drawing.Point(191, 122);
             this.lblBienvenida.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblBienvenida.Name = "lblBienvenida";
-            this.lblBienvenida.Size = new System.Drawing.Size(491, 29);
+            this.lblBienvenida.Size = new System.Drawing.Size(383, 26);
             this.lblBienvenida.TabIndex = 1;
             this.lblBienvenida.Text = "¡Hola, Bienvenido al sistema de Bioquim!";
             // 
-            // frmInicioAdmin
+            // frmInicioRepartidor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -109,7 +110,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
-            this.Name = "frmInicioAdmin";
+            this.Name = "frmInicioRepartidor";
             this.Text = "frmInicio";
             this.Load += new System.EventHandler(this.frmInicioEmpleado_Load_1);
             this.pnlInicioEmpleado.ResumeLayout(false);

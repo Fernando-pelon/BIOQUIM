@@ -144,6 +144,7 @@
             this.txtBuscar.Size = new System.Drawing.Size(141, 20);
             this.txtBuscar.TabIndex = 6;
             this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
+            this.txtBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // frmGestionUsuarios
             // 

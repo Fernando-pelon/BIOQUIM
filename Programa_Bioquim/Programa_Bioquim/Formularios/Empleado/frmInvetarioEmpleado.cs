@@ -27,6 +27,9 @@ namespace Programa_Bioquim.Formularios.Empleado
 
         private void frmInvetario_Load(object sender, EventArgs e)
         {
+            txtNombreProducto.MaxLength = 35;
+            txtCantidadProducto.MaxLength = 8;
+            txtCostoProducto.MaxLength = 8;
             MostrarInvetario();
         }
 
@@ -114,41 +117,67 @@ namespace Programa_Bioquim.Formularios.Empleado
 
         private void txtCostoProducto_KeyPress(object sender, KeyPressEventArgs e)
         {
-           
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
-            {
-                e.Handled = true;
-            }
-            
-            if (e.KeyChar == '.' && ((sender as TextBox).Text.IndexOf('.') > -1))
-            {
-                e.Handled = true;
-            }
+
         }
 
         private void txtNombreProducto_KeyPress(object sender, KeyPressEventArgs e)
         {
-            
-            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar) && e.KeyChar != ' ')
-            {
-                e.Handled = true;
-            }
+
         }
 
         private void txtCantidadProducto_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
-            {
-                e.Handled = true;
-            }
 
-            if (e.KeyChar == '.' && ((sender as TextBox).Text.IndexOf('.') > -1))
-            {
-                e.Handled = true;
-            }
         }
 
         private void txtCantidadProducto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombreProducto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verifica si el texto actual más el nuevo carácter excede los 100 caracteres
+            if (txtBuscarProducto.Text.Length >= 100 && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Cancela la entrada del carácter
+            }
+        }
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo dígitos y teclas de control (como Backspace)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Bloquea cualquier carácter que no sea número
+                return;
+            }
+
+            // Limitar a 100 caracteres
+            if (txtCantidadProducto.Text.Length >= 100 && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Bloquea si ya hay 100 caracteres
+            }
+        }
+        private void textBox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo dígitos y teclas de control (como Backspace)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true; // Bloquea cualquier carácter que no sea número
+                return;
+            }
+
+            // Limitar a 100 caracteres
+            if (txtCantidadProducto.Text.Length >= 100 && !char.IsControl(e.KeyChar))
+            {
+                e.Handled = true; // Bloquea si ya hay 100 caracteres
+            }
+        }
+        private void txtCostoProducto_TextChanged(object sender, EventArgs e)
         {
 
         }

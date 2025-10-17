@@ -63,7 +63,7 @@ namespace Programa_Bioquim.userControl
                         {
                             // Contraseña cambiada, continuar normal
                             SesionUsuario.IniciarSesion(usuarioLogueado);
-                            if (formPadre != null) formPadre.Close();
+                            if (formPadre != null) formPadre.Hide();
                             RedirigirSegunTipoUsuario();
                         }
                         else

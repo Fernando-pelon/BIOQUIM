@@ -52,18 +52,21 @@
             this.gbRecuperacionContraseña.Controls.Add(this.txtNuevaContrasena);
             this.gbRecuperacionContraseña.Controls.Add(this.txtCorreoActual);
             this.gbRecuperacionContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbRecuperacionContraseña.Location = new System.Drawing.Point(115, 68);
+            this.gbRecuperacionContraseña.Location = new System.Drawing.Point(86, 55);
+            this.gbRecuperacionContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.gbRecuperacionContraseña.Name = "gbRecuperacionContraseña";
-            this.gbRecuperacionContraseña.Size = new System.Drawing.Size(571, 314);
+            this.gbRecuperacionContraseña.Padding = new System.Windows.Forms.Padding(2);
+            this.gbRecuperacionContraseña.Size = new System.Drawing.Size(428, 255);
             this.gbRecuperacionContraseña.TabIndex = 9;
             this.gbRecuperacionContraseña.TabStop = false;
             this.gbRecuperacionContraseña.Text = "Olvide mi contraseña";
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(335, 263);
+            this.btnCancelar.Location = new System.Drawing.Point(232, 214);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(110, 45);
+            this.btnCancelar.Size = new System.Drawing.Size(89, 37);
             this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -73,9 +76,10 @@
             // 
             this.lblCorreo.AutoSize = true;
             this.lblCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCorreo.Location = new System.Drawing.Point(90, 60);
+            this.lblCorreo.Location = new System.Drawing.Point(50, 53);
+            this.lblCorreo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(154, 20);
+            this.lblCorreo.Size = new System.Drawing.Size(129, 17);
             this.lblCorreo.TabIndex = 5;
             this.lblCorreo.Text = "Correo Electronico:";
             // 
@@ -83,9 +87,10 @@
             // 
             this.lblNueva.AutoSize = true;
             this.lblNueva.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNueva.Location = new System.Drawing.Point(90, 121);
+            this.lblNueva.Location = new System.Drawing.Point(50, 101);
+            this.lblNueva.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNueva.Name = "lblNueva";
-            this.lblNueva.Size = new System.Drawing.Size(149, 20);
+            this.lblNueva.Size = new System.Drawing.Size(128, 17);
             this.lblNueva.TabIndex = 6;
             this.lblNueva.Text = "Nueva contraseña:";
             // 
@@ -93,17 +98,19 @@
             // 
             this.lblConfirmar.AutoSize = true;
             this.lblConfirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirmar.Location = new System.Drawing.Point(90, 186);
+            this.lblConfirmar.Location = new System.Drawing.Point(50, 154);
+            this.lblConfirmar.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblConfirmar.Name = "lblConfirmar";
-            this.lblConfirmar.Size = new System.Drawing.Size(176, 20);
+            this.lblConfirmar.Size = new System.Drawing.Size(148, 17);
             this.lblConfirmar.TabIndex = 7;
             this.lblConfirmar.Text = "Confirmar contraseña:";
             // 
             // btnCambiarContrasena
             // 
-            this.btnCambiarContrasena.Location = new System.Drawing.Point(451, 263);
+            this.btnCambiarContrasena.Location = new System.Drawing.Point(325, 214);
+            this.btnCambiarContrasena.Margin = new System.Windows.Forms.Padding(2);
             this.btnCambiarContrasena.Name = "btnCambiarContrasena";
-            this.btnCambiarContrasena.Size = new System.Drawing.Size(114, 45);
+            this.btnCambiarContrasena.Size = new System.Drawing.Size(99, 37);
             this.btnCambiarContrasena.TabIndex = 4;
             this.btnCambiarContrasena.Text = "Confirmar";
             this.btnCambiarContrasena.UseVisualStyleBackColor = true;
@@ -111,36 +118,41 @@
             // 
             // txtConfirmarContrasena
             // 
-            this.txtConfirmarContrasena.Location = new System.Drawing.Point(269, 183);
+            this.txtConfirmarContrasena.Location = new System.Drawing.Point(202, 149);
+            this.txtConfirmarContrasena.Margin = new System.Windows.Forms.Padding(2);
             this.txtConfirmarContrasena.Name = "txtConfirmarContrasena";
             this.txtConfirmarContrasena.PasswordChar = '*';
-            this.txtConfirmarContrasena.Size = new System.Drawing.Size(226, 30);
+            this.txtConfirmarContrasena.Size = new System.Drawing.Size(170, 26);
             this.txtConfirmarContrasena.TabIndex = 1;
             // 
             // txtNuevaContrasena
             // 
-            this.txtNuevaContrasena.Location = new System.Drawing.Point(269, 118);
+            this.txtNuevaContrasena.Location = new System.Drawing.Point(202, 96);
+            this.txtNuevaContrasena.Margin = new System.Windows.Forms.Padding(2);
             this.txtNuevaContrasena.Name = "txtNuevaContrasena";
             this.txtNuevaContrasena.PasswordChar = '*';
-            this.txtNuevaContrasena.Size = new System.Drawing.Size(226, 30);
+            this.txtNuevaContrasena.Size = new System.Drawing.Size(170, 26);
             this.txtNuevaContrasena.TabIndex = 0;
             // 
             // txtCorreoActual
             // 
-            this.txtCorreoActual.Location = new System.Drawing.Point(269, 54);
+            this.txtCorreoActual.Location = new System.Drawing.Point(202, 44);
+            this.txtCorreoActual.Margin = new System.Windows.Forms.Padding(2);
             this.txtCorreoActual.Name = "txtCorreoActual";
-            this.txtCorreoActual.PasswordChar = '*';
-            this.txtCorreoActual.Size = new System.Drawing.Size(226, 30);
+            this.txtCorreoActual.Size = new System.Drawing.Size(170, 26);
             this.txtCorreoActual.TabIndex = 2;
             // 
             // frmOlvideContraseña
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.gbRecuperacionContraseña);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmOlvideContraseña";
-            this.Text = "frmOlvideContraseña";
+            this.Text = " ";
+            this.Load += new System.EventHandler(this.frmOlvideContraseña_Load);
             this.gbRecuperacionContraseña.ResumeLayout(false);
             this.gbRecuperacionContraseña.PerformLayout();
             this.ResumeLayout(false);

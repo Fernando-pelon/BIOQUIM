@@ -32,6 +32,7 @@ namespace Programa_Bioquim.Formularios.Empleado
 
         private void frmRutasDeEntrega_Load(object sender, EventArgs e)
         {
+            txtCostoProducto.MaxLength = 8;
             MostrarRutas();
             cargarEmpresas();
             cargarProductos();
@@ -104,10 +105,10 @@ namespace Programa_Bioquim.Formularios.Empleado
         {
             cbProducto.Text = dgvRutas.CurrentRow.Cells[1].Value.ToString();
             txtCostoProducto.Text = dgvRutas.CurrentRow.Cells[2].Value.ToString();
-            rbEfectivo.Checked = dgvRutas.CurrentRow.Cells[3].Value.ToString() == "Efectivo";
-            rbTarjetaCredito.Checked = dgvRutas.CurrentRow.Cells[3].Value.ToString() == "Tarjeta de Credito";
-            cbEmpresa.Text = dgvRutas.CurrentRow.Cells[4].Value.ToString();
-            cbUbicacionEmpresa.Text = dgvRutas.CurrentRow.Cells[5].Value.ToString();
+            rbEfectivo.Checked = dgvRutas.CurrentRow.Cells[5].Value.ToString() == "Efectivo";
+            rbTarjetaCredito.Checked = dgvRutas.CurrentRow.Cells[5].Value.ToString() == "Tarjeta de Credito";
+            cbEmpresa.Text = dgvRutas.CurrentRow.Cells[3].Value.ToString();
+            cbUbicacionEmpresa.Text = dgvRutas.CurrentRow.Cells[4].Value.ToString();
 
         }
 
@@ -158,14 +159,26 @@ namespace Programa_Bioquim.Formularios.Empleado
 
         private void txtCostoProducto_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+
+        }
+
+        private void txtCostoProducto_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        private void textBox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Permitir solo dígitos y teclas de control (como Backspace)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
-                e.Handled = true;
+                e.Handled = true; // Bloquea cualquier carácter que no sea número
+                return;
             }
 
-            if (e.KeyChar == '.' && ((sender as TextBox).Text.IndexOf('.') > -1))
+            // Limitar a 100 caracteres
+            if (txtCostoProducto.Text.Length >= 100 && !char.IsControl(e.KeyChar))
             {
-                e.Handled = true;
+                e.Handled = true; // Bloquea si ya hay 100 caracteres
             }
         }
     }

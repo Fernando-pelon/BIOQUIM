@@ -32,6 +32,7 @@ namespace Programa_Bioquim.Formularios.Empleado
 
         private void frmRutasDeEntrega_Load(object sender, EventArgs e)
         {
+            txtCostoProducto.MaxLength = 8;
             MostrarRutas();
             cargarEmpresas();
             cargarProductos();
@@ -104,10 +105,10 @@ namespace Programa_Bioquim.Formularios.Empleado
         {
             cbProducto.Text = dgvRutas.CurrentRow.Cells[1].Value.ToString();
             txtCostoProducto.Text = dgvRutas.CurrentRow.Cells[2].Value.ToString();
-            rbEfectivo.Checked = dgvRutas.CurrentRow.Cells[3].Value.ToString() == "Efectivo";
-            rbTarjetaCredito.Checked = dgvRutas.CurrentRow.Cells[3].Value.ToString() == "Tarjeta de Credito";
-            cbEmpresa.Text = dgvRutas.CurrentRow.Cells[4].Value.ToString();
-            cbUbicacionEmpresa.Text = dgvRutas.CurrentRow.Cells[5].Value.ToString();
+            rbEfectivo.Checked = dgvRutas.CurrentRow.Cells[5].Value.ToString() == "Efectivo";
+            rbTarjetaCredito.Checked = dgvRutas.CurrentRow.Cells[5].Value.ToString() == "Tarjeta de Credito";
+            cbEmpresa.Text = dgvRutas.CurrentRow.Cells[3].Value.ToString();
+            cbUbicacionEmpresa.Text = dgvRutas.CurrentRow.Cells[4].Value.ToString();
 
         }
 
@@ -167,6 +168,11 @@ namespace Programa_Bioquim.Formularios.Empleado
             {
                 e.Handled = true;
             }
+        }
+
+        private void txtCostoProducto_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

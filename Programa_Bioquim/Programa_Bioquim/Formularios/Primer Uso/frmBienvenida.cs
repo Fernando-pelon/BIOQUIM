@@ -44,5 +44,10 @@ namespace Programa_Bioquim.Formularios.Primer_Uso
                 this.Hide();
             }
         }
+
+        private void lblBienvenida_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

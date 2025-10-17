@@ -43,23 +43,23 @@
             this.pnlInicioEmpleado.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlInicioEmpleado.Controls.Add(this.dgvDatosRutas);
             this.pnlInicioEmpleado.Controls.Add(this.lblRutas);
-            this.pnlInicioEmpleado.Location = new System.Drawing.Point(47, 233);
-            this.pnlInicioEmpleado.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlInicioEmpleado.Location = new System.Drawing.Point(35, 189);
             this.pnlInicioEmpleado.Name = "pnlInicioEmpleado";
-            this.pnlInicioEmpleado.Size = new System.Drawing.Size(873, 326);
+            this.pnlInicioEmpleado.Size = new System.Drawing.Size(655, 265);
             this.pnlInicioEmpleado.TabIndex = 9;
             this.pnlInicioEmpleado.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlInicioEmpleado_Paint);
             // 
             // dgvDatosRutas
             // 
             this.dgvDatosRutas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDatosRutas.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders;
+            this.dgvDatosRutas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvDatosRutas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDatosRutas.Location = new System.Drawing.Point(7, 39);
-            this.dgvDatosRutas.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDatosRutas.Location = new System.Drawing.Point(5, 32);
             this.dgvDatosRutas.Name = "dgvDatosRutas";
             this.dgvDatosRutas.ReadOnly = true;
             this.dgvDatosRutas.RowHeadersWidth = 45;
-            this.dgvDatosRutas.Size = new System.Drawing.Size(856, 260);
+            this.dgvDatosRutas.Size = new System.Drawing.Size(642, 211);
             this.dgvDatosRutas.TabIndex = 1;
             this.dgvDatosRutas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDatosRutas_CellContentClick);
             // 
@@ -67,21 +67,19 @@
             // 
             this.lblRutas.AutoSize = true;
             this.lblRutas.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblRutas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRutas.Font = new System.Drawing.Font("Open Sans Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRutas.Location = new System.Drawing.Point(0, 0);
-            this.lblRutas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRutas.Name = "lblRutas";
-            this.lblRutas.Size = new System.Drawing.Size(254, 31);
+            this.lblRutas.Size = new System.Drawing.Size(194, 28);
             this.lblRutas.TabIndex = 0;
             this.lblRutas.Text = "Rutas en progreso";
             // 
             // pbPerfil
             // 
             this.pbPerfil.Image = global::Programa_Bioquim.Properties.Resources.Group;
-            this.pbPerfil.Location = new System.Drawing.Point(47, 86);
-            this.pbPerfil.Margin = new System.Windows.Forms.Padding(4);
+            this.pbPerfil.Location = new System.Drawing.Point(35, 70);
             this.pbPerfil.Name = "pbPerfil";
-            this.pbPerfil.Size = new System.Drawing.Size(113, 103);
+            this.pbPerfil.Size = new System.Drawing.Size(85, 84);
             this.pbPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbPerfil.TabIndex = 0;
             this.pbPerfil.TabStop = false;
@@ -89,25 +87,23 @@
             // lblBienvenida
             // 
             this.lblBienvenida.AutoSize = true;
-            this.lblBienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienvenida.Location = new System.Drawing.Point(191, 122);
-            this.lblBienvenida.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBienvenida.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenida.Location = new System.Drawing.Point(143, 99);
             this.lblBienvenida.Name = "lblBienvenida";
-            this.lblBienvenida.Size = new System.Drawing.Size(491, 29);
+            this.lblBienvenida.Size = new System.Drawing.Size(383, 26);
             this.lblBienvenida.TabIndex = 1;
             this.lblBienvenida.Text = "¡Hola, Bienvenido al sistema de Bioquim!";
             // 
             // frmInicioAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1067, 658);
+            this.ClientSize = new System.Drawing.Size(800, 535);
             this.Controls.Add(this.lblBienvenida);
             this.Controls.Add(this.pbPerfil);
             this.Controls.Add(this.pnlInicioEmpleado);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "frmInicioAdmin";
             this.Text = "frmInicio";

@@ -55,11 +55,9 @@
             this.gbxDatos.Controls.Add(this.btnCrearCuenta);
             this.gbxDatos.Controls.Add(this.txtNombre);
             this.gbxDatos.Controls.Add(this.lblNombre);
-            this.gbxDatos.Location = new System.Drawing.Point(309, 135);
-            this.gbxDatos.Margin = new System.Windows.Forms.Padding(4);
+            this.gbxDatos.Location = new System.Drawing.Point(232, 110);
             this.gbxDatos.Name = "gbxDatos";
-            this.gbxDatos.Padding = new System.Windows.Forms.Padding(4);
-            this.gbxDatos.Size = new System.Drawing.Size(429, 315);
+            this.gbxDatos.Size = new System.Drawing.Size(322, 256);
             this.gbxDatos.TabIndex = 12;
             this.gbxDatos.TabStop = false;
             // 
@@ -70,10 +68,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCrearPrimerUsuario.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnCrearPrimerUsuario.ForeColor = System.Drawing.Color.White;
-            this.btnCrearPrimerUsuario.Location = new System.Drawing.Point(113, 261);
-            this.btnCrearPrimerUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCrearPrimerUsuario.Location = new System.Drawing.Point(85, 212);
             this.btnCrearPrimerUsuario.Name = "btnCrearPrimerUsuario";
-            this.btnCrearPrimerUsuario.Size = new System.Drawing.Size(188, 46);
+            this.btnCrearPrimerUsuario.Size = new System.Drawing.Size(141, 37);
             this.btnCrearPrimerUsuario.TabIndex = 13;
             this.btnCrearPrimerUsuario.Text = "Crear Cuenta";
             this.btnCrearPrimerUsuario.UseVisualStyleBackColor = false;
@@ -84,13 +81,13 @@
             this.txtCorreo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCorreo.Location = new System.Drawing.Point(50, 211);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCorreo.Location = new System.Drawing.Point(38, 171);
             this.txtCorreo.Multiline = true;
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(332, 23);
+            this.txtCorreo.Size = new System.Drawing.Size(250, 19);
             this.txtCorreo.TabIndex = 12;
             this.txtCorreo.UseSystemPasswordChar = true;
+            this.txtCorreo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // lblCorreo
             // 
@@ -98,10 +95,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Location = new System.Drawing.Point(44, 182);
-            this.lblCorreo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCorreo.Location = new System.Drawing.Point(33, 148);
             this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(51, 16);
+            this.lblCorreo.Size = new System.Drawing.Size(41, 13);
             this.lblCorreo.TabIndex = 11;
             this.lblCorreo.Text = "Correo:";
             // 
@@ -110,11 +106,11 @@
             this.txtApellido.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtApellido.Location = new System.Drawing.Point(48, 144);
-            this.txtApellido.Margin = new System.Windows.Forms.Padding(4);
+            this.txtApellido.Location = new System.Drawing.Point(36, 117);
             this.txtApellido.Name = "txtApellido";
-            this.txtApellido.Size = new System.Drawing.Size(332, 22);
+            this.txtApellido.Size = new System.Drawing.Size(250, 20);
             this.txtApellido.TabIndex = 10;
+            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // lblApellido
             // 
@@ -122,10 +118,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Location = new System.Drawing.Point(44, 116);
-            this.lblApellido.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblApellido.Location = new System.Drawing.Point(33, 94);
             this.lblApellido.Name = "lblApellido";
-            this.lblApellido.Size = new System.Drawing.Size(60, 16);
+            this.lblApellido.Size = new System.Drawing.Size(47, 13);
             this.lblApellido.TabIndex = 9;
             this.lblApellido.Text = "Apellido:";
             // 
@@ -136,10 +131,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCrearCuenta.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnCrearCuenta.ForeColor = System.Drawing.Color.White;
-            this.btnCrearCuenta.Location = new System.Drawing.Point(114, 280);
-            this.btnCrearCuenta.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCrearCuenta.Location = new System.Drawing.Point(86, 228);
             this.btnCrearCuenta.Name = "btnCrearCuenta";
-            this.btnCrearCuenta.Size = new System.Drawing.Size(188, 0);
+            this.btnCrearCuenta.Size = new System.Drawing.Size(141, 0);
             this.btnCrearCuenta.TabIndex = 4;
             this.btnCrearCuenta.Text = "Crear Cuenta";
             this.btnCrearCuenta.UseVisualStyleBackColor = false;
@@ -149,11 +143,11 @@
             this.txtNombre.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtNombre.Location = new System.Drawing.Point(48, 74);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNombre.Location = new System.Drawing.Point(36, 60);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(332, 22);
+            this.txtNombre.Size = new System.Drawing.Size(250, 20);
             this.txtNombre.TabIndex = 2;
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox1_KeyPress);
             // 
             // lblNombre
             // 
@@ -161,10 +155,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(44, 46);
-            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNombre.Location = new System.Drawing.Point(33, 37);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(59, 16);
+            this.lblNombre.Size = new System.Drawing.Size(47, 13);
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Nombre:";
             // 
@@ -174,22 +167,23 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::Programa_Bioquim.Properties.Resources.CuadroAzul2;
-            this.pictureBox1.Location = new System.Drawing.Point(213, 50);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(160, 41);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(643, 521);
+            this.pictureBox1.Size = new System.Drawing.Size(482, 423);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // frmCrearNuevoUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1042, 616);
+            this.ClientSize = new System.Drawing.Size(782, 500);
             this.Controls.Add(this.gbxDatos);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmCrearNuevoUsuario";
             this.Text = "frmCrearNuevoUsuario";
             this.gbxDatos.ResumeLayout(false);

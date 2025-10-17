@@ -31,7 +31,7 @@ namespace Programa_Bioquim.Formularios.Primer_Uso
                     {
                         string query = "UPDATE Usuario SET contrasenaUsuario = @nuevaContrasena WHERE correoUsuario = @correo";
                         SqlCommand cmd = new SqlCommand(query, conexion);
-                        cmd.Parameters.AddWithValue("@nuevaContrasena", BCrypt.Net.BCrypt.HashPassword(nuevaContrasena));
+                        _ = cmd.Parameters.AddWithValue("@nuevaContrasena", BCrypt.Net.BCrypt.HashPassword(nuevaContrasena));
                         cmd.Parameters.AddWithValue("@correo", correo);
 
                         return cmd.ExecuteNonQuery() > 0;
@@ -105,6 +105,11 @@ namespace Programa_Bioquim.Formularios.Primer_Uso
         {
             MessageBox.Show("Debe cambiar su contraseña para continuar.", "Advertencia",
               MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
+        private void frmCambiarContraseña_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

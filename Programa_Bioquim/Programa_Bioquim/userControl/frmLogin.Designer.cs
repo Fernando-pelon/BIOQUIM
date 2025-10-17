@@ -36,7 +36,6 @@
             this.lblUsuario = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.lblOlvideContraseña = new System.Windows.Forms.Label();
             this.gbxDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -44,98 +43,93 @@
             // 
             // gbxDatos
             // 
-            this.gbxDatos.Controls.Add(this.lblOlvideContraseña);
+            this.gbxDatos.BackColor = System.Drawing.Color.WhiteSmoke;
             this.gbxDatos.Controls.Add(this.btnLogIn);
             this.gbxDatos.Controls.Add(this.txtContrasenia);
             this.gbxDatos.Controls.Add(this.txtUsuario);
             this.gbxDatos.Controls.Add(this.lblContraseña);
             this.gbxDatos.Controls.Add(this.lblUsuario);
-            this.gbxDatos.Location = new System.Drawing.Point(121, 221);
+            this.gbxDatos.Location = new System.Drawing.Point(125, 200);
             this.gbxDatos.Name = "gbxDatos";
-            this.gbxDatos.Size = new System.Drawing.Size(322, 233);
+            this.gbxDatos.Size = new System.Drawing.Size(315, 210);
             this.gbxDatos.TabIndex = 10;
             this.gbxDatos.TabStop = false;
-            this.gbxDatos.Text = "v";
             // 
             // btnLogIn
             // 
             this.btnLogIn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnLogIn.FlatAppearance.BorderSize = 0;
+            this.btnLogIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogIn.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogIn.ForeColor = System.Drawing.Color.White;
-            this.btnLogIn.Location = new System.Drawing.Point(83, 162);
+            this.btnLogIn.Location = new System.Drawing.Point(89, 142);
             this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.Size = new System.Drawing.Size(141, 35);
+            this.btnLogIn.Size = new System.Drawing.Size(135, 36);
             this.btnLogIn.TabIndex = 4;
-            this.btnLogIn.Text = "Iniciar Sesion";
+            this.btnLogIn.Text = "Iniciar Sesión";
             this.btnLogIn.UseVisualStyleBackColor = false;
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // txtContrasenia
             // 
-            this.txtContrasenia.Location = new System.Drawing.Point(10, 122);
+            this.txtContrasenia.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContrasenia.Location = new System.Drawing.Point(12, 98);
             this.txtContrasenia.Name = "txtContrasenia";
             this.txtContrasenia.ShortcutsEnabled = false;
-            this.txtContrasenia.Size = new System.Drawing.Size(250, 22);
+            this.txtContrasenia.Size = new System.Drawing.Size(290, 28);
             this.txtContrasenia.TabIndex = 3;
             this.txtContrasenia.UseSystemPasswordChar = true;
             this.txtContrasenia.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtContrasenia_KeyDown);
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Location = new System.Drawing.Point(10, 60);
+            this.txtUsuario.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Location = new System.Drawing.Point(12, 46);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.ShortcutsEnabled = false;
-            this.txtUsuario.Size = new System.Drawing.Size(250, 22);
+            this.txtUsuario.Size = new System.Drawing.Size(290, 28);
             this.txtUsuario.TabIndex = 2;
             this.txtUsuario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtUsuario_KeyDown);
             // 
             // lblContraseña
             // 
             this.lblContraseña.AutoSize = true;
-            this.lblContraseña.Location = new System.Drawing.Point(6, 99);
+            this.lblContraseña.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContraseña.Location = new System.Drawing.Point(9, 78);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(90, 16);
+            this.lblContraseña.Size = new System.Drawing.Size(98, 20);
             this.lblContraseña.TabIndex = 1;
             this.lblContraseña.Text = "Contraseña:";
             // 
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(7, 37);
+            this.lblUsuario.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuario.Location = new System.Drawing.Point(9, 26);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(65, 16);
+            this.lblUsuario.Size = new System.Drawing.Size(69, 20);
             this.lblUsuario.TabIndex = 0;
             this.lblUsuario.Text = "Usuario:";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Programa_Bioquim.Properties.Resources.LogoCompleto;
-            this.pictureBox2.Location = new System.Drawing.Point(116, 42);
+            this.pictureBox2.Location = new System.Drawing.Point(120, 20);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(319, 103);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.Size = new System.Drawing.Size(325, 95);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Programa_Bioquim.Properties.Resources.CuadroAzul2;
-            this.pictureBox1.Location = new System.Drawing.Point(18, 127);
+            this.pictureBox1.Location = new System.Drawing.Point(35, 110);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(519, 408);
+            this.pictureBox1.Size = new System.Drawing.Size(495, 420);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
-            // 
-            // lblOlvideContraseña
-            // 
-            this.lblOlvideContraseña.AutoSize = true;
-            this.lblOlvideContraseña.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblOlvideContraseña.Location = new System.Drawing.Point(80, 214);
-            this.lblOlvideContraseña.Name = "lblOlvideContraseña";
-            this.lblOlvideContraseña.Size = new System.Drawing.Size(153, 16);
-            this.lblOlvideContraseña.TabIndex = 5;
-            this.lblOlvideContraseña.Text = "Olvide mi contraseña";
-            this.lblOlvideContraseña.Click += new System.EventHandler(this.lblOlvideContraseña_Click);
             // 
             // frmLogin
             // 
@@ -167,6 +161,5 @@
         private System.Windows.Forms.Label lblUsuario;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label lblOlvideContraseña;
     }
 }

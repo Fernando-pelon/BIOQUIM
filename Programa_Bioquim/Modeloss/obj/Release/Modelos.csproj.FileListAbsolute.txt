@@ -1,0 +1,17 @@
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Release\Modeloss.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Release\Modeloss.pdb
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Release\BCrypt.Net-Next.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Release\System.Buffers.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Release\System.Memory.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Release\System.Numerics.Vectors.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Release\BCrypt.Net-Next.xml
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Release\System.Buffers.xml
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Release\System.Memory.xml
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Release\System.Numerics.Vectors.xml
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\obj\Release\Modelos.csproj.AssemblyReference.cache
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\obj\Release\Modelos.csproj.CoreCompileInputs.cache
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\obj\Release\Modelos.csproj.Up2Date
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\obj\Release\Modeloss.dll
+C:\Users\Miste\OneDrive\Escritorio\BIOQUIM\Programa_Bioquim\Modeloss\obj\Release\Modeloss.pdb

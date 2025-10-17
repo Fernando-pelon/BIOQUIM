@@ -57,10 +57,9 @@
             // 
             this.pnlRutas.BackColor = System.Drawing.Color.Blue;
             this.pnlRutas.Controls.Add(this.lblRutas);
-            this.pnlRutas.Location = new System.Drawing.Point(393, 27);
-            this.pnlRutas.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlRutas.Location = new System.Drawing.Point(303, 22);
             this.pnlRutas.Name = "pnlRutas";
-            this.pnlRutas.Size = new System.Drawing.Size(193, 60);
+            this.pnlRutas.Size = new System.Drawing.Size(136, 49);
             this.pnlRutas.TabIndex = 0;
             // 
             // lblRutas
@@ -69,10 +68,9 @@
             this.lblRutas.BackColor = System.Drawing.Color.Blue;
             this.lblRutas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.26415F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblRutas.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblRutas.Location = new System.Drawing.Point(49, 17);
-            this.lblRutas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRutas.Location = new System.Drawing.Point(45, 15);
             this.lblRutas.Name = "lblRutas";
-            this.lblRutas.Size = new System.Drawing.Size(79, 29);
+            this.lblRutas.Size = new System.Drawing.Size(67, 25);
             this.lblRutas.TabIndex = 0;
             this.lblRutas.Text = "Rutas";
             this.lblRutas.Click += new System.EventHandler(this.label1_Click);
@@ -81,14 +79,13 @@
             // 
             this.dgvRutas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvRutas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRutas.Location = new System.Drawing.Point(16, 108);
-            this.dgvRutas.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvRutas.Location = new System.Drawing.Point(12, 88);
             this.dgvRutas.Name = "dgvRutas";
             this.dgvRutas.ReadOnly = true;
             this.dgvRutas.RowHeadersVisible = false;
             this.dgvRutas.RowHeadersWidth = 45;
             this.dgvRutas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvRutas.Size = new System.Drawing.Size(912, 337);
+            this.dgvRutas.Size = new System.Drawing.Size(684, 274);
             this.dgvRutas.TabIndex = 1;
             this.dgvRutas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dgvRutas.DoubleClick += new System.EventHandler(this.dgvRutas_DoubleClick);
@@ -96,12 +93,12 @@
             // btnEliminarRuta
             // 
             this.btnEliminarRuta.BackColor = System.Drawing.Color.Blue;
-            this.btnEliminarRuta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarRuta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEliminarRuta.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarRuta.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarRuta.Location = new System.Drawing.Point(744, 80);
-            this.btnEliminarRuta.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEliminarRuta.Location = new System.Drawing.Point(558, 70);
             this.btnEliminarRuta.Name = "btnEliminarRuta";
-            this.btnEliminarRuta.Size = new System.Drawing.Size(155, 43);
+            this.btnEliminarRuta.Size = new System.Drawing.Size(116, 35);
             this.btnEliminarRuta.TabIndex = 3;
             this.btnEliminarRuta.Text = "Eliminar Ruta";
             this.btnEliminarRuta.UseVisualStyleBackColor = false;
@@ -110,12 +107,12 @@
             // btnAgregarRuta
             // 
             this.btnAgregarRuta.BackColor = System.Drawing.Color.Blue;
-            this.btnAgregarRuta.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarRuta.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgregarRuta.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarRuta.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarRuta.Location = new System.Drawing.Point(744, 126);
-            this.btnAgregarRuta.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregarRuta.Location = new System.Drawing.Point(558, 111);
             this.btnAgregarRuta.Name = "btnAgregarRuta";
-            this.btnAgregarRuta.Size = new System.Drawing.Size(155, 43);
+            this.btnAgregarRuta.Size = new System.Drawing.Size(116, 35);
             this.btnAgregarRuta.TabIndex = 4;
             this.btnAgregarRuta.Text = "Agregar Ruta";
             this.btnAgregarRuta.UseVisualStyleBackColor = false;
@@ -138,21 +135,20 @@
             this.panel1.Controls.Add(this.btnEliminarRuta);
             this.panel1.Controls.Add(this.lblUbicacionEmpresa);
             this.panel1.Controls.Add(this.txtCostoProducto);
-            this.panel1.Location = new System.Drawing.Point(16, 453);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(12, 368);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(912, 206);
+            this.panel1.Size = new System.Drawing.Size(684, 167);
             this.panel1.TabIndex = 13;
             // 
             // btnActualizarRutas
             // 
             this.btnActualizarRutas.BackColor = System.Drawing.Color.Blue;
-            this.btnActualizarRutas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarRutas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnActualizarRutas.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizarRutas.ForeColor = System.Drawing.Color.White;
-            this.btnActualizarRutas.Location = new System.Drawing.Point(744, 21);
-            this.btnActualizarRutas.Margin = new System.Windows.Forms.Padding(4);
+            this.btnActualizarRutas.Location = new System.Drawing.Point(558, 30);
             this.btnActualizarRutas.Name = "btnActualizarRutas";
-            this.btnActualizarRutas.Size = new System.Drawing.Size(155, 58);
+            this.btnActualizarRutas.Size = new System.Drawing.Size(116, 34);
             this.btnActualizarRutas.TabIndex = 23;
             this.btnActualizarRutas.Text = "Actualizar Ruta";
             this.btnActualizarRutas.UseVisualStyleBackColor = false;
@@ -161,22 +157,20 @@
             // lblTipoPago
             // 
             this.lblTipoPago.AutoSize = true;
-            this.lblTipoPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoPago.Location = new System.Drawing.Point(559, 26);
-            this.lblTipoPago.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTipoPago.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTipoPago.Location = new System.Drawing.Point(391, 21);
             this.lblTipoPago.Name = "lblTipoPago";
-            this.lblTipoPago.Size = new System.Drawing.Size(125, 20);
+            this.lblTipoPago.Size = new System.Drawing.Size(104, 20);
             this.lblTipoPago.TabIndex = 21;
             this.lblTipoPago.Text = "Tipo de Pago:";
             // 
             // rbTarjetaCredito
             // 
             this.rbTarjetaCredito.AutoSize = true;
-            this.rbTarjetaCredito.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbTarjetaCredito.Location = new System.Drawing.Point(563, 126);
-            this.rbTarjetaCredito.Margin = new System.Windows.Forms.Padding(4);
+            this.rbTarjetaCredito.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbTarjetaCredito.Location = new System.Drawing.Point(395, 111);
             this.rbTarjetaCredito.Name = "rbTarjetaCredito";
-            this.rbTarjetaCredito.Size = new System.Drawing.Size(164, 24);
+            this.rbTarjetaCredito.Size = new System.Drawing.Size(157, 24);
             this.rbTarjetaCredito.TabIndex = 20;
             this.rbTarjetaCredito.TabStop = true;
             this.rbTarjetaCredito.Text = "Tarjeta de Credito";
@@ -185,11 +179,10 @@
             // rbEfectivo
             // 
             this.rbEfectivo.AutoSize = true;
-            this.rbEfectivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbEfectivo.Location = new System.Drawing.Point(563, 80);
-            this.rbEfectivo.Margin = new System.Windows.Forms.Padding(4);
+            this.rbEfectivo.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbEfectivo.Location = new System.Drawing.Point(393, 70);
             this.rbEfectivo.Name = "rbEfectivo";
-            this.rbEfectivo.Size = new System.Drawing.Size(90, 24);
+            this.rbEfectivo.Size = new System.Drawing.Size(83, 24);
             this.rbEfectivo.TabIndex = 19;
             this.rbEfectivo.TabStop = true;
             this.rbEfectivo.Text = "Efectivo";
@@ -197,95 +190,94 @@
             // 
             // cbProducto
             // 
+            this.cbProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbProducto.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbProducto.FormattingEnabled = true;
-            this.cbProducto.Location = new System.Drawing.Point(23, 137);
-            this.cbProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.cbProducto.Location = new System.Drawing.Point(17, 111);
             this.cbProducto.Name = "cbProducto";
-            this.cbProducto.Size = new System.Drawing.Size(224, 24);
+            this.cbProducto.Size = new System.Drawing.Size(169, 28);
             this.cbProducto.TabIndex = 18;
             // 
             // cbUbicacionEmpresa
             // 
+            this.cbUbicacionEmpresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbUbicacionEmpresa.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbUbicacionEmpresa.FormattingEnabled = true;
-            this.cbUbicacionEmpresa.Location = new System.Drawing.Point(23, 57);
-            this.cbUbicacionEmpresa.Margin = new System.Windows.Forms.Padding(4);
+            this.cbUbicacionEmpresa.Location = new System.Drawing.Point(17, 46);
             this.cbUbicacionEmpresa.Name = "cbUbicacionEmpresa";
-            this.cbUbicacionEmpresa.Size = new System.Drawing.Size(224, 24);
+            this.cbUbicacionEmpresa.Size = new System.Drawing.Size(169, 28);
             this.cbUbicacionEmpresa.TabIndex = 17;
             this.cbUbicacionEmpresa.SelectedIndexChanged += new System.EventHandler(this.cbUbicacionEmpresa_SelectedIndexChanged);
             // 
             // cbEmpresa
             // 
+            this.cbEmpresa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbEmpresa.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbEmpresa.FormattingEnabled = true;
-            this.cbEmpresa.Location = new System.Drawing.Point(288, 137);
-            this.cbEmpresa.Margin = new System.Windows.Forms.Padding(4);
+            this.cbEmpresa.Location = new System.Drawing.Point(216, 111);
             this.cbEmpresa.Name = "cbEmpresa";
-            this.cbEmpresa.Size = new System.Drawing.Size(247, 24);
+            this.cbEmpresa.Size = new System.Drawing.Size(171, 28);
             this.cbEmpresa.TabIndex = 16;
             // 
             // lblEmpresaNombre
             // 
             this.lblEmpresaNombre.AutoSize = true;
-            this.lblEmpresaNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmpresaNombre.Location = new System.Drawing.Point(284, 103);
-            this.lblEmpresaNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblEmpresaNombre.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpresaNombre.Location = new System.Drawing.Point(213, 84);
             this.lblEmpresaNombre.Name = "lblEmpresaNombre";
-            this.lblEmpresaNombre.Size = new System.Drawing.Size(95, 20);
+            this.lblEmpresaNombre.Size = new System.Drawing.Size(79, 20);
             this.lblEmpresaNombre.TabIndex = 15;
             this.lblEmpresaNombre.Text = "Empresa :";
             // 
             // lblCantidadProducto
             // 
             this.lblCantidadProducto.AutoSize = true;
-            this.lblCantidadProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidadProducto.Location = new System.Drawing.Point(17, 103);
-            this.lblCantidadProducto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCantidadProducto.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidadProducto.Location = new System.Drawing.Point(13, 84);
             this.lblCantidadProducto.Name = "lblCantidadProducto";
-            this.lblCantidadProducto.Size = new System.Drawing.Size(88, 20);
+            this.lblCantidadProducto.Size = new System.Drawing.Size(78, 20);
             this.lblCantidadProducto.TabIndex = 14;
-            this.lblCantidadProducto.Text = "producto:";
+            this.lblCantidadProducto.Text = "Producto:";
             // 
             // lblMontoPagar
             // 
             this.lblMontoPagar.AutoSize = true;
-            this.lblMontoPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMontoPagar.Location = new System.Drawing.Point(284, 26);
-            this.lblMontoPagar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMontoPagar.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMontoPagar.Location = new System.Drawing.Point(213, 21);
             this.lblMontoPagar.Name = "lblMontoPagar";
-            this.lblMontoPagar.Size = new System.Drawing.Size(135, 20);
+            this.lblMontoPagar.Size = new System.Drawing.Size(119, 20);
             this.lblMontoPagar.TabIndex = 13;
             this.lblMontoPagar.Text = "Monto a pagar:";
             // 
             // lblUbicacionEmpresa
             // 
             this.lblUbicacionEmpresa.AutoSize = true;
-            this.lblUbicacionEmpresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUbicacionEmpresa.Location = new System.Drawing.Point(19, 26);
-            this.lblUbicacionEmpresa.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUbicacionEmpresa.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUbicacionEmpresa.Location = new System.Drawing.Point(14, 21);
             this.lblUbicacionEmpresa.Name = "lblUbicacionEmpresa";
-            this.lblUbicacionEmpresa.Size = new System.Drawing.Size(175, 20);
+            this.lblUbicacionEmpresa.Size = new System.Drawing.Size(149, 20);
             this.lblUbicacionEmpresa.TabIndex = 12;
-            this.lblUbicacionEmpresa.Text = "ubicacion Empresa:";
+            this.lblUbicacionEmpresa.Text = "Ubicacion Empresa:";
             this.lblUbicacionEmpresa.Click += new System.EventHandler(this.lblNombreProducto_Click);
             // 
             // txtCostoProducto
             // 
-            this.txtCostoProducto.Location = new System.Drawing.Point(288, 57);
-            this.txtCostoProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCostoProducto.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCostoProducto.Location = new System.Drawing.Point(216, 46);
             this.txtCostoProducto.Name = "txtCostoProducto";
             this.txtCostoProducto.ShortcutsEnabled = false;
-            this.txtCostoProducto.Size = new System.Drawing.Size(247, 22);
+            this.txtCostoProducto.Size = new System.Drawing.Size(171, 28);
             this.txtCostoProducto.TabIndex = 11;
-            this.txtCostoProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCostoProducto_KeyPress);
+            this.txtCostoProducto.TextChanged += new System.EventHandler(this.txtCostoProducto_TextChanged);
+            this.txtCostoProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
             // 
             // txtBuscarRutas
             // 
-            this.txtBuscarRutas.Location = new System.Drawing.Point(637, 70);
-            this.txtBuscarRutas.Margin = new System.Windows.Forms.Padding(4);
+            this.txtBuscarRutas.Location = new System.Drawing.Point(478, 57);
             this.txtBuscarRutas.Multiline = true;
             this.txtBuscarRutas.Name = "txtBuscarRutas";
             this.txtBuscarRutas.ShortcutsEnabled = false;
-            this.txtBuscarRutas.Size = new System.Drawing.Size(291, 30);
+            this.txtBuscarRutas.Size = new System.Drawing.Size(219, 25);
             this.txtBuscarRutas.TabIndex = 14;
             this.txtBuscarRutas.TextChanged += new System.EventHandler(this.txtBuscarRutas_TextChanged);
             // 
@@ -293,25 +285,23 @@
             // 
             this.lblBuscarRuta.AutoSize = true;
             this.lblBuscarRuta.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.18868F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuscarRuta.Location = new System.Drawing.Point(633, 46);
-            this.lblBuscarRuta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblBuscarRuta.Location = new System.Drawing.Point(475, 37);
             this.lblBuscarRuta.Name = "lblBuscarRuta";
-            this.lblBuscarRuta.Size = new System.Drawing.Size(120, 20);
+            this.lblBuscarRuta.Size = new System.Drawing.Size(102, 17);
             this.lblBuscarRuta.TabIndex = 22;
             this.lblBuscarRuta.Text = "Buscar Ruta:";
             // 
             // frmRutasDeEntregaEmpleado
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1067, 751);
+            this.ClientSize = new System.Drawing.Size(800, 610);
             this.Controls.Add(this.lblBuscarRuta);
             this.Controls.Add(this.txtBuscarRutas);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvRutas);
             this.Controls.Add(this.pnlRutas);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmRutasDeEntregaEmpleado";
             this.Text = "RutasDeEntrega";
             this.Load += new System.EventHandler(this.frmRutasDeEntrega_Load);

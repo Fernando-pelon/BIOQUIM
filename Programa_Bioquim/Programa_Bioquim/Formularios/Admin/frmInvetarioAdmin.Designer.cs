@@ -51,11 +51,12 @@
             // btnAgregarProducto
             // 
             this.btnAgregarProducto.BackColor = System.Drawing.Color.Blue;
-            this.btnAgregarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgregarProducto.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregarProducto.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarProducto.Location = new System.Drawing.Point(332, 109);
+            this.btnAgregarProducto.Location = new System.Drawing.Point(344, 109);
             this.btnAgregarProducto.Name = "btnAgregarProducto";
-            this.btnAgregarProducto.Size = new System.Drawing.Size(106, 44);
+            this.btnAgregarProducto.Size = new System.Drawing.Size(106, 55);
             this.btnAgregarProducto.TabIndex = 6;
             this.btnAgregarProducto.Text = "Agregar producto";
             this.btnAgregarProducto.UseVisualStyleBackColor = false;
@@ -64,11 +65,12 @@
             // btnEliminarProducto
             // 
             this.btnEliminarProducto.BackColor = System.Drawing.Color.Blue;
-            this.btnEliminarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEliminarProducto.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminarProducto.ForeColor = System.Drawing.Color.White;
             this.btnEliminarProducto.Location = new System.Drawing.Point(456, 109);
             this.btnEliminarProducto.Name = "btnEliminarProducto";
-            this.btnEliminarProducto.Size = new System.Drawing.Size(111, 44);
+            this.btnEliminarProducto.Size = new System.Drawing.Size(111, 55);
             this.btnEliminarProducto.TabIndex = 5;
             this.btnEliminarProducto.Text = "Eliminar producto";
             this.btnEliminarProducto.UseVisualStyleBackColor = false;
@@ -112,31 +114,35 @@
             // 
             // txtNombreProducto
             // 
+            this.txtNombreProducto.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNombreProducto.Location = new System.Drawing.Point(30, 48);
             this.txtNombreProducto.Name = "txtNombreProducto";
             this.txtNombreProducto.ShortcutsEnabled = false;
-            this.txtNombreProducto.Size = new System.Drawing.Size(169, 20);
+            this.txtNombreProducto.Size = new System.Drawing.Size(169, 28);
             this.txtNombreProducto.TabIndex = 9;
             this.txtNombreProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreProducto_KeyPress);
             // 
             // txtCantidadProducto
             // 
+            this.txtCantidadProducto.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCantidadProducto.Location = new System.Drawing.Point(30, 109);
             this.txtCantidadProducto.Name = "txtCantidadProducto";
             this.txtCantidadProducto.ShortcutsEnabled = false;
-            this.txtCantidadProducto.Size = new System.Drawing.Size(169, 20);
+            this.txtCantidadProducto.Size = new System.Drawing.Size(169, 28);
             this.txtCantidadProducto.TabIndex = 10;
             this.txtCantidadProducto.TextChanged += new System.EventHandler(this.txtCantidadProducto_TextChanged);
-            this.txtCantidadProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidadProducto_KeyPress);
+            this.txtCantidadProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_KeyPress);
             // 
             // txtCostoProducto
             // 
-            this.txtCostoProducto.Location = new System.Drawing.Point(252, 46);
+            this.txtCostoProducto.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCostoProducto.Location = new System.Drawing.Point(235, 44);
             this.txtCostoProducto.Name = "txtCostoProducto";
             this.txtCostoProducto.ShortcutsEnabled = false;
-            this.txtCostoProducto.Size = new System.Drawing.Size(186, 20);
+            this.txtCostoProducto.Size = new System.Drawing.Size(186, 28);
             this.txtCostoProducto.TabIndex = 11;
-            this.txtCostoProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCostoProducto_KeyPress);
+            this.txtCostoProducto.TextChanged += new System.EventHandler(this.txtCostoProducto_TextChanged);
+            this.txtCostoProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox4_KeyPress);
             // 
             // panel1
             // 
@@ -150,6 +156,7 @@
             this.panel1.Controls.Add(this.btnAgregarProducto);
             this.panel1.Controls.Add(this.txtNombreProducto);
             this.panel1.Controls.Add(this.btnEliminarProducto);
+            this.panel1.Font = new System.Drawing.Font("Open Sans Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(78, 364);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(584, 167);
@@ -159,11 +166,12 @@
             // btnActualizarProduc
             // 
             this.btnActualizarProduc.BackColor = System.Drawing.Color.Blue;
-            this.btnActualizarProduc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.830189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActualizarProduc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnActualizarProduc.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizarProduc.ForeColor = System.Drawing.Color.White;
-            this.btnActualizarProduc.Location = new System.Drawing.Point(456, 59);
+            this.btnActualizarProduc.Location = new System.Drawing.Point(456, 48);
             this.btnActualizarProduc.Name = "btnActualizarProduc";
-            this.btnActualizarProduc.Size = new System.Drawing.Size(111, 44);
+            this.btnActualizarProduc.Size = new System.Drawing.Size(111, 55);
             this.btnActualizarProduc.TabIndex = 16;
             this.btnActualizarProduc.Text = "Actualizar Producto";
             this.btnActualizarProduc.UseVisualStyleBackColor = false;
@@ -172,10 +180,10 @@
             // lblCantidadProducto
             // 
             this.lblCantidadProducto.AutoSize = true;
-            this.lblCantidadProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidadProducto.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidadProducto.Location = new System.Drawing.Point(26, 84);
             this.lblCantidadProducto.Name = "lblCantidadProducto";
-            this.lblCantidadProducto.Size = new System.Drawing.Size(168, 20);
+            this.lblCantidadProducto.Size = new System.Drawing.Size(148, 20);
             this.lblCantidadProducto.TabIndex = 14;
             this.lblCantidadProducto.Text = "Cantidad producto:";
             this.lblCantidadProducto.Click += new System.EventHandler(this.label2_Click);
@@ -183,20 +191,20 @@
             // lblCostoProducto
             // 
             this.lblCostoProducto.AutoSize = true;
-            this.lblCostoProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCostoProducto.Location = new System.Drawing.Point(248, 21);
+            this.lblCostoProducto.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCostoProducto.Location = new System.Drawing.Point(231, 21);
             this.lblCostoProducto.Name = "lblCostoProducto";
-            this.lblCostoProducto.Size = new System.Drawing.Size(143, 20);
+            this.lblCostoProducto.Size = new System.Drawing.Size(123, 20);
             this.lblCostoProducto.TabIndex = 13;
             this.lblCostoProducto.Text = "Costo producto:";
             // 
             // lblNombreProducto
             // 
             this.lblNombreProducto.AutoSize = true;
-            this.lblNombreProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreProducto.Font = new System.Drawing.Font("Open Sans Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreProducto.Location = new System.Drawing.Point(26, 21);
             this.lblNombreProducto.Name = "lblNombreProducto";
-            this.lblNombreProducto.Size = new System.Drawing.Size(159, 20);
+            this.lblNombreProducto.Size = new System.Drawing.Size(141, 20);
             this.lblNombreProducto.TabIndex = 12;
             this.lblNombreProducto.Text = "Nombre producto:";
             // 
@@ -219,7 +227,7 @@
             this.lblBuscarProductp.TabIndex = 23;
             this.lblBuscarProductp.Text = "Buscar Producto:";
             // 
-            // frmInvetario
+            // frmInvetarioAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -230,7 +238,7 @@
             this.Controls.Add(this.pnlinventario);
             this.Controls.Add(this.dgvInventario);
             this.Controls.Add(this.panel1);
-            this.Name = "frmInvetario";
+            this.Name = "frmInvetarioAdmin";
             this.Text = "frmInvetario";
             this.Load += new System.EventHandler(this.frmInvetario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).EndInit();
